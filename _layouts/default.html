@@ -12,6 +12,8 @@ layout: compress
     <meta name=description content="{{ site.bio }}">
     <meta name=author content="{{ site.name }}">
 
+    <meta property="og:image" content="http://blog.ry4nkim.kr/assets/images/profile.png">
+
     {% seo %}
 
     {% include favicon.html %}
@@ -23,8 +25,6 @@ layout: compress
     {% capture scss_sheet %}{% include style.scss %}{% endcapture %}
     {{ scss_sheet | scssify }}
     </style>
-
-    <meta property="og:image" content="http://blog.ry4nkim.kr/assets/images/profile.png">
 
 </head>
 <body>
