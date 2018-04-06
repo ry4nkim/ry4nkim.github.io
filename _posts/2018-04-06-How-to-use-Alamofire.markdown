@@ -2,7 +2,7 @@
 title: "[iOS / Swift4] Alamofire 사용하기"
 layout: post
 date: 2018-04-06 13:40
-image: /assets/images/profile.png
+image: /assets/images/profile-round.png
 headerImage: true
 tag:
 - iOS
