@@ -18,7 +18,7 @@ layout: page
 
 <h2>Career</h2>
 <ul>
-	<li>투비네트웍스 모바일 앱 (Android & iOS) 개발자 - 병역특례 산업기능요원 복무 (2018.01.25 ~ ing)</li>
+	<li>투비네트웍스 모바일 앱 (Android & iOS) 개발자 - 병역특례 산업기능요원 복무 (2018.01.08 ~ ing)</li>
 </ul>
 
 <h2>Activity</h2>
