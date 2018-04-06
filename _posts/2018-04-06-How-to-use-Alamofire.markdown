@@ -20,7 +20,7 @@ Alamofire 란?
 ### Index
 - [Preparations](#preparations)
 - [Get Started](#get-started)
-- [Alamofire Request Example](#alamofire-request-example)
+- [Alamofire JSON Request Example](#alamofire-json-request-example)
 
 ---
 ## Preparations
