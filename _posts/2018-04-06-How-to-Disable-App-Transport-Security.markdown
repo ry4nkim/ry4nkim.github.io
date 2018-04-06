@@ -21,15 +21,14 @@ App Transport Security(ATS) 란?
 App Transport Security HTTP 연결 오류 메시지
 
 {% highlight raw %}
-App Transport Security has blocked a cleartext HTTP resource(http://) load since it is insecure. Temporary exceptions can be configured via your app's Info.plist file.
+App Transport Security has blocked a cleartext HTTP resource(http://) load since it is insecure.
+Temporary exceptions can be configured via your app's Info.plist file.
 {% endhighlight %}
 
 {% highlight raw %}
-App Transport Security가 안전하지 않기 때문에 cleartext HTTP(http://) 리소스 로드를 차단했습니다. 임시 예외는 앱의 Info.plist 파일을 통해 구성할 수 있습니다.
+App Transport Security가 안전하지 않기 때문에 cleartext HTTP(http://) 리소스 로드를 차단했습니다.
+임시 예외는 앱의 Info.plist 파일을 통해 구성할 수 있습니다.
 {% endhighlight %}
-
-### Index
-- [How to Disable ATS](#how-to-disable-ats)
 
 ---
 ## How to Disable ATS
@@ -37,9 +36,14 @@ App Transport Security가 안전하지 않기 때문에 cleartext HTTP(http://) 
 앱 개발을 위해 HTTP 프로토콜의 연결이 꼭 필요로 하다면 Info.plist 파일을 통해 App Transport Security를 해제할 수 있습니다.
 
 Info.plist
-{% highlight plist %}
+{% highlight ruby %}
 <key>NSAppTransportSecurity</key>
 <dict>
-    <key>NSAllowsArbitraryLoads</key><true/>
+    <key>NSAllowsArbitraryLoads</key>
+    <true/>
+    <key>NSAllowsArbitraryLoadsForMedia</key>
+    <true/>
+    <key>NSAllowsArbitraryLoadsInWebContent</key>
+    <true/>
 </dict>
 {% endhighlight %}
