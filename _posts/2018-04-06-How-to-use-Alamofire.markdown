@@ -15,8 +15,7 @@ description: Alamofire 란? Alamofire는 iOS와 OS X에서 사용하기 위한 S
 ## Summary:
 
 Alamofire 란?
-- Alamofire는 iOS와 OS X에서 사용하기 위한 Swift 기반의 HTTP 네트워킹 라이브러리 입니다.
-- [Github - Alamofire](https://github.com/Alamofire/Alamofire)
+- [Alamofire](https://github.com/Alamofire/Alamofire)는 iOS와 OS X에서 사용하기 위한 Swift 기반의 HTTP 네트워킹 라이브러리 입니다.
 
 ### Index
 - [Preparations](#preparations)
