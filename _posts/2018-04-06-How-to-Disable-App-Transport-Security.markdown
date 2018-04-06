@@ -20,15 +20,9 @@ App Transport Security(ATS) 란?
 
 App Transport Security HTTP 연결 오류 메시지
 
-{% highlight danger %}
-App Transport Security has blocked a cleartext HTTP resource(http://) load since it is insecure.
-Temporary exceptions can be configured via your app's Info.plist file.
-{% endhighlight %}
+> App Transport Security has blocked a cleartext HTTP resource(http://) load since it is insecure. Temporary exceptions can be configured via your app's Info.plist file.
 
-{% highlight raw %}
-App Transport Security가 안전하지 않기 때문에 cleartext HTTP(http://) 리소스 로드를 차단했습니다.
-임시 예외는 앱의 Info.plist 파일을 통해 구성할 수 있습니다.
-{% endhighlight %}
+> App Transport Security가 안전하지 않기 때문에 cleartext HTTP(http://) 리소스 로드를 차단했습니다. 임시 예외는 앱의 Info.plist 파일을 통해 구성할 수 있습니다.
 
 ---
 ## How to Disable ATS
