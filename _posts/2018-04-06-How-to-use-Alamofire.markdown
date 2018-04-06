@@ -3,7 +3,7 @@ title: "[iOS / Swift4] Alamofire 사용하기"
 layout: post
 date: 2018-04-06 13:40
 image: /assets/images/github-logo.png
-headerImage: fal9se
+headerImage: true
 tag:
 - iOS
 - Swift

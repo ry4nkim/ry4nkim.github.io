@@ -1,0 +1,45 @@
+---
+title: "[iOS] App Transport Security 해제 방법"
+layout: post
+date: 2018-04-06 16:10
+image: /assets/images/github-logo.png
+headerImage: true
+tag:
+- iOS
+category: blog
+author: ry4nkim
+description: Alamofire 란? Alamofire는 iOS와 OS X에서 사용하기 위한 Swift 기반의 HTTP 네트워킹 라이브러리 입니다. Alamofire를 사용하기 위해서는 CocoaPods가 필수적으로 설치되어 있어야 합니다.
+---
+
+## Summary:
+
+ATS (App Transport Security) 란?
+- App Transport Security 는 iOS 9 부터 도입된 네트워크 보안 기능입니다. 
+- 이 기능은 HTTPS 연결을 제외한 보안에 취약한 네트워크 프로토콜의 연결을 차단시킵니다.
+- 이로인해 기존에 많이 쓰이던 HTTP 프로토콜의 연결을 하지 못하게 되었습니다.
+
+ATS 기능 활성화 후의 HTTP 연결 오류 메시지
+
+{% highlight raw %}
+App Transport Security has blocked a cleartext HTTP resource(http://) load since it is insecure. Temporary exceptions can be configured via your app's Info.plist file.
+{% endhighlight %}
+
+{% highlight raw %}
+App Transport Security가 안전하지 않기 때문에 cleartext HTTP(http://) 리소스 로드를 차단했습니다. 임시 예외는 앱의 Info.plist 파일을 통해 구성할 수 있습니다.
+{% endhighlight %}
+
+### Index
+- [How to Disable ATS](#how-to-disable-ats)
+
+---
+## How to Disable ATS
+
+앱 개발을 위해 HTTP 프로토콜의 연결이 꼭 필요로 하다면 Info.plist 파일을 통해 ATS를 해제할 수 있습니다.
+
+Info.plist
+{% highlight plist %}
+<key>NSAppTransportSecurity</key>
+<dict>
+    <key>NSAllowsArbitraryLoads</key><true/>
+</dict>
+{% endhighlight %}

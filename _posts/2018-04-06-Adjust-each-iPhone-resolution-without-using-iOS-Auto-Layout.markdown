@@ -3,7 +3,7 @@ title: "[iOS / Swift4] Auto Layout 사용하지 않고 각각의 iPhone 해상�
 layout: post
 date: 2018-04-06 10:30
 image: /assets/images/github-logo.png
-headerImage: false
+headerImage: true
 tag:
 - iOS
 - Swift
