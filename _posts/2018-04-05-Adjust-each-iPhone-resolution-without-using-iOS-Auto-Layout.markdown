@@ -27,7 +27,7 @@ description: 처음 iOS를 공부하다 보면 하나의 Storyboard만으로 여
 ---
 ## Preparations
 
-각각의 iPhone 크기 별로 Storyboard를 생성해둔다.
+Storyboard를 각각의 iPhone 크기(4S, SE, 8, 8 Plus, X 등)에 맞게 생성해둔다.
 
 ## Code
 
