@@ -20,6 +20,7 @@ Alamofire 란?
 ### Index
 - [Preparations](#preparations)
 - [Get Started](#get-started)
+- [Alamofire Request Example](#alamofire-request-example)
 
 ---
 ## Preparations
@@ -33,17 +34,17 @@ $ sudo gem install cocoapods
 
 ## Get Started
 
-터미널을 실행하고 cd 명령어로 Alamofire를 사용할 XCode 프로젝트 경로로 이동합니다.
+1.터미널을 실행하고 cd 명령어로 Alamofire를 사용할 Xcode 프로젝트 경로로 이동합니다.
 {% highlight raw %}
 $ cd <Your Project Path>
 {% endhighlight %}
 
-이동한 후, 아래 명령어를 입력하면 프로젝트 경로 내에 Podfile이 생성됩니다.
+2.이동한 후, 아래 명령어를 입력하면 프로젝트 경로 내에 Podfile이 생성됩니다.
 {% highlight raw %}
 $ pod init
 {% endhighlight %}
 
-생성된 Podfile 을 Text Editor 로 열어 아래와 같이 수정해줍니다.
+3.생성된 Podfile 을 Text Editor 로 열어 아래와 같이 수정해줍니다.
 {% highlight raw %}
 source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '10.0'
@@ -54,18 +55,21 @@ target '<Your Target Name>' do
 end
 {% endhighlight %}
 
-Podfile을 수정 및 저장한 뒤, 아래 명령을 입력하여 Alamofire 라이브러리를 설치합니다.
+4.Podfile을 수정 및 저장한 뒤, 아래 명령을 입력하여 Alamofire 라이브러리를 설치합니다.
 {% highlight raw %}
 $ pod install
 {% endhighlight %}
 
-설치 후 프로젝트 내에 새로 생성된 <Your Project Name>.xcworkspace 를 XCode로 실행합니다.
+5.설치 후 프로젝트 내에 새로 생성된 `<Your Project Name>.xcworkspace` 파일을 Xcode로 실행합니다.
 
-ViewController.swift 파일에 맨 위줄 라인에 `import Alamofire` 을 추가하여 정상적으로 빌드되는지 확인합니다.
+6.ViewController.swift 파일에 맨 위줄 라인에 `import Alamofire` 을 추가하여 정상적으로 빌드되는지 확인합니다.
 
+## Alamofire Request Example
+
+Alamofire JSON Request
 {% highlight swift %}
 Alamofire.request(
-            "<URL>",
+            "http://<Your URL>",
             method: .get,
             parameters: [:],
             encoding: URLEncoding.default,
