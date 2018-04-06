@@ -11,7 +11,6 @@ layout: compress
 
     <meta name=description content="{{ site.bio }}">
     <meta name=author content="{{ site.name }}">
-     <meta name="naver-site-verification" content="01d13aa49a22cd5b017bed2b84424206c080c46a"/>
 
     {% seo %}
 
@@ -24,6 +23,8 @@ layout: compress
     {% capture scss_sheet %}{% include style.scss %}{% endcapture %}
     {{ scss_sheet | scssify }}
     </style>
+
+    <meta property="og:image" content="http://blog.ry4nkim.kr/assets/images/profile.png">
 
 </head>
 <body>
