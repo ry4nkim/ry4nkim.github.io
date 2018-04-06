@@ -61,4 +61,4 @@ $ pod install
 
 설치 후 프로젝트 내에 새로 생성된 <Your Project Name>.xcworkspace 를 XCode로 실행합니다.
 
-ViewController.swift 파일에 맨 위줄 라인에 *import Alamofire* 을 입력하여 정상적으로 빌드되는지 확인합니다.
+ViewController.swift 파일에 맨 위줄 라인에 `import Alamofire` 을 입력하여 정상적으로 빌드되는지 확인합니다.
