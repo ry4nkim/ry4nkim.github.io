@@ -42,8 +42,8 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '10.0'
 use_frameworks!
 
-target '<b><Your Target Name></b>' do
-    <b>pod 'Alamofire', '~> 4.7'</b>
+target '*<Your Target Name>*' do
+    *pod 'Alamofire', '~> 4.7'*
 end
 {% endhighlight %}
 
