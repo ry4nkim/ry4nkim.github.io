@@ -19,7 +19,7 @@ Alamofire 란?
 
 ### Index
 - [Preparations](#preparations)
-- [Get Started](#get_started)
+- [Get Started](#get-started)
 
 ---
 ## Preparations
@@ -42,8 +42,8 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '10.0'
 use_frameworks!
 
-target '<Your Target Name>' do
-#    pod 'Alamofire', '~> 4.7'
+target '<b><Your Target Name></b>' do
+    <b>pod 'Alamofire', '~> 4.7'</b>
 end
 {% endhighlight %}
 
