@@ -59,7 +59,7 @@ layout: page
 	<li>Public</li>
 	<ul>
 		<li>[Android] GetNum - 연락처 공유받기</li>
-		<li>[Android] 카톡파도 - 카카오톡 파일 공유 도우미</li>
+		<li>[Android] 카톡파도 - 카카오톡 파일공유 도우미</li>
 		<li>[Android] 쌍용GO - 천안쌍용고등학교 앱</li>
 	</ul>
 </ul>
