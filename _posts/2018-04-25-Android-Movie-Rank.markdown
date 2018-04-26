@@ -46,8 +46,7 @@ This repository contains a Android app implemented with the MVP architecture tha
 2. [Selector (jsoup Java HTML Parser 1.11.3 API)](https://jsoup.org/apidocs/org/jsoup/select/Selector.html)
 3. [Try jsoup online: Java HTML parser and CSS debugger](https://try.jsoup.org)
 
-### HTML parsing website:
-[Megabox](http://www.megabox.co.kr/)
+### HTML parsing website:  [Megabox](http://www.megabox.co.kr/)
 
 ### License
 ```
