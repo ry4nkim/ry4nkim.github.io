@@ -15,15 +15,16 @@ externalLink: false
 
 # Android : Movie Rank
 
+Github: https://github.com/ry4nkim/android-movie-rank
+
 This repository contains a Android app implemented with the MVP architecture that uses Jsoup to parse HTML.
 <br>
 <p align="center">
   <img src="https://blog.ry4nkim.kr/assets/images/android-movie-rank/movie-rank.png" width="200">
-  <img src="https://blog.ry4nkim.kr/assets/images/android-movie-rank/movie-widhlist.png" width="200">
+  <img src="https://blog.ry4nkim.kr/assets/images/android-movie-rank/movie-wishlist.png" width="200">
   <img src="https://blog.ry4nkim.kr/assets/images/android-movie-rank/movie-detail.png" width="200">
   <img src="https://blog.ry4nkim.kr/assets/images/android-movie-rank/movie-wish.png" width="200">
 </p>
-<br>
 <br>
 
 #### The app has following packages:
