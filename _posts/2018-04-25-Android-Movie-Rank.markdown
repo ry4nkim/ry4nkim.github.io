@@ -2,62 +2,34 @@
 title: "[Android] Movie Rank"
 layout: post
 date: 2018-04-25 18:00
-image: /assets5/images/profile-round.png
+tag: Android
+image: /assets/images/profile-round.png
 headerImage: true
-tag:
-- Android
-- Java
-- Jsoup
-- MVP
+projects: true
+hidden: true # don't count this post in blog pagination
+description: "This repository contains a Android app implemented with the MVP architecture that uses Jsoup to parse HTML."
 category: project
 author: ry4nkim
-description: This repository contains a sample app implemented with the MVP architecture that uses Jsoup to parse HTML.
+externalLink: false
 ---
 
-# Android : Movie Rank
+![Screenshot](https://raw.githubusercontent.com/sergiokopplin/indigo/gh-pages/assets/screen-shot.png)
 
-This repository contains a sample app implemented with the MVP architecture that uses Jsoup to parse HTML.
-<br>
-<p align="center">
-  <img src="https://blog.ry4nkim.kr/assets/images/android-movie-rank/movie-rank.png" width="200">
-  <img src="https://blog.ry4nkim.kr/assets/images/android-movie-rank/movie-widhlist.png" width="200">
-  <img src="https://blog.ry4nkim.kr/assets/images/android-movie-rank/movie-detail.png" width="200">
-  <img src="https://blog.ry4nkim.kr/assets/images/android-movie-rank/movie-wish.png" width="200">
-</p>
-<br>
-<br>
+Example of project - Indigo Minimalist Jekyll Template - [Demo](http://sergiokopplin.github.io/indigo/). This is a simple and minimalist template for Jekyll for those who likes to eat noodles.
 
-#### The app has following packages:
-1. **Model**
-2. **View**
-3. **Presenter**
-4. **Adapter**
-5. **Utils**
+---
 
-### Library reference resources:
-1. Jsoup: https://github.com/jhy/jsoup
+What has inside?
 
-### Concept reference resources:
-1. [Use selector-syntax to find elements](https://jsoup.org/cookbook/extracting-data/selector-syntax)
-2. [Selector (jsoup Java HTML Parser 1.11.3 API)](https://jsoup.org/apidocs/org/jsoup/select/Selector.html)
-3. [Try jsoup online: Java HTML parser and CSS debugger](https://try.jsoup.org)
+- Gulp
+- BrowserSync
+- Stylus
+- SVG
+- Travis
+- No JS
+- [98/100](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fsergiokopplin.github.io%2Findigo%2F)
 
-### HTML parsing website:
-[Megabox](http://www.megabox.co.kr/)
+---
 
-### License
-```
-   Copyright (C) 2017 MINDORKS NEXTGEN PRIVATE LIMITED
-
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
-
-       http://www.apache.org/licenses/LICENSE-2.0
-
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.
-```
+[Check it out](http://sergiokopplin.github.io/indigo/) here.
+If you need some help, just [tell me](http://github.com/sergiokopplin/indigo/issues).
