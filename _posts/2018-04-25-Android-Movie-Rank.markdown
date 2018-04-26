@@ -2,7 +2,11 @@
 title: "[Android] Movie Rank"
 layout: post
 date: 2018-04-25 18:00
-tag: Android
+tag:
+- Android
+- Java
+- MVP
+- Jsoup
 image: /assets/images/profile-round.png
 headerImage: true
 projects: true
