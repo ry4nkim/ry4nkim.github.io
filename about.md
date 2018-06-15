@@ -52,17 +52,20 @@ layout: page
 	<li>Private</li>
 	<ul>
 		<li>
+			<a href="https://itunes.apple.com/kr/app/id1398166366" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[iOS] SideBySide - 같이 좀 달립시다</a>
+		</li>
+		<li>
 			<a href="https://play.google.com/store/apps/details?id=com.tbnws.sidebyside" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Android] SideBySide - 같이 좀 달립시다</a>
 		</li>
 	</ul>
 
 	<li>Public</li>
 	<ul>
-		<li>[Android] GetNum - 연락처 공유받기</li>
-		<li>[Android] 카톡파도 - 카카오톡 파일공유 도우미</li>
-		<li>[Android] 쌍용GO - 천안쌍용고등학교 앱</li>
 		<li>
 			<a href="https://github.com/ry4nkim/android-movie-rank" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Android] Movie Rank</a>
 		</li>
+		<li>[Android] GetNum - 연락처 공유받기</li>
+		<li>[Android] 카톡파도 - 카카오톡 파일공유 도우미</li>
+		<li>[Android] 쌍용GO - 천안쌍용고등학교 앱</li>
 	</ul>
 </ul>
