@@ -1,15 +1,16 @@
 ---
 title: "[iOS / Swift4] Alamofire 사용하기"
 layout: post
-date: 2018-04-06 13:40
-image: /assets/images/profile-round.png
+date: '2018-04-06 00:00:00'
+image: "/assets/images/profile-round.png"
 headerImage: true
 tag:
 - iOS
 - Swift
 category: blog
 author: ry4nkim
-description: Alamofire 란? Alamofire는 iOS와 OS X에서 사용하기 위한 Swift 기반의 HTTP 네트워킹 라이브러리 입니다. Alamofire를 사용하기 위해서는 CocoaPods가 필수적으로 설치되어 있어야 합니다.
+description: Alamofire 란? Alamofire는 iOS와 OS X에서 사용하기 위한 Swift 기반의 HTTP 네트워킹 라이브러리
+  입니다. Alamofire를 사용하기 위해서는 CocoaPods가 필수적으로 설치되어 있어야 합니다.
 ---
 
 ## Summary:

@@ -1,14 +1,16 @@
 ---
 title: "[iOS] App Transport Security 해제 방법"
 layout: post
-date: 2018-04-06 16:10
-image: /assets/images/profile-round.png
+date: '2018-04-06 00:00:00'
+image: "/assets/images/profile-round.png"
 headerImage: true
 tag:
 - iOS
 category: blog
 author: ry4nkim
-description: App Transport Security (ATS) 란? App Transport Security 는 iOS 9 부터 도입된 네트워크 보안 기능입니다. 이 기능은 HTTPS 연결을 제외한 보안에 취약한 네트워크 프로토콜의 연결을 차단시킵니다. 이로인해 기존에 많이 쓰이던 HTTP 프로토콜의 연결을 하지 못하게 되었습니다.
+description: App Transport Security (ATS) 란? App Transport Security 는 iOS 9 부터 도입된
+  네트워크 보안 기능입니다. 이 기능은 HTTPS 연결을 제외한 보안에 취약한 네트워크 프로토콜의 연결을 차단시킵니다. 이로인해 기존에 많이 쓰이던
+  HTTP 프로토콜의 연결을 하지 못하게 되었습니다.
 ---
 
 ## Summary:

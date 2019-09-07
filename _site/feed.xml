@@ -1,4 +1,1909 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-09-07T17:35:26+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">ry4nkim</title><subtitle>ry4nkim's blog</subtitle><entry><title type="html">[프로그래머스] 7daySQL 챌린지 Day 1</title><link href="http://localhost:4000/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-7daySQL-%EC%B1%8C%EB%A6%B0%EC%A7%80-Day-1/" rel="alternate" type="text/html" title="[프로그래머스] 7daySQL 챌린지 Day 1" /><published>2019-09-07T00:00:00+09:00</published><updated>2019-09-07T00:00:00+09:00</updated><id>http://localhost:4000/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-7daySQL-%EC%B1%8C%EB%A6%B0%EC%A7%80-Day-1</id><content type="html" xml:base="http://localhost:4000/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-7daySQL-%EC%B1%8C%EB%A6%B0%EC%A7%80-Day-1/">&lt;h2 id=&quot;summary&quot;&gt;Summary:&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-09-07T20:33:30+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">ry4nkim</title><subtitle>ry4nkim's blog</subtitle><entry><title type="html">[프로그래머스] 7daySQL 챌린지 Day 6</title><link href="http://localhost:4000/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-7daySQL-%EC%B1%8C%EB%A6%B0%EC%A7%80-Day-6/" rel="alternate" type="text/html" title="[프로그래머스] 7daySQL 챌린지 Day 6" /><published>2019-09-07T00:00:00+09:00</published><updated>2019-09-07T00:00:00+09:00</updated><id>http://localhost:4000/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-7daySQL-%EC%B1%8C%EB%A6%B0%EC%A7%80-Day-6</id><content type="html" xml:base="http://localhost:4000/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-7daySQL-%EC%B1%8C%EB%A6%B0%EC%A7%80-Day-6/">&lt;h2 id=&quot;summary&quot;&gt;Summary:&lt;/h2&gt;
+
+&lt;p&gt;[프로그래머스] 7daySQL 챌린지 Day 6&lt;/p&gt;
+
+&lt;h3 id=&quot;index&quot;&gt;Index&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#오랜-기간-보호한-동물1&quot;&gt;오랜 기간 보호한 동물(1)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#보호소에서-중성화한-동물&quot;&gt;보호소에서 중성화한 동물&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;h2 id=&quot;오랜-기간-보호한-동물1&quot;&gt;오랜 기간 보호한 동물(1)&lt;/h2&gt;
+
+&lt;p&gt;출처 : &lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/59044&quot; target=&quot;_blank&quot;&gt;프로그래머스 # 코딩테스트 연습 - 오랜 기간 보호한 동물(1)&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;문제&quot;&gt;문제&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_INS&lt;/code&gt; 테이블은 동물 보호소에 들어온 동물의 정보를 담은 테이블입니다. 
+&lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_INS&lt;/code&gt; 테이블 구조는 다음과 같으며, &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_ID&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_TYPE&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;DATETIME&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;INTAKE_CONDITION&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;NAME&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;SEX_UPON_INTAKE&lt;/code&gt;는 각각 동물의 아이디, 생물 종, 보호 시작일, 보호 시작 시 상태, 이름, 성별 및 중성화 여부를 나타냅니다.&lt;/p&gt;
+
+&lt;div class=&quot;table-wrapper&quot;&gt;
+
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;NAME&lt;/th&gt;
+        &lt;th&gt;TYPE&lt;/th&gt;
+        &lt;th&gt;NULLABLE&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;ANIMAL_ID&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;ANIMAL_TYPE&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;DATETIME&lt;/td&gt;
+        &lt;td&gt;DATETIME&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;INTAKE_CONDITION&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;NAME&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;TRUE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;SEX_UPON_INTAKE&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_OUTS&lt;/code&gt; 테이블은 동물 보호소에서 입양 보낸 동물의 정보를 담은 테이블입니다. 
+&lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_OUTS&lt;/code&gt; 테이블 구조는 다음과 같으며, &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_ID&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_TYPE&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;DATETIME&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;NAME&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;SEX_UPON_OUTCOME&lt;/code&gt;는 각각 동물의 아이디, 생물 종, 입양일, 이름, 성별 및 중성화 여부를 나타냅니다. 
+&lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_OUTS&lt;/code&gt; 테이블의 &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_ID&lt;/code&gt;는 &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_INS&lt;/code&gt;의 &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_ID&lt;/code&gt;의 외래 키입니다.&lt;/p&gt;
+
+&lt;div class=&quot;table-wrapper&quot;&gt;
+
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;NAME&lt;/th&gt;
+        &lt;th&gt;TYPE&lt;/th&gt;
+        &lt;th&gt;NULLABLE&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;ANIMAL_ID&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;ANIMAL_TYPE&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;DATETIME&lt;/td&gt;
+        &lt;td&gt;DATETIME&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;NAME&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;TRUE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;SEX_UPON_OUTCOME&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;아직 입양을 못 간 동물 중, 가장 오래 보호소에 있었던 동물 3마리의 이름과 보호 시작일을 조회하는 SQL문을 작성해주세요. 이때 결과는 보호 시작일 순으로 조회해야 합니다.&lt;/p&gt;
+
+&lt;h3 id=&quot;예시&quot;&gt;예시&lt;/h3&gt;
+
+&lt;p&gt;예를 들어, &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_INS&lt;/code&gt; 테이블과 &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_OUTS&lt;/code&gt; 테이블이 다음과 같다면&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_INS&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;table-wrapper&quot;&gt;
+
+  &lt;p&gt;| ANIMAL_ID | ANIMAL_TYPE | DATETIME            | INTAKE_CONDITION | NAME   | SEX_UPON_INTAKE |
+|———–|————-|———————|——————|——–|—————–|
+| A354597   | Cat         | 2014-05-02 12:16:00 | Normal           | Ariel  | Spayed Female   |
+| A373687   | Dog         | 2014-03-20 12:31:00 | Normal           | Rosie  | Spayed Female   |
+| A412697   | Dog         | 2016-01-03 16:25:00 | Normal           | Jackie | Neutered Male   |
+| A413789   | Dog         | 2016-04-19 13:28:00 | Normal           | Benji  | Spayed Female   |
+| A414198   | Dog         | 2015-01-29 15:01:00 | Normal           | Shelly | Spayed Female   |&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_OUTS&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;table-wrapper&quot;&gt;
+
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;ANIMAL_ID&lt;/th&gt;
+        &lt;th&gt;ANIMAL_TYPE&lt;/th&gt;
+        &lt;th&gt;DATETIME&lt;/th&gt;
+        &lt;th&gt;NAME&lt;/th&gt;
+        &lt;th&gt;SEX_UPON_OUTCOME&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A354597&lt;/td&gt;
+        &lt;td&gt;Cat&lt;/td&gt;
+        &lt;td&gt;2014-05-02 12:16:00&lt;/td&gt;
+        &lt;td&gt;Ariel&lt;/td&gt;
+        &lt;td&gt;Spayed Female&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A373687&lt;/td&gt;
+        &lt;td&gt;Dog&lt;/td&gt;
+        &lt;td&gt;2014-03-20 12:31:00&lt;/td&gt;
+        &lt;td&gt;Rosie&lt;/td&gt;
+        &lt;td&gt;Spayed Female&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;SQL문을 실행하면 다음과 같이 나와야 합니다.&lt;/p&gt;
+
+&lt;div class=&quot;table-wrapper&quot;&gt;
+
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;NAME&lt;/th&gt;
+        &lt;th&gt;DATETIME&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Shelly&lt;/td&gt;
+        &lt;td&gt;2015-01-29 15:01:00&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Jackie&lt;/td&gt;
+        &lt;td&gt;2016-01-03 16:25:00&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Benji&lt;/td&gt;
+        &lt;td&gt;2016-04-19 13:28:00&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;※ 입양을 가지 못한 동물이 3마리 이상인 경우만 입력으로 주어집니다.&lt;/p&gt;
+
+&lt;h3 id=&quot;풀이&quot;&gt;풀이&lt;/h3&gt;
+
+&lt;noscript&gt;&lt;pre&gt;SELECT I.NAME,
+       I.DATETIME # I의 NAME, DATETIME 컬럼 조회
+FROM ANIMAL_INS AS I # ANIMAL_INS 테이블(I) 검색
+LEFT JOIN ANIMAL_OUTS AS O # ANIMAL_OUTS 테이블(O) 레프트 조인
+ON I.ANIMAL_ID = O.ANIMAL_ID # I-O간 ANIMAL_ID 외래키 참조
+WHERE O.ANIMAL_ID IS NULL # O의 ANIMAL_ID가 NULL인 로우 필터링
+ORDER BY I.DATETIME # I의 DATETIME 컬럼 오름차순 정렬
+LIMIT 0, 3 # 조회 결과를 0번 로우부터 3개까지로 제한&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/ry4nkim/33efdf69bc697f17647a2683874a6064.js?file=solution_6_1.sql&quot;&gt; &lt;/script&gt;
+
+&lt;hr /&gt;
+&lt;h2 id=&quot;보호소에서-중성화한-동물&quot;&gt;보호소에서 중성화한 동물&lt;/h2&gt;
+
+&lt;p&gt;출처 : &lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/59045&quot; target=&quot;_blank&quot;&gt;프로그래머스 # 코딩테스트 연습 - 보호소에서 중성화한 동물&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;문제-1&quot;&gt;문제&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_INS&lt;/code&gt; 테이블은 동물 보호소에 들어온 동물의 정보를 담은 테이블입니다. 
+&lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_INS&lt;/code&gt; 테이블 구조는 다음과 같으며, &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_ID&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_TYPE&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;DATETIME&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;INTAKE_CONDITION&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;NAME&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;SEX_UPON_INTAKE&lt;/code&gt;는 각각 동물의 아이디, 생물 종, 보호 시작일, 보호 시작 시 상태, 이름, 성별 및 중성화 여부를 나타냅니다.&lt;/p&gt;
+
+&lt;div class=&quot;table-wrapper&quot;&gt;
+
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;NAME&lt;/th&gt;
+        &lt;th&gt;TYPE&lt;/th&gt;
+        &lt;th&gt;NULLABLE&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;ANIMAL_ID&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;ANIMAL_TYPE&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;DATETIME&lt;/td&gt;
+        &lt;td&gt;DATETIME&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;INTAKE_CONDITION&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;NAME&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;TRUE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;SEX_UPON_INTAKE&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_OUTS&lt;/code&gt; 테이블은 동물 보호소에서 입양 보낸 동물의 정보를 담은 테이블입니다. 
+&lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_OUTS&lt;/code&gt; 테이블 구조는 다음과 같으며, &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_ID&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_TYPE&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;DATETIME&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;NAME&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;SEX_UPON_OUTCOME&lt;/code&gt;는 각각 동물의 아이디, 생물 종, 입양일, 이름, 성별 및 중성화 여부를 나타냅니다. 
+&lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_OUTS&lt;/code&gt; 테이블의 &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_ID&lt;/code&gt;는 &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_INS&lt;/code&gt;의 &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_ID&lt;/code&gt;의 외래 키입니다.&lt;/p&gt;
+
+&lt;div class=&quot;table-wrapper&quot;&gt;
+
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;NAME&lt;/th&gt;
+        &lt;th&gt;TYPE&lt;/th&gt;
+        &lt;th&gt;NULLABLE&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;ANIMAL_ID&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;ANIMAL_TYPE&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;DATETIME&lt;/td&gt;
+        &lt;td&gt;DATETIME&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;NAME&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;TRUE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;SEX_UPON_OUTCOME&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;보호소에서 중성화 수술을 거친 동물 정보를 알아보려 합니다. 보호소에 들어올 당시에는 중성화&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;되지 않았지만, 보호소를 나갈 당시에는 중성화된 동물의 아이디와 생물 종, 이름을 조회하는 아이디 순으로 조회하는 SQL 문을 작성해주세요.&lt;/p&gt;
+
+&lt;h3 id=&quot;예시-1&quot;&gt;예시&lt;/h3&gt;
+
+&lt;p&gt;예를 들어, &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_INS&lt;/code&gt; 테이블과 &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_OUTS&lt;/code&gt; 테이블이 다음과 같다면&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_INS&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;table-wrapper&quot;&gt;
+
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;ANIMAL_ID&lt;/th&gt;
+        &lt;th&gt;ANIMAL_TYPE&lt;/th&gt;
+        &lt;th&gt;DATETIME&lt;/th&gt;
+        &lt;th&gt;INTAKE_CONDITION&lt;/th&gt;
+        &lt;th&gt;NAME&lt;/th&gt;
+        &lt;th&gt;SEX_UPON_INTAKE&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A367438&lt;/td&gt;
+        &lt;td&gt;Dog&lt;/td&gt;
+        &lt;td&gt;2015-09-10 16:01:00&lt;/td&gt;
+        &lt;td&gt;Normal&lt;/td&gt;
+        &lt;td&gt;Cookie&lt;/td&gt;
+        &lt;td&gt;Spayed Female&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A382192&lt;/td&gt;
+        &lt;td&gt;Dog&lt;/td&gt;
+        &lt;td&gt;2015-03-13 13:14:00&lt;/td&gt;
+        &lt;td&gt;Normal&lt;/td&gt;
+        &lt;td&gt;Maxwell 2&lt;/td&gt;
+        &lt;td&gt;Intact Male&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A405494&lt;/td&gt;
+        &lt;td&gt;Dog&lt;/td&gt;
+        &lt;td&gt;2014-05-16 14:17:00&lt;/td&gt;
+        &lt;td&gt;Normal&lt;/td&gt;
+        &lt;td&gt;Kaila&lt;/td&gt;
+        &lt;td&gt;Spayed Female&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A410330&lt;/td&gt;
+        &lt;td&gt;Dog&lt;/td&gt;
+        &lt;td&gt;2016-09-11 14:09:00&lt;/td&gt;
+        &lt;td&gt;Sick&lt;/td&gt;
+        &lt;td&gt;Chewy&lt;/td&gt;
+        &lt;td&gt;Intact Female&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_OUTS&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;table-wrapper&quot;&gt;
+
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;ANIMAL_ID&lt;/th&gt;
+        &lt;th&gt;ANIMAL_TYPE&lt;/th&gt;
+        &lt;th&gt;DATETIME&lt;/th&gt;
+        &lt;th&gt;NAME&lt;/th&gt;
+        &lt;th&gt;SEX_UPON_OUTCOME&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A367438&lt;/td&gt;
+        &lt;td&gt;Dog&lt;/td&gt;
+        &lt;td&gt;2015-09-12 13:30:00&lt;/td&gt;
+        &lt;td&gt;Cookie&lt;/td&gt;
+        &lt;td&gt;Spayed Female&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A382192&lt;/td&gt;
+        &lt;td&gt;Dog&lt;/td&gt;
+        &lt;td&gt;2015-03-16 13:46:00&lt;/td&gt;
+        &lt;td&gt;Maxwell 2&lt;/td&gt;
+        &lt;td&gt;Neutered Male&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A405494&lt;/td&gt;
+        &lt;td&gt;Dog&lt;/td&gt;
+        &lt;td&gt;2014-05-20 11:44:00&lt;/td&gt;
+        &lt;td&gt;Kaila&lt;/td&gt;
+        &lt;td&gt;Spayed Female&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A410330&lt;/td&gt;
+        &lt;td&gt;Dog&lt;/td&gt;
+        &lt;td&gt;2016-09-13 13:46:00&lt;/td&gt;
+        &lt;td&gt;Chewy&lt;/td&gt;
+        &lt;td&gt;Spayed Female&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Cookie는 보호소에 들어올 당시에 이미 중성화되어있었습니다.&lt;/li&gt;
+  &lt;li&gt;Maxwell 2는 보호소에 들어온 후 중성화되었습니다.&lt;/li&gt;
+  &lt;li&gt;Kaila는 보호소에 들어올 당시에 이미 중성화되어있었습니다.&lt;/li&gt;
+  &lt;li&gt;Chewy는 보호소에 들어온 후 중성화되었습니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;따라서 SQL문을 실행하면 다음과 같이 나와야 합니다.&lt;/p&gt;
+
+&lt;div class=&quot;table-wrapper&quot;&gt;
+
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;ANIMAL_ID&lt;/th&gt;
+        &lt;th&gt;ANIMAL_TYPE&lt;/th&gt;
+        &lt;th&gt;NAME&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A382192&lt;/td&gt;
+        &lt;td&gt;Dog&lt;/td&gt;
+        &lt;td&gt;Maxwell 2&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A410330&lt;/td&gt;
+        &lt;td&gt;Dog&lt;/td&gt;
+        &lt;td&gt;Chewy&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;h3 id=&quot;풀이-1&quot;&gt;풀이&lt;/h3&gt;
+
+&lt;noscript&gt;&lt;pre&gt;SELECT I.ANIMAL_ID,
+       I.ANIMAL_TYPE,
+       I.NAME # I의 ANIMAL_ID, ANIMAL_TYPE, NAME 컬럼 조회
+FROM ANIMAL_INS AS I # ANIMAL_INS 테이블(I) 검색
+INNER JOIN ANIMAL_OUTS AS O # ANIMAL_OUTS 테이블(O) 이너 조인
+ON I.ANIMAL_ID = O.ANIMAL_ID # I-O간 ANIMAL_ID 외래키 참조
+WHERE I.SEX_UPON_INTAKE LIKE &amp;#39;Intact %&amp;#39; # I의 SEX_UPON_INTAKE가 &amp;#39;Intact &amp;#39;로 시작하는 로우 필터링
+AND (O.SEX_UPON_OUTCOME LIKE &amp;#39;Spayed %&amp;#39; OR O.SEX_UPON_OUTCOME LIKE &amp;#39;Neutered %&amp;#39;) # O의 SEX_UPON_OUTCOME이 &amp;#39;Spayed &amp;#39;로 시작하거나 &amp;#39;Neutered &amp;#39;로 시작하는 로우 필터링
+ORDER BY I.ANIMAL_ID # I의 ANIMAL_ID 컬럼 오름차순 정렬&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/ry4nkim/33efdf69bc697f17647a2683874a6064.js?file=solution_6_2.sql&quot;&gt; &lt;/script&gt;
+
+&lt;hr /&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;중성화를 거치지 않은 동물은 성별 및 중성화 여부에 Intact, 중성화를 거친 동물은 Spayed 또는 Neutered라고 표시되어있습니다. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>ry4nkim</name></author><category term="blog" /><category term="MySQL" /><category term="Programmers.kr" /><category term="7daySQL 챌린지" /><summary type="html">Summary:</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/profile-round.png" /></entry><entry><title type="html">[프로그래머스] 7daySQL 챌린지 Day 5</title><link href="http://localhost:4000/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-7daySQL-%EC%B1%8C%EB%A6%B0%EC%A7%80-Day-5/" rel="alternate" type="text/html" title="[프로그래머스] 7daySQL 챌린지 Day 5" /><published>2019-09-06T00:00:00+09:00</published><updated>2019-09-06T00:00:00+09:00</updated><id>http://localhost:4000/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-7daySQL-%EC%B1%8C%EB%A6%B0%EC%A7%80-Day-5</id><content type="html" xml:base="http://localhost:4000/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-7daySQL-%EC%B1%8C%EB%A6%B0%EC%A7%80-Day-5/">&lt;h2 id=&quot;summary&quot;&gt;Summary:&lt;/h2&gt;
+
+&lt;p&gt;[프로그래머스] 7daySQL 챌린지 Day 5&lt;/p&gt;
+
+&lt;h3 id=&quot;index&quot;&gt;Index&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#없어진-기록-찾기&quot;&gt;없어진 기록 찾기&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#있었는데요-없었습니다&quot;&gt;있었는데요 없었습니다&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;h2 id=&quot;없어진-기록-찾기&quot;&gt;없어진 기록 찾기&lt;/h2&gt;
+
+&lt;p&gt;출처 : &lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/59042&quot; target=&quot;_blank&quot;&gt;프로그래머스 # 코딩테스트 연습 - 없어진 기록 찾기&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;문제&quot;&gt;문제&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_INS&lt;/code&gt; 테이블은 동물 보호소에 들어온 동물의 정보를 담은 테이블입니다. 
+&lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_INS&lt;/code&gt; 테이블 구조는 다음과 같으며, &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_ID&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_TYPE&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;DATETIME&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;INTAKE_CONDITION&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;NAME&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;SEX_UPON_INTAKE&lt;/code&gt;는 각각 동물의 아이디, 생물 종, 보호 시작일, 보호 시작 시 상태, 이름, 성별 및 중성화 여부를 나타냅니다.&lt;/p&gt;
+
+&lt;div class=&quot;table-wrapper&quot;&gt;
+
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;NAME&lt;/th&gt;
+        &lt;th&gt;TYPE&lt;/th&gt;
+        &lt;th&gt;NULLABLE&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;ANIMAL_ID&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;ANIMAL_TYPE&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;DATETIME&lt;/td&gt;
+        &lt;td&gt;DATETIME&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;INTAKE_CONDITION&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;NAME&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;TRUE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;SEX_UPON_INTAKE&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_OUTS&lt;/code&gt; 테이블은 동물 보호소에서 입양 보낸 동물의 정보를 담은 테이블입니다. 
+&lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_OUTS&lt;/code&gt; 테이블 구조는 다음과 같으며, &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_ID&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_TYPE&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;DATETIME&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;NAME&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;SEX_UPON_OUTCOME&lt;/code&gt;는 각각 동물의 아이디, 생물 종, 입양일, 이름, 성별 및 중성화 여부를 나타냅니다. 
+&lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_OUTS&lt;/code&gt; 테이블의 &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_ID&lt;/code&gt;는 &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_INS&lt;/code&gt;의 &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_ID&lt;/code&gt;의 외래 키입니다.&lt;/p&gt;
+
+&lt;div class=&quot;table-wrapper&quot;&gt;
+
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;NAME&lt;/th&gt;
+        &lt;th&gt;TYPE&lt;/th&gt;
+        &lt;th&gt;NULLABLE&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;ANIMAL_ID&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;ANIMAL_TYPE&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;DATETIME&lt;/td&gt;
+        &lt;td&gt;DATETIME&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;NAME&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;TRUE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;SEX_UPON_OUTCOME&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;천재지변으로 인해 일부 데이터가 유실되었습니다. 입양을 간 기록은 있는데, 보호소에 들어온 기록이 없는 동물의 ID와 이름을 ID 순으로 조회하는 SQL문을 작성해주세요.&lt;/p&gt;
+
+&lt;h3 id=&quot;예시&quot;&gt;예시&lt;/h3&gt;
+
+&lt;p&gt;예를 들어, &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_INS&lt;/code&gt; 테이블과 &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_OUTS&lt;/code&gt; 테이블이 다음과 같다면&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_INS&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;table-wrapper&quot;&gt;
+
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;ANIMAL_ID&lt;/th&gt;
+        &lt;th&gt;ANIMAL_TYPE&lt;/th&gt;
+        &lt;th&gt;DATETIME&lt;/th&gt;
+        &lt;th&gt;INTAKE_CONDITION&lt;/th&gt;
+        &lt;th&gt;NAME&lt;/th&gt;
+        &lt;th&gt;SEX_UPON_INTAKE&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A352713&lt;/td&gt;
+        &lt;td&gt;Cat&lt;/td&gt;
+        &lt;td&gt;2017-04-13 16:29:00&lt;/td&gt;
+        &lt;td&gt;Normal&lt;/td&gt;
+        &lt;td&gt;Gia&lt;/td&gt;
+        &lt;td&gt;Spayed Female&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A350375&lt;/td&gt;
+        &lt;td&gt;Cat&lt;/td&gt;
+        &lt;td&gt;2017-03-06 15:01:00&lt;/td&gt;
+        &lt;td&gt;Normal&lt;/td&gt;
+        &lt;td&gt;Meo&lt;/td&gt;
+        &lt;td&gt;Neutered Male&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_OUTS&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;table-wrapper&quot;&gt;
+
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;ANIMAL_ID&lt;/th&gt;
+        &lt;th&gt;ANIMAL_TYPE&lt;/th&gt;
+        &lt;th&gt;DATETIME&lt;/th&gt;
+        &lt;th&gt;NAME&lt;/th&gt;
+        &lt;th&gt;SEX_UPON_OUTCOME&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A349733&lt;/td&gt;
+        &lt;td&gt;Dog&lt;/td&gt;
+        &lt;td&gt;2017-09-27 19:09:00&lt;/td&gt;
+        &lt;td&gt;Allie&lt;/td&gt;
+        &lt;td&gt;Spayed Female&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A352713&lt;/td&gt;
+        &lt;td&gt;Cat&lt;/td&gt;
+        &lt;td&gt;2017-04-25 12:25:00&lt;/td&gt;
+        &lt;td&gt;Gia&lt;/td&gt;
+        &lt;td&gt;Spayed Female&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A349990&lt;/td&gt;
+        &lt;td&gt;Cat&lt;/td&gt;
+        &lt;td&gt;2018-02-02 14:18:00&lt;/td&gt;
+        &lt;td&gt;Spice&lt;/td&gt;
+        &lt;td&gt;Spayed Female&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_OUTS&lt;/code&gt; 테이블에서&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Allie의 ID는 &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_INS&lt;/code&gt;에 없으므로, Allie의 데이터는 유실되었습니다.&lt;/li&gt;
+  &lt;li&gt;Gia의 ID는 &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_INS&lt;/code&gt;에 있으므로, Gia의 데이터는 유실되지 않았습니다.&lt;/li&gt;
+  &lt;li&gt;Spice의 ID는 &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_INS&lt;/code&gt;에 없으므로, Spice의 데이터는 유실되었습니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;따라서 SQL문을 실행하면 다음과 같이 나와야 합니다.&lt;/p&gt;
+
+&lt;div class=&quot;table-wrapper&quot;&gt;
+
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;ANIMAL_ID&lt;/th&gt;
+        &lt;th&gt;NAME&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A349733&lt;/td&gt;
+        &lt;td&gt;Allie&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A349990&lt;/td&gt;
+        &lt;td&gt;Spice&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;h3 id=&quot;풀이&quot;&gt;풀이&lt;/h3&gt;
+
+&lt;noscript&gt;&lt;pre&gt;SELECT O.ANIMAL_ID,
+       O.NAME # O의 ANIMAL_ID, O의 NAME 컬럼 조회
+FROM ANIMAL_OUTS AS O # ANIMAL_OUTS 테이블(O) 검색
+LEFT JOIN ANIMAL_INS AS I # ANIMAL_INS 테이블(I) 레프트 조인
+ON O.ANIMAL_ID = I.ANIMAL_ID # O-I간 ANIMAL_ID 외래키 참조
+WHERE I.ANIMAL_ID IS NULL # I의 ANIMAL_ID이 NULL인 로우 필터링
+ORDER BY O.ANIMAL_ID # O의 ANIMAL_ID 컬럼 오름차순 정렬&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/ry4nkim/e1c4fc9e67e6fe1f46f223366c010fe1.js?file=solution_5_1.sql&quot;&gt; &lt;/script&gt;
+
+&lt;hr /&gt;
+&lt;h2 id=&quot;있었는데요-없었습니다&quot;&gt;있었는데요 없었습니다&lt;/h2&gt;
+
+&lt;p&gt;출처 : &lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/59043&quot; target=&quot;_blank&quot;&gt;프로그래머스 # 코딩테스트 연습 - 있었는데요 없었습니다&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;문제-1&quot;&gt;문제&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_INS&lt;/code&gt; 테이블은 동물 보호소에 들어온 동물의 정보를 담은 테이블입니다. 
+&lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_INS&lt;/code&gt; 테이블 구조는 다음과 같으며, &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_ID&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_TYPE&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;DATETIME&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;INTAKE_CONDITION&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;NAME&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;SEX_UPON_INTAKE&lt;/code&gt;는 각각 동물의 아이디, 생물 종, 보호 시작일, 보호 시작 시 상태, 이름, 성별 및 중성화 여부를 나타냅니다.&lt;/p&gt;
+
+&lt;div class=&quot;table-wrapper&quot;&gt;
+
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;NAME&lt;/th&gt;
+        &lt;th&gt;TYPE&lt;/th&gt;
+        &lt;th&gt;NULLABLE&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;ANIMAL_ID&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;ANIMAL_TYPE&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;DATETIME&lt;/td&gt;
+        &lt;td&gt;DATETIME&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;INTAKE_CONDITION&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;NAME&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;TRUE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;SEX_UPON_INTAKE&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_OUTS&lt;/code&gt; 테이블은 동물 보호소에서 입양 보낸 동물의 정보를 담은 테이블입니다. 
+&lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_OUTS&lt;/code&gt; 테이블 구조는 다음과 같으며, &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_ID&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_TYPE&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;DATETIME&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;NAME&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;SEX_UPON_OUTCOME&lt;/code&gt;는 각각 동물의 아이디, 생물 종, 입양일, 이름, 성별 및 중성화 여부를 나타냅니다. 
+&lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_OUTS&lt;/code&gt; 테이블의 &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_ID&lt;/code&gt;는 &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_INS&lt;/code&gt;의 &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_ID&lt;/code&gt;의 외래 키입니다.&lt;/p&gt;
+
+&lt;div class=&quot;table-wrapper&quot;&gt;
+
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;NAME&lt;/th&gt;
+        &lt;th&gt;TYPE&lt;/th&gt;
+        &lt;th&gt;NULLABLE&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;ANIMAL_ID&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;ANIMAL_TYPE&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;DATETIME&lt;/td&gt;
+        &lt;td&gt;DATETIME&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;NAME&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;TRUE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;SEX_UPON_OUTCOME&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;관리자의 실수로 일부 동물의 입양일이 잘못 입력되었습니다. 보호 시작일보다 입양일이 더 빠른 동물의 아이디와 이름을 조회하는 SQL문을 작성해주세요. 이때 결과는 보호 시작일이 빠른 순으로 조회해야합니다.&lt;/p&gt;
+
+&lt;h3 id=&quot;예시-1&quot;&gt;예시&lt;/h3&gt;
+
+&lt;p&gt;예를 들어, &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_INS&lt;/code&gt; 테이블과 &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_OUTS&lt;/code&gt; 테이블이 다음과 같다면&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_INS&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;table-wrapper&quot;&gt;
+
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;ANIMAL_ID&lt;/th&gt;
+        &lt;th&gt;ANIMAL_TYPE&lt;/th&gt;
+        &lt;th&gt;DATETIME&lt;/th&gt;
+        &lt;th&gt;INTAKE_CONDITION&lt;/th&gt;
+        &lt;th&gt;NAME&lt;/th&gt;
+        &lt;th&gt;SEX_UPON_INTAKE&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A350276&lt;/td&gt;
+        &lt;td&gt;Cat&lt;/td&gt;
+        &lt;td&gt;2017-08-13 13:50:00&lt;/td&gt;
+        &lt;td&gt;Normal&lt;/td&gt;
+        &lt;td&gt;Jewel&lt;/td&gt;
+        &lt;td&gt;Spayed Female&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A381217&lt;/td&gt;
+        &lt;td&gt;Dog&lt;/td&gt;
+        &lt;td&gt;2017-07-08 09:41:00&lt;/td&gt;
+        &lt;td&gt;Sick&lt;/td&gt;
+        &lt;td&gt;Cherokee&lt;/td&gt;
+        &lt;td&gt;Neutered Male&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_OUTS&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;table-wrapper&quot;&gt;
+
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;ANIMAL_ID&lt;/th&gt;
+        &lt;th&gt;ANIMAL_TYPE&lt;/th&gt;
+        &lt;th&gt;DATETIME&lt;/th&gt;
+        &lt;th&gt;NAME&lt;/th&gt;
+        &lt;th&gt;SEX_UPON_OUTCOME&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A350276&lt;/td&gt;
+        &lt;td&gt;Cat&lt;/td&gt;
+        &lt;td&gt;2018-01-28 17:51:00&lt;/td&gt;
+        &lt;td&gt;Jewel&lt;/td&gt;
+        &lt;td&gt;Spayed Female&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A381217&lt;/td&gt;
+        &lt;td&gt;Dog&lt;/td&gt;
+        &lt;td&gt;2017-06-09 18:51:00&lt;/td&gt;
+        &lt;td&gt;Cherokee&lt;/td&gt;
+        &lt;td&gt;Neutered Male&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;SQL문을 실행하면 다음과 같이 나와야 합니다.&lt;/p&gt;
+
+&lt;div class=&quot;table-wrapper&quot;&gt;
+
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;ANIMAL_ID&lt;/th&gt;
+        &lt;th&gt;NAME&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A381217&lt;/td&gt;
+        &lt;td&gt;Cherokee&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;h3 id=&quot;풀이-1&quot;&gt;풀이&lt;/h3&gt;
+
+&lt;noscript&gt;&lt;pre&gt;SELECT I.ANIMAL_ID,
+       I.NAME # I의 ANIMAL_ID, I의 NAME 컬럼 조회
+FROM ANIMAL_INS AS I # ANIMAL_OUTS 테이블(I) 검색
+INNER JOIN ANIMAL_OUTS AS O # ANIMAL_INS 테이블(O) 이너 조인
+ON I.ANIMAL_ID = O.ANIMAL_ID # I-O간 ANIMAL_ID 외래키 참조
+WHERE I.DATETIME &amp;gt; O.DATETIME # I의 DATETIME이 O의 DATETIME보다 큰 로우 필터링
+ORDER BY I.DATETIME # I의 DATETIME 컬럼 오름차순 정렬&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/ry4nkim/e1c4fc9e67e6fe1f46f223366c010fe1.js?file=solution_5_2.sql&quot;&gt; &lt;/script&gt;
+
+&lt;hr /&gt;</content><author><name>ry4nkim</name></author><category term="blog" /><category term="MySQL" /><category term="Programmers.kr" /><category term="7daySQL 챌린지" /><summary type="html">Summary:</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/profile-round.png" /></entry><entry><title type="html">[프로그래머스] 7daySQL 챌린지 Day 4</title><link href="http://localhost:4000/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-7daySQL-%EC%B1%8C%EB%A6%B0%EC%A7%80-Day-4/" rel="alternate" type="text/html" title="[프로그래머스] 7daySQL 챌린지 Day 4" /><published>2019-09-05T00:00:00+09:00</published><updated>2019-09-05T00:00:00+09:00</updated><id>http://localhost:4000/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-7daySQL-%EC%B1%8C%EB%A6%B0%EC%A7%80-Day-4</id><content type="html" xml:base="http://localhost:4000/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-7daySQL-%EC%B1%8C%EB%A6%B0%EC%A7%80-Day-4/">&lt;h2 id=&quot;summary&quot;&gt;Summary:&lt;/h2&gt;
+
+&lt;p&gt;[프로그래머스] 7daySQL 챌린지 Day 4&lt;/p&gt;
+
+&lt;h3 id=&quot;index&quot;&gt;Index&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#고양이와-개는-몇-마리-있을까&quot;&gt;고양이와 개는 몇 마리 있을까&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#동명-동물-수-찾기&quot;&gt;동명 동물 수 찾기&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;h2 id=&quot;고양이와-개는-몇-마리-있을까&quot;&gt;고양이와 개는 몇 마리 있을까&lt;/h2&gt;
+
+&lt;p&gt;출처 : &lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/59040&quot; target=&quot;_blank&quot;&gt;프로그래머스 # 코딩테스트 연습 - 고양이와 개는 몇 마리 있을까&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;문제&quot;&gt;문제&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_INS&lt;/code&gt; 테이블은 동물 보호소에 들어온 동물의 정보를 담은 테이블입니다. &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_INS&lt;/code&gt; 테이블 구조는 다음과 같으며, &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_ID&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_TYPE&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;DATETIME&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;INTAKE_CONDITION&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;NAME&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;SEX_UPON_INTAKE&lt;/code&gt;는 각각 동물의 아이디, 생물 종, 보호 시작일, 보호 시작 시 상태, 이름, 성별 및 중성화 여부를 나타냅니다.&lt;/p&gt;
+
+&lt;div class=&quot;table-wrapper&quot;&gt;
+
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;NAME&lt;/th&gt;
+        &lt;th&gt;TYPE&lt;/th&gt;
+        &lt;th&gt;NULLABLE&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;ANIMAL_ID&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;ANIMAL_TYPE&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;DATETIME&lt;/td&gt;
+        &lt;td&gt;DATETIME&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;INTAKE_CONDITION&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;NAME&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;TRUE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;SEX_UPON_INTAKE&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;동물 보호소에 들어온 동물 중 고양이와 개가 각각 몇 마리인지 조회하는 SQL문을 작성해주세요. 이때 고양이가 개보다 먼저 조회해주세요.&lt;/p&gt;
+
+&lt;h3 id=&quot;예시&quot;&gt;예시&lt;/h3&gt;
+
+&lt;p&gt;예를 들어 &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_INS&lt;/code&gt; 테이블이 다음과 같다면&lt;/p&gt;
+
+&lt;div class=&quot;table-wrapper&quot;&gt;
+
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;ANIMAL_ID&lt;/th&gt;
+        &lt;th&gt;ANIMAL_TYPE&lt;/th&gt;
+        &lt;th&gt;DATETIME&lt;/th&gt;
+        &lt;th&gt;INTAKE_CONDITION&lt;/th&gt;
+        &lt;th&gt;NAME&lt;/th&gt;
+        &lt;th&gt;SEX_UPON_INTAKE&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A373219&lt;/td&gt;
+        &lt;td&gt;Cat&lt;/td&gt;
+        &lt;td&gt;2014-07-29 11:43:00&lt;/td&gt;
+        &lt;td&gt;Normal&lt;/td&gt;
+        &lt;td&gt;Ella&lt;/td&gt;
+        &lt;td&gt;Spayed Female&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A377750&lt;/td&gt;
+        &lt;td&gt;Dog&lt;/td&gt;
+        &lt;td&gt;2017-10-25 17:17:00&lt;/td&gt;
+        &lt;td&gt;Normal&lt;/td&gt;
+        &lt;td&gt;Lucy&lt;/td&gt;
+        &lt;td&gt;Spayed Female&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A354540&lt;/td&gt;
+        &lt;td&gt;Cat&lt;/td&gt;
+        &lt;td&gt;2014-12-11 11:48:00&lt;/td&gt;
+        &lt;td&gt;Normal&lt;/td&gt;
+        &lt;td&gt;Tux&lt;/td&gt;
+        &lt;td&gt;Neutered Male&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;고양이는 2마리, 개는 1마리 들어왔습니다. 따라서 SQL문을 실행하면 다음과 같이 나와야 합니다.&lt;/p&gt;
+
+&lt;div class=&quot;table-wrapper&quot;&gt;
+
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;ANIMAL_TYPE&lt;/th&gt;
+        &lt;th&gt;count&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Cat&lt;/td&gt;
+        &lt;td&gt;2&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Dog&lt;/td&gt;
+        &lt;td&gt;1&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;h3 id=&quot;풀이&quot;&gt;풀이&lt;/h3&gt;
+
+&lt;noscript&gt;&lt;pre&gt;&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html&amp;gt;
+  &amp;lt;head&amp;gt;
+    &amp;lt;meta http-equiv=&amp;quot;Content-type&amp;quot; content=&amp;quot;text/html; charset=utf-8&amp;quot;&amp;gt;
+    &amp;lt;meta http-equiv=&amp;quot;Content-Security-Policy&amp;quot; content=&amp;quot;default-src &amp;#39;none&amp;#39;; style-src &amp;#39;unsafe-inline&amp;#39;; img-src data:; connect-src &amp;#39;self&amp;#39;&amp;quot;&amp;gt;
+    &amp;lt;title&amp;gt;Site not found &amp;amp;middot; GitHub Pages&amp;lt;/title&amp;gt;
+    &amp;lt;style type=&amp;quot;text/css&amp;quot; media=&amp;quot;screen&amp;quot;&amp;gt;
+      body {
+        background-color: #f1f1f1;
+        margin: 0;
+        font-family: &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, sans-serif;
+      }
+
+      .container { margin: 50px auto 40px auto; width: 600px; text-align: center; }
+
+      a { color: #4183c4; text-decoration: none; }
+      a:hover { text-decoration: underline; }
+
+      h1 { width: 800px; position:relative; left: -100px; letter-spacing: -1px; line-height: 60px; font-size: 60px; font-weight: 100; margin: 0px 0 50px 0; text-shadow: 0 1px 0 #fff; }
+      p { color: rgba(0, 0, 0, 0.5); margin: 20px 0; line-height: 1.6; }
+
+      ul { list-style: none; margin: 25px 0; padding: 0; }
+      li { display: table-cell; font-weight: bold; width: 1%; }
+
+      .logo { display: inline-block; margin-top: 35px; }
+      .logo-img-2x { display: none; }
+      @media
+      only screen and (-webkit-min-device-pixel-ratio: 2),
+      only screen and (   min--moz-device-pixel-ratio: 2),
+      only screen and (     -o-min-device-pixel-ratio: 2/1),
+      only screen and (        min-device-pixel-ratio: 2),
+      only screen and (                min-resolution: 192dpi),
+      only screen and (                min-resolution: 2dppx) {
+        .logo-img-1x { display: none; }
+        .logo-img-2x { display: inline-block; }
+      }
+
+      #suggestions {
+        margin-top: 35px;
+        color: #ccc;
+      }
+      #suggestions a {
+        color: #666666;
+        font-weight: 200;
+        font-size: 14px;
+        margin: 0 10px;
+      }
+
+    &amp;lt;/style&amp;gt;
+  &amp;lt;/head&amp;gt;
+  &amp;lt;body&amp;gt;
+
+    &amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt;
+
+      &amp;lt;h1&amp;gt;404&amp;lt;/h1&amp;gt;
+      &amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;There isn&amp;#39;t a GitHub Pages site here.&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt;
+
+      &amp;lt;p&amp;gt;
+        If you&amp;#39;re trying to publish one,
+        &amp;lt;a href=&amp;quot;https://help.github.com/pages/&amp;quot;&amp;gt;read the full documentation&amp;lt;/a&amp;gt;
+        to learn how to set up &amp;lt;strong&amp;gt;GitHub Pages&amp;lt;/strong&amp;gt;
+        for your repository, organization, or user account.
+      &amp;lt;/p&amp;gt;
+
+      &amp;lt;div id=&amp;quot;suggestions&amp;quot;&amp;gt;
+        &amp;lt;a href=&amp;quot;https://githubstatus.com&amp;quot;&amp;gt;GitHub Status&amp;lt;/a&amp;gt; &amp;amp;mdash;
+        &amp;lt;a href=&amp;quot;https://twitter.com/githubstatus&amp;quot;&amp;gt;@githubstatus&amp;lt;/a&amp;gt;
+      &amp;lt;/div&amp;gt;
+
+      &amp;lt;a href=&amp;quot;/&amp;quot; class=&amp;quot;logo logo-img-1x&amp;quot;&amp;gt;
+        &amp;lt;img width=&amp;quot;32&amp;quot; height=&amp;quot;32&amp;quot; title=&amp;quot;&amp;quot; alt=&amp;quot;&amp;quot; src=&amp;quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpFMTZCRDY3REIzRjAxMUUyQUQzREIxQzRENUFFNUM5NiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpFMTZCRDY3RUIzRjAxMUUyQUQzREIxQzRENUFFNUM5NiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkUxNkJENjdCQjNGMDExRTJBRDNEQjFDNEQ1QUU1Qzk2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkUxNkJENjdDQjNGMDExRTJBRDNEQjFDNEQ1QUU1Qzk2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+SM9MCAAAA+5JREFUeNrEV11Ik1EY3s4+ddOp29Q5b0opCgKFsoKoi5Kg6CIhuwi6zLJLoYLopq4qsKKgi4i6CYIoU/q5iDAKs6syoS76IRWtyJ+p7cdt7sf1PGOD+e0c3dygAx/67ZzzPM95/877GYdHRg3ZjMXFxepQKNS6sLCwJxqNNuFpiMfjVs4ZjUa/pmmjeD6VlJS8NpvNT4QQ7mxwjSsJiEQim/1+/9lgMHgIr5ohuxG1WCw9Vqv1clFR0dCqBODElV6v90ogEDjGdYbVjXhpaendioqK07CIR7ZAqE49PT09BPL2PMgTByQGsYiZlQD4uMXtdr+JxWINhgINYhGT2MsKgMrm2dnZXgRXhaHAg5jEJodUAHxux4LudHJE9RdEdA+i3Juz7bGHe4mhE9FNrgwBCLirMFV9Okh5eflFh8PR5nK5nDabrR2BNJlKO0T35+Li4n4+/J+/JQCxhmu5h3uJoXNHPbmWZAHMshWB8l5/ipqammaAf0zPDDx1ONV3vurdidqwAQL+pEc8sLcAe1CCvQ3YHxIW8Pl85xSWNC1hADDIv0rIE/o4J0k3kww4xSlwIhcq3EFFOm7KN/hUGOQkt0CFa5WpNJlMvxBEz/IVQAxg/ZRZl9wiHA63yDYieM7DnLP5CiAGsC7I5sgtYKJGWe2A8seFqgFJrJjEPY1Cn3pJ8/9W1e5VWsFDTEmFrBcoDhZJEQkXuhICMyKpjhahqN21hRYATKfUOlDmkygrR4o4C0VOLGJKrOITKB4jijzdXygBKixyC5TDQdnk/Pz8qRw6oOWGlsTKGOQW6OH6FBWsyePxdOXLTgxiyebILZCjz+GLgMIKnXNzc49YMlcRdHXcSwxFVgTInQhC9G33UhNoJLuqq6t345p9y3eUy8OTk5PjAHuI9uo4b07FBaOhsu0A4Unc+T1TU1Nj3KsSSE5yJ65jqF2DDd8QqWYmAZrIM2VlZTdnZmb6AbpdV9V6ec9znf5Q7HjYumdRE0JOp3MjitO4SFa+cZz8Umqe3TCbSLvdfkR/kWDdNQl5InuTcysOcpFT35ZrbBxx4p3JAHlZVVW1D/634VRt+FvLBgK/v5LV9WS+10xMTEwtRw7XvqOL+e2Q8V3AYIOIAXQ26/heWVnZCVfcyKHg2CBgTpmPmjYM8l24GyaUHyaIh7XwfR9ErE8qHoDfn2LTNAVC0HX6MFcBIP8Bi+6F6cdW/DICkANRfx99fEYFQ7Nph5i/uQiA214gno7K+guhaiKg9gC62+M8eR7XsBsYJ4ilam60Fb7r7uAj8wFyuwM1oIOWgfmDy6RXEEQzJMPe23DXrVS7rtyD3Df8z/FPgAEAzWU5Ku59ZAUAAAAASUVORK5CYII=&amp;quot;&amp;gt;
+      &amp;lt;/a&amp;gt;
+
+      &amp;lt;a href=&amp;quot;/&amp;quot; class=&amp;quot;logo logo-img-2x&amp;quot;&amp;gt;
+        &amp;lt;img width=&amp;quot;32&amp;quot; height=&amp;quot;32&amp;quot; title=&amp;quot;&amp;quot; alt=&amp;quot;&amp;quot; src=&amp;quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpEQUM1QkUxRUI0MUMxMUUyQUQzREIxQzRENUFFNUM5NiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpEQUM1QkUxRkI0MUMxMUUyQUQzREIxQzRENUFFNUM5NiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkUxNkJENjdGQjNGMDExRTJBRDNEQjFDNEQ1QUU1Qzk2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkUxNkJENjgwQjNGMDExRTJBRDNEQjFDNEQ1QUU1Qzk2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+hfPRaQAAB6lJREFUeNrsW2mM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&amp;quot;&amp;gt;
+      &amp;lt;/a&amp;gt;
+    &amp;lt;/div&amp;gt;
+  &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/ry4nkim/18ba9d224c0cd1ebe7fad1f5288023a1.js?file=solution_4_1.sql&quot;&gt; &lt;/script&gt;
+
+&lt;hr /&gt;
+&lt;h2 id=&quot;동명-동물-수-찾기&quot;&gt;동명 동물 수 찾기&lt;/h2&gt;
+
+&lt;p&gt;출처 : &lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/59041&quot; target=&quot;_blank&quot;&gt;프로그래머스 # 코딩테스트 연습 - 동명 동물 수 찾기&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;문제-1&quot;&gt;문제&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_INS&lt;/code&gt; 테이블은 동물 보호소에 들어온 동물의 정보를 담은 테이블입니다. &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_INS&lt;/code&gt; 테이블 구조는 다음과 같으며, &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_ID&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_TYPE&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;DATETIME&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;INTAKE_CONDITION&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;NAME&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;SEX_UPON_INTAKE&lt;/code&gt;는 각각 동물의 아이디, 생물 종, 보호 시작일, 보호 시작 시 상태, 이름, 성별 및 중성화 여부를 나타냅니다.&lt;/p&gt;
+
+&lt;div class=&quot;table-wrapper&quot;&gt;
+
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;NAME&lt;/th&gt;
+        &lt;th&gt;TYPE&lt;/th&gt;
+        &lt;th&gt;NULLABLE&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;ANIMAL_ID&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;ANIMAL_TYPE&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;DATETIME&lt;/td&gt;
+        &lt;td&gt;DATETIME&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;INTAKE_CONDITION&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;NAME&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;TRUE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;SEX_UPON_INTAKE&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;동물 보호소에 들어온 동물 이름 중 두 번 이상 쓰인 이름과 해당 이름이 쓰인 횟수를 조회하는 SQL문을 작성해주세요. 이때 결과는 이름이 없는 동물은 집계에서 제외하며, 결과는 이름 순으로 조회해주세요.&lt;/p&gt;
+
+&lt;h3 id=&quot;예시-1&quot;&gt;예시&lt;/h3&gt;
+
+&lt;p&gt;예를 들어 &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_INS&lt;/code&gt; 테이블이 다음과 같다면&lt;/p&gt;
+
+&lt;div class=&quot;table-wrapper&quot;&gt;
+
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;ANIMAL_ID&lt;/th&gt;
+        &lt;th&gt;ANIMAL_TYPE&lt;/th&gt;
+        &lt;th&gt;DATETIME&lt;/th&gt;
+        &lt;th&gt;INTAKE_CONDITION&lt;/th&gt;
+        &lt;th&gt;NAME&lt;/th&gt;
+        &lt;th&gt;SEX_UPON_INTAKE&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A396810&lt;/td&gt;
+        &lt;td&gt;Dog&lt;/td&gt;
+        &lt;td&gt;2016-08-22 16:13:00&lt;/td&gt;
+        &lt;td&gt;Injured&lt;/td&gt;
+        &lt;td&gt;Raven&lt;/td&gt;
+        &lt;td&gt;Spayed Female&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A377750&lt;/td&gt;
+        &lt;td&gt;Dog&lt;/td&gt;
+        &lt;td&gt;2017-10-25 17:17:00&lt;/td&gt;
+        &lt;td&gt;Normal&lt;/td&gt;
+        &lt;td&gt;Lucy&lt;/td&gt;
+        &lt;td&gt;Spayed Female&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A355688&lt;/td&gt;
+        &lt;td&gt;Dog&lt;/td&gt;
+        &lt;td&gt;2014-01-26 13:48:00&lt;/td&gt;
+        &lt;td&gt;Normal&lt;/td&gt;
+        &lt;td&gt;Shadow&lt;/td&gt;
+        &lt;td&gt;Neutered Male&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A399421&lt;/td&gt;
+        &lt;td&gt;Dog&lt;/td&gt;
+        &lt;td&gt;2015-08-25 14:08:00&lt;/td&gt;
+        &lt;td&gt;Normal&lt;/td&gt;
+        &lt;td&gt;Lucy&lt;/td&gt;
+        &lt;td&gt;Spayed Female&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A400680&lt;/td&gt;
+        &lt;td&gt;Dog&lt;/td&gt;
+        &lt;td&gt;2017-06-17 13:29:00&lt;/td&gt;
+        &lt;td&gt;Normal&lt;/td&gt;
+        &lt;td&gt;Lucy&lt;/td&gt;
+        &lt;td&gt;Spayed Female&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A410668&lt;/td&gt;
+        &lt;td&gt;Cat&lt;/td&gt;
+        &lt;td&gt;2015-11-19 13:41:00&lt;/td&gt;
+        &lt;td&gt;Normal&lt;/td&gt;
+        &lt;td&gt;Raven&lt;/td&gt;
+        &lt;td&gt;Spayed Female&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Raven 이름은 2번 쓰였습니다.&lt;/li&gt;
+  &lt;li&gt;Lucy 이름은 3번 쓰였습니다&lt;/li&gt;
+  &lt;li&gt;Shadow 이름은 1번 쓰였습니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;따라서 SQL문을 실행하면 다음과 같이 나와야 합니다.&lt;/p&gt;
+
+&lt;div class=&quot;table-wrapper&quot;&gt;
+
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;NAME&lt;/th&gt;
+        &lt;th&gt;COUNT&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Lucy&lt;/td&gt;
+        &lt;td&gt;3&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Raven&lt;/td&gt;
+        &lt;td&gt;2&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;h3 id=&quot;풀이-1&quot;&gt;풀이&lt;/h3&gt;
+
+&lt;noscript&gt;&lt;pre&gt;SELECT NAME,
+       COUNT(1) AS COUNT # NAME 컬럼, 로우카운트(COUNT) 조회
+FROM ANIMAL_INS # ANIMAL_INS 테이블 검색
+WHERE NAME IS NOT NULL # NAME이 NULL이 아닌 로우 필터링
+GROUP BY NAME # NAME 컬럼 그룹핑
+HAVING COUNT(1) &amp;gt;= 2 # 그룹핑 결과의 로우카운트가 2이상인 로우 필터링
+ORDER BY NAME # NAME 컬럼 오름차순 정렬&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/ry4nkim/18ba9d224c0cd1ebe7fad1f5288023a1.js?file=solution_4_2.sql&quot;&gt; &lt;/script&gt;
+
+&lt;hr /&gt;</content><author><name>ry4nkim</name></author><category term="blog" /><category term="MySQL" /><category term="Programmers.kr" /><category term="7daySQL 챌린지" /><summary type="html">Summary:</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/profile-round.png" /></entry><entry><title type="html">[프로그래머스] 7daySQL 챌린지 Day 3</title><link href="http://localhost:4000/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-7daySQL-%EC%B1%8C%EB%A6%B0%EC%A7%80-Day-3/" rel="alternate" type="text/html" title="[프로그래머스] 7daySQL 챌린지 Day 3" /><published>2019-09-04T00:00:00+09:00</published><updated>2019-09-04T00:00:00+09:00</updated><id>http://localhost:4000/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-7daySQL-%EC%B1%8C%EB%A6%B0%EC%A7%80-Day-3</id><content type="html" xml:base="http://localhost:4000/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-7daySQL-%EC%B1%8C%EB%A6%B0%EC%A7%80-Day-3/">&lt;h2 id=&quot;summary&quot;&gt;Summary:&lt;/h2&gt;
+
+&lt;p&gt;[프로그래머스] 7daySQL 챌린지 Day 3&lt;/p&gt;
+
+&lt;h3 id=&quot;index&quot;&gt;Index&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#최솟값-구하기&quot;&gt;최솟값 구하기&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#이름이-없는-동물의-아이디&quot;&gt;이름이 없는 동물의 아이디&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;h2 id=&quot;최솟값-구하기&quot;&gt;최솟값 구하기&lt;/h2&gt;
+
+&lt;p&gt;출처 : &lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/59038&quot; target=&quot;_blank&quot;&gt;프로그래머스 # 코딩테스트 연습 - 최솟값 구하기&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;문제&quot;&gt;문제&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_INS&lt;/code&gt; 테이블은 동물 보호소에 들어온 동물의 정보를 담은 테이블입니다. &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_INS&lt;/code&gt; 테이블 구조는 다음과 같으며, &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_ID&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_TYPE&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;DATETIME&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;INTAKE_CONDITION&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;NAME&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;SEX_UPON_INTAKE&lt;/code&gt;는 각각 동물의 아이디, 생물 종, 보호 시작일, 보호 시작 시 상태, 이름, 성별 및 중성화 여부를 나타냅니다.&lt;/p&gt;
+
+&lt;div class=&quot;table-wrapper&quot;&gt;
+
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;NAME&lt;/th&gt;
+        &lt;th&gt;TYPE&lt;/th&gt;
+        &lt;th&gt;NULLABLE&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;ANIMAL_ID&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;ANIMAL_TYPE&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;DATETIME&lt;/td&gt;
+        &lt;td&gt;DATETIME&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;INTAKE_CONDITION&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;NAME&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;TRUE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;SEX_UPON_INTAKE&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;동물 보호소에 가장 먼저 들어온 동물은 언제 들어왔는지 조회하는 SQL 문을 작성해주세요.&lt;/p&gt;
+
+&lt;h3 id=&quot;예시&quot;&gt;예시&lt;/h3&gt;
+
+&lt;p&gt;예를 들어 &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_INS&lt;/code&gt; 테이블이 다음과 같다면&lt;/p&gt;
+
+&lt;div class=&quot;table-wrapper&quot;&gt;
+
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;ANIMAL_ID&lt;/th&gt;
+        &lt;th&gt;ANIMAL_TYPE&lt;/th&gt;
+        &lt;th&gt;DATETIME&lt;/th&gt;
+        &lt;th&gt;INTAKE_CONDITION&lt;/th&gt;
+        &lt;th&gt;NAME&lt;/th&gt;
+        &lt;th&gt;SEX_UPON_INTAKE&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A399552&lt;/td&gt;
+        &lt;td&gt;Dog&lt;/td&gt;
+        &lt;td&gt;2013-10-14 15:38:00&lt;/td&gt;
+        &lt;td&gt;Normal&lt;/td&gt;
+        &lt;td&gt;Jack&lt;/td&gt;
+        &lt;td&gt;Neutered Male&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A379998&lt;/td&gt;
+        &lt;td&gt;Dog&lt;/td&gt;
+        &lt;td&gt;2013-10-23 11:42:00&lt;/td&gt;
+        &lt;td&gt;Normal&lt;/td&gt;
+        &lt;td&gt;Disciple&lt;/td&gt;
+        &lt;td&gt;Intact Male&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A370852&lt;/td&gt;
+        &lt;td&gt;Dog&lt;/td&gt;
+        &lt;td&gt;2013-11-03 15:04:00&lt;/td&gt;
+        &lt;td&gt;Normal&lt;/td&gt;
+        &lt;td&gt;Katie&lt;/td&gt;
+        &lt;td&gt;Spayed Female&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A403564&lt;/td&gt;
+        &lt;td&gt;Dog&lt;/td&gt;
+        &lt;td&gt;2013-11-18 17:03:00&lt;/td&gt;
+        &lt;td&gt;Normal&lt;/td&gt;
+        &lt;td&gt;Anna&lt;/td&gt;
+        &lt;td&gt;Spayed Female&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;가장 먼저 들어온 동물은 Jack이고, Jack은 2013-10-14 15:38:00에 들어왔습니다. 따라서 SQL문을 실행하면 다음과 같이 나와야 합니다.&lt;/p&gt;
+
+&lt;div class=&quot;table-wrapper&quot;&gt;
+
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;시간&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;2013-10-14 15:38:00&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;h3 id=&quot;풀이&quot;&gt;풀이&lt;/h3&gt;
+
+&lt;noscript&gt;&lt;pre&gt;SELECT MIN(DATETIME) AS 시간 # DATETIME 컬럼의 최솟값(시간) 조회
+FROM ANIMAL_INS # ANIMAL_INS 테이블 검색&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/ry4nkim/21a6338aa6ebb538933bc57a02c705fb.js?file=solution_3_1.sql&quot;&gt; &lt;/script&gt;
+
+&lt;hr /&gt;
+&lt;h2 id=&quot;이름이-없는-동물의-아이디&quot;&gt;이름이 없는 동물의 아이디&lt;/h2&gt;
+
+&lt;p&gt;출처 : &lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/59039&quot; target=&quot;_blank&quot;&gt;프로그래머스 # 코딩테스트 연습 - 이름이 없는 동물의 아이디&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;문제-1&quot;&gt;문제&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_INS&lt;/code&gt; 테이블은 동물 보호소에 들어온 동물의 정보를 담은 테이블입니다. &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_INS&lt;/code&gt; 테이블 구조는 다음과 같으며, &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_ID&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_TYPE&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;DATETIME&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;INTAKE_CONDITION&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;NAME&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;SEX_UPON_INTAKE&lt;/code&gt;는 각각 동물의 아이디, 생물 종, 보호 시작일, 보호 시작 시 상태, 이름, 성별 및 중성화 여부를 나타냅니다.&lt;/p&gt;
+
+&lt;div class=&quot;table-wrapper&quot;&gt;
+
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;NAME&lt;/th&gt;
+        &lt;th&gt;TYPE&lt;/th&gt;
+        &lt;th&gt;NULLABLE&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;ANIMAL_ID&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;ANIMAL_TYPE&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;DATETIME&lt;/td&gt;
+        &lt;td&gt;DATETIME&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;INTAKE_CONDITION&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;NAME&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;TRUE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;SEX_UPON_INTAKE&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;동물 보호소에 들어온 동물 중, 이름이 없는 채로 들어온 동물의 ID를 조회하는 SQL 문을 작성해주세요. 단, ID는 오름차순 정렬되어야 합니다.&lt;/p&gt;
+
+&lt;h3 id=&quot;예시-1&quot;&gt;예시&lt;/h3&gt;
+
+&lt;p&gt;예를 들어 &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_INS&lt;/code&gt; 테이블이 다음과 같다면&lt;/p&gt;
+
+&lt;div class=&quot;table-wrapper&quot;&gt;
+
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;ANIMAL_ID&lt;/th&gt;
+        &lt;th&gt;ANIMAL_TYPE&lt;/th&gt;
+        &lt;th&gt;DATETIME&lt;/th&gt;
+        &lt;th&gt;INTAKE_CONDITION&lt;/th&gt;
+        &lt;th&gt;NAME&lt;/th&gt;
+        &lt;th&gt;SEX_UPON_INTAKE&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A368930&lt;/td&gt;
+        &lt;td&gt;Dog&lt;/td&gt;
+        &lt;td&gt;2014-06-08 13:20:00&lt;/td&gt;
+        &lt;td&gt;Normal&lt;/td&gt;
+        &lt;td&gt;NULL&lt;/td&gt;
+        &lt;td&gt;Spayed Female&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A524634&lt;/td&gt;
+        &lt;td&gt;Dog&lt;/td&gt;
+        &lt;td&gt;2015-01-02 18:54:00&lt;/td&gt;
+        &lt;td&gt;Normal&lt;/td&gt;
+        &lt;td&gt;*Belle&lt;/td&gt;
+        &lt;td&gt;Intact Female&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A465637&lt;/td&gt;
+        &lt;td&gt;Dog&lt;/td&gt;
+        &lt;td&gt;2017-06-04 08:17:00&lt;/td&gt;
+        &lt;td&gt;Injured&lt;/td&gt;
+        &lt;td&gt;*Commander&lt;/td&gt;
+        &lt;td&gt;Neutered Male&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;이름이 없는 채로 들어온 동물의 ID는 A368930입니다. 따라서 SQL을 실행하면 다음과 같이 출력되어야 합니다.&lt;/p&gt;
+
+&lt;div class=&quot;table-wrapper&quot;&gt;
+
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;ANIMAL_ID&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A368930&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;h3 id=&quot;풀이-1&quot;&gt;풀이&lt;/h3&gt;
+
+&lt;noscript&gt;&lt;pre&gt;SELECT ANIMAL_ID # ANIMAL_ID 컬럼 조회
+FROM ANIMAL_INS # ANIMAL_INS 테이블 검색
+WHERE NAME IS NULL # NAME이 NULL인 행 필터링
+ORDER BY ANIMAL_ID # ANIMAL_ID 컬럼 오름차순 정렬&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/ry4nkim/21a6338aa6ebb538933bc57a02c705fb.js?file=solution_3_2.sql&quot;&gt; &lt;/script&gt;
+
+&lt;hr /&gt;</content><author><name>ry4nkim</name></author><category term="blog" /><category term="MySQL" /><category term="Programmers.kr" /><category term="7daySQL 챌린지" /><summary type="html">Summary:</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/profile-round.png" /></entry><entry><title type="html">[프로그래머스] 7daySQL 챌린지 Day 2</title><link href="http://localhost:4000/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-7daySQL-%EC%B1%8C%EB%A6%B0%EC%A7%80-Day-2/" rel="alternate" type="text/html" title="[프로그래머스] 7daySQL 챌린지 Day 2" /><published>2019-09-03T00:00:00+09:00</published><updated>2019-09-03T00:00:00+09:00</updated><id>http://localhost:4000/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-7daySQL-%EC%B1%8C%EB%A6%B0%EC%A7%80-Day-2</id><content type="html" xml:base="http://localhost:4000/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-7daySQL-%EC%B1%8C%EB%A6%B0%EC%A7%80-Day-2/">&lt;h2 id=&quot;summary&quot;&gt;Summary:&lt;/h2&gt;
+
+&lt;p&gt;[프로그래머스] 7daySQL 챌린지 Day 2&lt;/p&gt;
+
+&lt;h3 id=&quot;index&quot;&gt;Index&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#아픈-동물-찾기&quot;&gt;아픈 동물 찾기&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#어린-동물-찾기&quot;&gt;어린 동물 찾기&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;h2 id=&quot;아픈-동물-찾기&quot;&gt;아픈 동물 찾기&lt;/h2&gt;
+
+&lt;p&gt;출처 : &lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/59036&quot; target=&quot;_blank&quot;&gt;프로그래머스 # 코딩테스트 연습 - 아픈 동물 찾기&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;문제&quot;&gt;문제&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_INS&lt;/code&gt; 테이블은 동물 보호소에 들어온 동물의 정보를 담은 테이블입니다. &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_INS&lt;/code&gt; 테이블 구조는 다음과 같으며, &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_ID&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_TYPE&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;DATETIME&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;INTAKE_CONDITION&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;NAME&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;SEX_UPON_INTAKE&lt;/code&gt;는 각각 동물의 아이디, 생물 종, 보호 시작일, 보호 시작 시 상태, 이름, 성별 및 중성화 여부를 나타냅니다.&lt;/p&gt;
+
+&lt;div class=&quot;table-wrapper&quot;&gt;
+
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;NAME&lt;/th&gt;
+        &lt;th&gt;TYPE&lt;/th&gt;
+        &lt;th&gt;NULLABLE&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;ANIMAL_ID&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;ANIMAL_TYPE&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;DATETIME&lt;/td&gt;
+        &lt;td&gt;DATETIME&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;INTAKE_CONDITION&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;NAME&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;TRUE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;SEX_UPON_INTAKE&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;동물 보호소에 들어온 동물 중 아픈 동물&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;의 아이디와 이름을 조회하는 SQL 문을 작성해주세요. 이때 결과는 아이디 순으로 조회해주세요.&lt;/p&gt;
+
+&lt;h3 id=&quot;예시&quot;&gt;예시&lt;/h3&gt;
+
+&lt;p&gt;예를 들어 &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_INS&lt;/code&gt; 테이블이 다음과 같다면&lt;/p&gt;
+
+&lt;div class=&quot;table-wrapper&quot;&gt;
+
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;ANIMAL_ID&lt;/th&gt;
+        &lt;th&gt;ANIMAL_TYPE&lt;/th&gt;
+        &lt;th&gt;DATETIME&lt;/th&gt;
+        &lt;th&gt;INTAKE_CONDITION&lt;/th&gt;
+        &lt;th&gt;NAME&lt;/th&gt;
+        &lt;th&gt;SEX_UPON_INTAKE&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A365172&lt;/td&gt;
+        &lt;td&gt;Dog&lt;/td&gt;
+        &lt;td&gt;2014-08-26 12:53:00&lt;/td&gt;
+        &lt;td&gt;Normal&lt;/td&gt;
+        &lt;td&gt;Diablo&lt;/td&gt;
+        &lt;td&gt;Neutered Male&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A367012&lt;/td&gt;
+        &lt;td&gt;Dog&lt;/td&gt;
+        &lt;td&gt;2015-09-16 09:06:00&lt;/td&gt;
+        &lt;td&gt;Sick&lt;/td&gt;
+        &lt;td&gt;Miller&lt;/td&gt;
+        &lt;td&gt;Neutered Male&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A365302&lt;/td&gt;
+        &lt;td&gt;Dog&lt;/td&gt;
+        &lt;td&gt;2017-01-08 16:34:00&lt;/td&gt;
+        &lt;td&gt;Aged&lt;/td&gt;
+        &lt;td&gt;Minnie&lt;/td&gt;
+        &lt;td&gt;Spayed Female&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A381217&lt;/td&gt;
+        &lt;td&gt;Dog&lt;/td&gt;
+        &lt;td&gt;2017-07-08 09:41:00&lt;/td&gt;
+        &lt;td&gt;Sick&lt;/td&gt;
+        &lt;td&gt;Cherokee&lt;/td&gt;
+        &lt;td&gt;Neutered Male&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;이 중 아픈 동물은 Miller와 Cherokee입니다. 따라서 SQL문을 실행하면 다음과 같이 나와야 합니다.&lt;/p&gt;
+
+&lt;div class=&quot;table-wrapper&quot;&gt;
+
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;ANIMAL_ID&lt;/th&gt;
+        &lt;th&gt;NAME&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A367012&lt;/td&gt;
+        &lt;td&gt;Miller&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A381217&lt;/td&gt;
+        &lt;td&gt;Cherokee&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;h3 id=&quot;풀이&quot;&gt;풀이&lt;/h3&gt;
+
+&lt;noscript&gt;&lt;pre&gt;SELECT ANIMAL_ID,
+       NAME # ANIMAL_ID, NAME 컬럼 조회
+FROM ANIMAL_INS # ANIMAL_INS 테이블 검색
+WHERE INTAKE_CONDITION = &amp;#39;Sick&amp;#39; # INTAKE_CONDITION이 &amp;#39;Sick&amp;#39;인 행 필터링
+ORDER BY ANIMAL_ID # ANIMAL_ID 컬럼 오름차순 정렬&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/ry4nkim/0b5262f73a2fd773ab49b519e8171d6b.js?file=solution_2_1.sql&quot;&gt; &lt;/script&gt;
+
+&lt;hr /&gt;
+&lt;h2 id=&quot;어린-동물-찾기&quot;&gt;어린 동물 찾기&lt;/h2&gt;
+
+&lt;p&gt;출처 : &lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/59037&quot; target=&quot;_blank&quot;&gt;프로그래머스 # 코딩테스트 연습 - 어린 동물 찾기&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;문제-1&quot;&gt;문제&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_INS&lt;/code&gt; 테이블은 동물 보호소에 들어온 동물의 정보를 담은 테이블입니다. &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_INS&lt;/code&gt; 테이블 구조는 다음과 같으며, &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_ID&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_TYPE&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;DATETIME&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;INTAKE_CONDITION&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;NAME&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;SEX_UPON_INTAKE&lt;/code&gt;는 각각 동물의 아이디, 생물 종, 보호 시작일, 보호 시작 시 상태, 이름, 성별 및 중성화 여부를 나타냅니다.&lt;/p&gt;
+
+&lt;div class=&quot;table-wrapper&quot;&gt;
+
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;NAME&lt;/th&gt;
+        &lt;th&gt;TYPE&lt;/th&gt;
+        &lt;th&gt;NULLABLE&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;ANIMAL_ID&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;ANIMAL_TYPE&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;DATETIME&lt;/td&gt;
+        &lt;td&gt;DATETIME&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;INTAKE_CONDITION&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;NAME&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;TRUE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;SEX_UPON_INTAKE&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;동물 보호소에 들어온 동물 중 젊은 동물&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;의 아이디와 이름을 조회하는 SQL 문을 작성해주세요. 이때 결과는 아이디 순으로 조회해주세요.&lt;/p&gt;
+
+&lt;h3 id=&quot;예시-1&quot;&gt;예시&lt;/h3&gt;
+
+&lt;p&gt;예를 들어 &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_INS&lt;/code&gt; 테이블이 다음과 같다면&lt;/p&gt;
+
+&lt;div class=&quot;table-wrapper&quot;&gt;
+
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;ANIMAL_ID&lt;/th&gt;
+        &lt;th&gt;ANIMAL_TYPE&lt;/th&gt;
+        &lt;th&gt;DATETIME&lt;/th&gt;
+        &lt;th&gt;INTAKE_CONDITION&lt;/th&gt;
+        &lt;th&gt;NAME&lt;/th&gt;
+        &lt;th&gt;SEX_UPON_INTAKE&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A365172&lt;/td&gt;
+        &lt;td&gt;Dog&lt;/td&gt;
+        &lt;td&gt;2014-08-26 12:53:00&lt;/td&gt;
+        &lt;td&gt;Normal&lt;/td&gt;
+        &lt;td&gt;Diablo&lt;/td&gt;
+        &lt;td&gt;Neutered Male&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A367012&lt;/td&gt;
+        &lt;td&gt;Dog&lt;/td&gt;
+        &lt;td&gt;2015-09-16 09:06:00&lt;/td&gt;
+        &lt;td&gt;Sick&lt;/td&gt;
+        &lt;td&gt;Miller&lt;/td&gt;
+        &lt;td&gt;Neutered Male&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A365302&lt;/td&gt;
+        &lt;td&gt;Dog&lt;/td&gt;
+        &lt;td&gt;2017-01-08 16:34:00&lt;/td&gt;
+        &lt;td&gt;Aged&lt;/td&gt;
+        &lt;td&gt;Minnie&lt;/td&gt;
+        &lt;td&gt;Spayed Female&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A381217&lt;/td&gt;
+        &lt;td&gt;Dog&lt;/td&gt;
+        &lt;td&gt;2017-07-08 09:41:00&lt;/td&gt;
+        &lt;td&gt;Sick&lt;/td&gt;
+        &lt;td&gt;Cherokee&lt;/td&gt;
+        &lt;td&gt;Neutered Male&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;이 중 젊은 동물은 Diablo, Miller, Cherokee입니다. 따라서 SQL문을 실행하면 다음과 같이 나와야 합니다.&lt;/p&gt;
+
+&lt;div class=&quot;table-wrapper&quot;&gt;
+
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;ANIMAL_ID&lt;/th&gt;
+        &lt;th&gt;NAME&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A365172&lt;/td&gt;
+        &lt;td&gt;Diablo&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A367012&lt;/td&gt;
+        &lt;td&gt;Miller&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A381217&lt;/td&gt;
+        &lt;td&gt;Cherokee&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;h3 id=&quot;풀이-1&quot;&gt;풀이&lt;/h3&gt;
+
+&lt;noscript&gt;&lt;pre&gt;SELECT ANIMAL_ID,
+       NAME # ANIMAL_ID, NAME 컬럼 조회
+FROM ANIMAL_INS # ANIMAL_INS 테이블 검색
+WHERE INTAKE_CONDITION != &amp;#39;Aged&amp;#39; # INTAKE_CONDITION이 &amp;#39;Aged&amp;#39;가 아닌 행 필터링
+ORDER BY ANIMAL_ID # ANIMAL_ID 컬럼 오름차순 정렬&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/ry4nkim/0b5262f73a2fd773ab49b519e8171d6b.js?file=solution_2_2.sql&quot;&gt; &lt;/script&gt;
+
+&lt;hr /&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;INTAKE_CONDITION이 Sick 인 경우를 뜻함 &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot;&gt;
+      &lt;p&gt;INTAKE_CONDITION이 Aged가 아닌 경우를 뜻함 &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>ry4nkim</name></author><category term="blog" /><category term="MySQL" /><category term="Programmers.kr" /><category term="7daySQL 챌린지" /><summary type="html">Summary:</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/profile-round.png" /></entry><entry><title type="html">[프로그래머스] 7daySQL 챌린지 Day 1</title><link href="http://localhost:4000/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-7daySQL-%EC%B1%8C%EB%A6%B0%EC%A7%80-Day-1/" rel="alternate" type="text/html" title="[프로그래머스] 7daySQL 챌린지 Day 1" /><published>2019-09-02T00:00:00+09:00</published><updated>2019-09-02T00:00:00+09:00</updated><id>http://localhost:4000/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-7daySQL-%EC%B1%8C%EB%A6%B0%EC%A7%80-Day-1</id><content type="html" xml:base="http://localhost:4000/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-7daySQL-%EC%B1%8C%EB%A6%B0%EC%A7%80-Day-1/">&lt;h2 id=&quot;summary&quot;&gt;Summary:&lt;/h2&gt;
 
 &lt;p&gt;[프로그래머스] 7daySQL 챌린지 Day 1&lt;/p&gt;
 
@@ -10,6 +1915,8 @@
 
 &lt;hr /&gt;
 &lt;h2 id=&quot;모든-레코드-조회하기&quot;&gt;모든 레코드 조회하기&lt;/h2&gt;
+
+&lt;p&gt;출처 : &lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/59034&quot; target=&quot;_blank&quot;&gt;프로그래머스 # 코딩테스트 연습 - 모든 레코드 조회하기&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;문제&quot;&gt;문제&lt;/h3&gt;
 
@@ -116,19 +2023,94 @@
 
 &lt;p&gt;..이하 생략&lt;/p&gt;
 
-&lt;p&gt;본 문제는 Kaggle의 Austin Animal Center Shelter Intakes and Outcomes에서 제공하는 데이터를 사용하였으며 ODbL의 적용을 받습니다.&lt;/p&gt;
-
-&lt;p&gt;출처 : &lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/59034&quot; target=&quot;_blank&quot;&gt;프로그래머스 # 코딩테스트 연습 - 모든 레코드 조회하기&lt;/a&gt;&lt;/p&gt;
-
 &lt;h3 id=&quot;풀이&quot;&gt;풀이&lt;/h3&gt;
 
-&lt;noscript&gt;&lt;pre&gt;SELECT * # 모든 컬럼 조회
-FROM ANIMAL_INS # ANIMAL_INS 테이블 참조
-ORDER BY ANIMAL_ID # ANIMAL_ID 순으로 정렬&lt;/pre&gt;&lt;/noscript&gt;
+&lt;noscript&gt;&lt;pre&gt;&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html&amp;gt;
+  &amp;lt;head&amp;gt;
+    &amp;lt;meta http-equiv=&amp;quot;Content-type&amp;quot; content=&amp;quot;text/html; charset=utf-8&amp;quot;&amp;gt;
+    &amp;lt;meta http-equiv=&amp;quot;Content-Security-Policy&amp;quot; content=&amp;quot;default-src &amp;#39;none&amp;#39;; style-src &amp;#39;unsafe-inline&amp;#39;; img-src data:; connect-src &amp;#39;self&amp;#39;&amp;quot;&amp;gt;
+    &amp;lt;title&amp;gt;Site not found &amp;amp;middot; GitHub Pages&amp;lt;/title&amp;gt;
+    &amp;lt;style type=&amp;quot;text/css&amp;quot; media=&amp;quot;screen&amp;quot;&amp;gt;
+      body {
+        background-color: #f1f1f1;
+        margin: 0;
+        font-family: &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, sans-serif;
+      }
+
+      .container { margin: 50px auto 40px auto; width: 600px; text-align: center; }
+
+      a { color: #4183c4; text-decoration: none; }
+      a:hover { text-decoration: underline; }
+
+      h1 { width: 800px; position:relative; left: -100px; letter-spacing: -1px; line-height: 60px; font-size: 60px; font-weight: 100; margin: 0px 0 50px 0; text-shadow: 0 1px 0 #fff; }
+      p { color: rgba(0, 0, 0, 0.5); margin: 20px 0; line-height: 1.6; }
+
+      ul { list-style: none; margin: 25px 0; padding: 0; }
+      li { display: table-cell; font-weight: bold; width: 1%; }
+
+      .logo { display: inline-block; margin-top: 35px; }
+      .logo-img-2x { display: none; }
+      @media
+      only screen and (-webkit-min-device-pixel-ratio: 2),
+      only screen and (   min--moz-device-pixel-ratio: 2),
+      only screen and (     -o-min-device-pixel-ratio: 2/1),
+      only screen and (        min-device-pixel-ratio: 2),
+      only screen and (                min-resolution: 192dpi),
+      only screen and (                min-resolution: 2dppx) {
+        .logo-img-1x { display: none; }
+        .logo-img-2x { display: inline-block; }
+      }
+
+      #suggestions {
+        margin-top: 35px;
+        color: #ccc;
+      }
+      #suggestions a {
+        color: #666666;
+        font-weight: 200;
+        font-size: 14px;
+        margin: 0 10px;
+      }
+
+    &amp;lt;/style&amp;gt;
+  &amp;lt;/head&amp;gt;
+  &amp;lt;body&amp;gt;
+
+    &amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt;
+
+      &amp;lt;h1&amp;gt;404&amp;lt;/h1&amp;gt;
+      &amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;There isn&amp;#39;t a GitHub Pages site here.&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt;
+
+      &amp;lt;p&amp;gt;
+        If you&amp;#39;re trying to publish one,
+        &amp;lt;a href=&amp;quot;https://help.github.com/pages/&amp;quot;&amp;gt;read the full documentation&amp;lt;/a&amp;gt;
+        to learn how to set up &amp;lt;strong&amp;gt;GitHub Pages&amp;lt;/strong&amp;gt;
+        for your repository, organization, or user account.
+      &amp;lt;/p&amp;gt;
+
+      &amp;lt;div id=&amp;quot;suggestions&amp;quot;&amp;gt;
+        &amp;lt;a href=&amp;quot;https://githubstatus.com&amp;quot;&amp;gt;GitHub Status&amp;lt;/a&amp;gt; &amp;amp;mdash;
+        &amp;lt;a href=&amp;quot;https://twitter.com/githubstatus&amp;quot;&amp;gt;@githubstatus&amp;lt;/a&amp;gt;
+      &amp;lt;/div&amp;gt;
+
+      &amp;lt;a href=&amp;quot;/&amp;quot; class=&amp;quot;logo logo-img-1x&amp;quot;&amp;gt;
+        &amp;lt;img width=&amp;quot;32&amp;quot; height=&amp;quot;32&amp;quot; title=&amp;quot;&amp;quot; alt=&amp;quot;&amp;quot; src=&amp;quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpFMTZCRDY3REIzRjAxMUUyQUQzREIxQzRENUFFNUM5NiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpFMTZCRDY3RUIzRjAxMUUyQUQzREIxQzRENUFFNUM5NiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkUxNkJENjdCQjNGMDExRTJBRDNEQjFDNEQ1QUU1Qzk2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkUxNkJENjdDQjNGMDExRTJBRDNEQjFDNEQ1QUU1Qzk2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+SM9MCAAAA+5JREFUeNrEV11Ik1EY3s4+ddOp29Q5b0opCgKFsoKoi5Kg6CIhuwi6zLJLoYLopq4qsKKgi4i6CYIoU/q5iDAKs6syoS76IRWtyJ+p7cdt7sf1PGOD+e0c3dygAx/67ZzzPM95/877GYdHRg3ZjMXFxepQKNS6sLCwJxqNNuFpiMfjVs4ZjUa/pmmjeD6VlJS8NpvNT4QQ7mxwjSsJiEQim/1+/9lgMHgIr5ohuxG1WCw9Vqv1clFR0dCqBODElV6v90ogEDjGdYbVjXhpaendioqK07CIR7ZAqE49PT09BPL2PMgTByQGsYiZlQD4uMXtdr+JxWINhgINYhGT2MsKgMrm2dnZXgRXhaHAg5jEJodUAHxux4LudHJE9RdEdA+i3Juz7bGHe4mhE9FNrgwBCLirMFV9Okh5eflFh8PR5nK5nDabrR2BNJlKO0T35+Li4n4+/J+/JQCxhmu5h3uJoXNHPbmWZAHMshWB8l5/ipqammaAf0zPDDx1ONV3vurdidqwAQL+pEc8sLcAe1CCvQ3YHxIW8Pl85xSWNC1hADDIv0rIE/o4J0k3kww4xSlwIhcq3EFFOm7KN/hUGOQkt0CFa5WpNJlMvxBEz/IVQAxg/ZRZl9wiHA63yDYieM7DnLP5CiAGsC7I5sgtYKJGWe2A8seFqgFJrJjEPY1Cn3pJ8/9W1e5VWsFDTEmFrBcoDhZJEQkXuhICMyKpjhahqN21hRYATKfUOlDmkygrR4o4C0VOLGJKrOITKB4jijzdXygBKixyC5TDQdnk/Pz8qRw6oOWGlsTKGOQW6OH6FBWsyePxdOXLTgxiyebILZCjz+GLgMIKnXNzc49YMlcRdHXcSwxFVgTInQhC9G33UhNoJLuqq6t345p9y3eUy8OTk5PjAHuI9uo4b07FBaOhsu0A4Unc+T1TU1Nj3KsSSE5yJ65jqF2DDd8QqWYmAZrIM2VlZTdnZmb6AbpdV9V6ec9znf5Q7HjYumdRE0JOp3MjitO4SFa+cZz8Umqe3TCbSLvdfkR/kWDdNQl5InuTcysOcpFT35ZrbBxx4p3JAHlZVVW1D/634VRt+FvLBgK/v5LV9WS+10xMTEwtRw7XvqOL+e2Q8V3AYIOIAXQ26/heWVnZCVfcyKHg2CBgTpmPmjYM8l24GyaUHyaIh7XwfR9ErE8qHoDfn2LTNAVC0HX6MFcBIP8Bi+6F6cdW/DICkANRfx99fEYFQ7Nph5i/uQiA214gno7K+guhaiKg9gC62+M8eR7XsBsYJ4ilam60Fb7r7uAj8wFyuwM1oIOWgfmDy6RXEEQzJMPe23DXrVS7rtyD3Df8z/FPgAEAzWU5Ku59ZAUAAAAASUVORK5CYII=&amp;quot;&amp;gt;
+      &amp;lt;/a&amp;gt;
+
+      &amp;lt;a href=&amp;quot;/&amp;quot; class=&amp;quot;logo logo-img-2x&amp;quot;&amp;gt;
+        &amp;lt;img width=&amp;quot;32&amp;quot; height=&amp;quot;32&amp;quot; title=&amp;quot;&amp;quot; alt=&amp;quot;&amp;quot; src=&amp;quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpEQUM1QkUxRUI0MUMxMUUyQUQzREIxQzRENUFFNUM5NiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpEQUM1QkUxRkI0MUMxMUUyQUQzREIxQzRENUFFNUM5NiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkUxNkJENjdGQjNGMDExRTJBRDNEQjFDNEQ1QUU1Qzk2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkUxNkJENjgwQjNGMDExRTJBRDNEQjFDNEQ1QUU1Qzk2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+hfPRaQAAB6lJREFUeNrsW2mM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&amp;quot;&amp;gt;
+      &amp;lt;/a&amp;gt;
+    &amp;lt;/div&amp;gt;
+  &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/ry4nkim/80ea2e1a175b375f6e4b3a9085385592.js?file=solution_1_1.sql&quot;&gt; &lt;/script&gt;
 
 &lt;hr /&gt;
 &lt;h2 id=&quot;역순-정렬하기&quot;&gt;역순 정렬하기&lt;/h2&gt;
+
+&lt;p&gt;출처 : &lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/59035&quot; target=&quot;_blank&quot;&gt;프로그래머스 # 코딩테스트 연습 - 역순 정렬하기&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;문제-1&quot;&gt;문제&lt;/h3&gt;
 
@@ -219,17 +2201,15 @@ ORDER BY ANIMAL_ID # ANIMAL_ID 순으로 정렬&lt;/pre&gt;&lt;/noscript&gt;
 
 &lt;p&gt;..이하 생략&lt;/p&gt;
 
-&lt;p&gt;본 문제는 Kaggle의 Austin Animal Center Shelter Intakes and Outcomes에서 제공하는 데이터를 사용하였으며 ODbL의 적용을 받습니다.&lt;/p&gt;
-
-&lt;p&gt;출처 : &lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/59035&quot; target=&quot;_blank&quot;&gt;프로그래머스 # 코딩테스트 연습 - 역순 정렬하기&lt;/a&gt;&lt;/p&gt;
-
 &lt;h3 id=&quot;풀이-1&quot;&gt;풀이&lt;/h3&gt;
 
 &lt;noscript&gt;&lt;pre&gt;SELECT NAME,
        DATETIME # NAME, DATETIME 컬럼 조회
-FROM ANIMAL_INS # ANIMAL_INS 테이블 참조
-ORDER BY ANIMAL_ID DESC # ANIMAL_ID 역순으로 정렬&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/ry4nkim/80ea2e1a175b375f6e4b3a9085385592.js?file=solution_1_2.sql&quot;&gt; &lt;/script&gt;</content><author><name>ry4nkim</name></author><category term="blog" /><category term="MySQL" /><category term="Programmers.kr" /><summary type="html">Summary:</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/profile-round.png" /></entry><entry><title type="html">[Android] Movie Rank</title><link href="http://localhost:4000/Android-Movie-Rank/" rel="alternate" type="text/html" title="[Android] Movie Rank" /><published>2018-04-25T18:00:00+09:00</published><updated>2018-04-25T18:00:00+09:00</updated><id>http://localhost:4000/Android-Movie-Rank</id><content type="html" xml:base="http://localhost:4000/Android-Movie-Rank/">&lt;h1 id=&quot;android--movie-rank&quot;&gt;Android : Movie Rank&lt;/h1&gt;
+FROM ANIMAL_INS # ANIMAL_INS 테이블 검색
+ORDER BY ANIMAL_ID DESC # ANIMAL_ID 컬럼 내림차순 정렬&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/ry4nkim/80ea2e1a175b375f6e4b3a9085385592.js?file=solution_1_2.sql&quot;&gt; &lt;/script&gt;
+
+&lt;hr /&gt;</content><author><name>ry4nkim</name></author><category term="blog" /><category term="MySQL" /><category term="Programmers.kr" /><category term="7daySQL 챌린지" /><summary type="html">Summary:</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/profile-round.png" /></entry><entry><title type="html">[Android] Movie Rank</title><link href="http://localhost:4000/Android-Movie-Rank/" rel="alternate" type="text/html" title="[Android] Movie Rank" /><published>2018-04-25T00:00:00+09:00</published><updated>2018-04-25T00:00:00+09:00</updated><id>http://localhost:4000/Android-Movie-Rank</id><content type="html" xml:base="http://localhost:4000/Android-Movie-Rank/">&lt;h1 id=&quot;android--movie-rank&quot;&gt;Android : Movie Rank&lt;/h1&gt;
 
 &lt;p&gt;Github: https://github.com/ry4nkim/android-movie-rank&lt;/p&gt;
 
@@ -280,41 +2260,7 @@ ORDER BY ANIMAL_ID DESC # ANIMAL_ID 역순으로 정렬&lt;/pre&gt;&lt;/noscript
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>ry4nkim</name></author><category term="project" /><category term="Android" /><category term="Java" /><category term="MVP" /><category term="Jsoup" /><summary type="html">Android : Movie Rank</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/profile-round.png" /></entry><entry><title type="html">[iOS] App Transport Security 해제 방법</title><link href="http://localhost:4000/How-to-Disable-App-Transport-Security/" rel="alternate" type="text/html" title="[iOS] App Transport Security 해제 방법" /><published>2018-04-06T16:10:00+09:00</published><updated>2018-04-06T16:10:00+09:00</updated><id>http://localhost:4000/How-to-Disable-App-Transport-Security</id><content type="html" xml:base="http://localhost:4000/How-to-Disable-App-Transport-Security/">&lt;h2 id=&quot;summary&quot;&gt;Summary:&lt;/h2&gt;
-
-&lt;p&gt;App Transport Security (ATS) 란?&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;App Transport Security 는 iOS 9 부터 도입된 네트워크 보안 기능입니다.&lt;/li&gt;
-  &lt;li&gt;이 기능은 HTTPS 연결을 제외한 보안에 취약한 네트워크 프로토콜의 연결을 차단시킵니다.&lt;/li&gt;
-  &lt;li&gt;이로인해 기존에 많이 쓰이던 HTTP 프로토콜의 연결을 하지 못하게 되었습니다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;App Transport Security HTTP 연결 오류 메시지&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;App Transport Security has blocked a cleartext HTTP resource(http://) load since it is insecure. Temporary exceptions can be configured via your app’s Info.plist file.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;App Transport Security가 안전하지 않기 때문에 cleartext HTTP(http://) 리소스 로드를 차단했습니다. 임시 예외는 앱의 Info.plist 파일을 통해 구성할 수 있습니다.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;hr /&gt;
-&lt;h2 id=&quot;how-to-disable-app-transport-security&quot;&gt;How to Disable App Transport Security&lt;/h2&gt;
-
-&lt;p&gt;특정 iOS 앱 개발을 위해 HTTP 프로토콜의 연결이 꼭 필요로 하다면 Info.plist 파일에 아래 코드를 추가하여 App Transport Security를 해제할 수 있습니다.&lt;/p&gt;
-
-&lt;p&gt;Info.plist&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;key&amp;gt;&lt;/span&gt;NSAppTransportSecurity&lt;span class=&quot;nt&quot;&gt;&amp;lt;/key&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;dict&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;key&amp;gt;&lt;/span&gt;NSAllowsArbitraryLoads&lt;span class=&quot;nt&quot;&gt;&amp;lt;/key&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;true/&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;key&amp;gt;&lt;/span&gt;NSAllowsArbitraryLoadsForMedia&lt;span class=&quot;nt&quot;&gt;&amp;lt;/key&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;true/&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;key&amp;gt;&lt;/span&gt;NSAllowsArbitraryLoadsInWebContent&lt;span class=&quot;nt&quot;&gt;&amp;lt;/key&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;true/&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/dict&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name>ry4nkim</name></author><category term="blog" /><category term="iOS" /><summary type="html">Summary:</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/profile-round.png" /></entry><entry><title type="html">[iOS / Swift4] Alamofire 사용하기</title><link href="http://localhost:4000/How-to-use-Alamofire/" rel="alternate" type="text/html" title="[iOS / Swift4] Alamofire 사용하기" /><published>2018-04-06T13:40:00+09:00</published><updated>2018-04-06T13:40:00+09:00</updated><id>http://localhost:4000/How-to-use-Alamofire</id><content type="html" xml:base="http://localhost:4000/How-to-use-Alamofire/">&lt;h2 id=&quot;summary&quot;&gt;Summary:&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>ry4nkim</name></author><category term="project" /><category term="Android" /><category term="Java" /><category term="MVP" /><category term="Jsoup" /><summary type="html">Android : Movie Rank</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/profile-round.png" /></entry><entry><title type="html">[iOS / Swift4] Alamofire 사용하기</title><link href="http://localhost:4000/How-to-use-Alamofire/" rel="alternate" type="text/html" title="[iOS / Swift4] Alamofire 사용하기" /><published>2018-04-06T00:00:00+09:00</published><updated>2018-04-06T00:00:00+09:00</updated><id>http://localhost:4000/How-to-use-Alamofire</id><content type="html" xml:base="http://localhost:4000/How-to-use-Alamofire/">&lt;h2 id=&quot;summary&quot;&gt;Summary:&lt;/h2&gt;
 
 &lt;p&gt;Alamofire 란?&lt;/p&gt;
 &lt;ul&gt;
@@ -380,7 +2326,41 @@ end&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
                 &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;JSON&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
                     &lt;span class=&quot;nf&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;JSON&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
                 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name>ry4nkim</name></author><category term="blog" /><category term="iOS" /><category term="Swift" /><summary type="html">Summary:</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/profile-round.png" /></entry><entry><title type="html">[iOS / Swift4] Auto Layout 사용하지 않고 각각의 iPhone 해상도 맞추기</title><link href="http://localhost:4000/Adjust-each-iPhone-resolution-without-using-iOS-Auto-Layout/" rel="alternate" type="text/html" title="[iOS / Swift4] Auto Layout 사용하지 않고 각각의 iPhone 해상도 맞추기" /><published>2018-04-06T10:30:00+09:00</published><updated>2018-04-06T10:30:00+09:00</updated><id>http://localhost:4000/Adjust-each-iPhone-resolution-without-using-iOS-Auto-Layout</id><content type="html" xml:base="http://localhost:4000/Adjust-each-iPhone-resolution-without-using-iOS-Auto-Layout/">&lt;h2 id=&quot;summary&quot;&gt;Summary:&lt;/h2&gt;
+            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name>ry4nkim</name></author><category term="blog" /><category term="iOS" /><category term="Swift" /><summary type="html">Summary:</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/profile-round.png" /></entry><entry><title type="html">[iOS] App Transport Security 해제 방법</title><link href="http://localhost:4000/How-to-Disable-App-Transport-Security/" rel="alternate" type="text/html" title="[iOS] App Transport Security 해제 방법" /><published>2018-04-06T00:00:00+09:00</published><updated>2018-04-06T00:00:00+09:00</updated><id>http://localhost:4000/How-to-Disable-App-Transport-Security</id><content type="html" xml:base="http://localhost:4000/How-to-Disable-App-Transport-Security/">&lt;h2 id=&quot;summary&quot;&gt;Summary:&lt;/h2&gt;
+
+&lt;p&gt;App Transport Security (ATS) 란?&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;App Transport Security 는 iOS 9 부터 도입된 네트워크 보안 기능입니다.&lt;/li&gt;
+  &lt;li&gt;이 기능은 HTTPS 연결을 제외한 보안에 취약한 네트워크 프로토콜의 연결을 차단시킵니다.&lt;/li&gt;
+  &lt;li&gt;이로인해 기존에 많이 쓰이던 HTTP 프로토콜의 연결을 하지 못하게 되었습니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;App Transport Security HTTP 연결 오류 메시지&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;App Transport Security has blocked a cleartext HTTP resource(http://) load since it is insecure. Temporary exceptions can be configured via your app’s Info.plist file.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;App Transport Security가 안전하지 않기 때문에 cleartext HTTP(http://) 리소스 로드를 차단했습니다. 임시 예외는 앱의 Info.plist 파일을 통해 구성할 수 있습니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+&lt;h2 id=&quot;how-to-disable-app-transport-security&quot;&gt;How to Disable App Transport Security&lt;/h2&gt;
+
+&lt;p&gt;특정 iOS 앱 개발을 위해 HTTP 프로토콜의 연결이 꼭 필요로 하다면 Info.plist 파일에 아래 코드를 추가하여 App Transport Security를 해제할 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;Info.plist&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;key&amp;gt;&lt;/span&gt;NSAppTransportSecurity&lt;span class=&quot;nt&quot;&gt;&amp;lt;/key&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;dict&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;key&amp;gt;&lt;/span&gt;NSAllowsArbitraryLoads&lt;span class=&quot;nt&quot;&gt;&amp;lt;/key&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;true/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;key&amp;gt;&lt;/span&gt;NSAllowsArbitraryLoadsForMedia&lt;span class=&quot;nt&quot;&gt;&amp;lt;/key&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;true/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;key&amp;gt;&lt;/span&gt;NSAllowsArbitraryLoadsInWebContent&lt;span class=&quot;nt&quot;&gt;&amp;lt;/key&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;true/&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/dict&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name>ry4nkim</name></author><category term="blog" /><category term="iOS" /><summary type="html">Summary:</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/profile-round.png" /></entry><entry><title type="html">[iOS / Swift4] Auto Layout 사용하지 않고 각각의 iPhone 해상도 맞추기</title><link href="http://localhost:4000/Adjust-each-iPhone-resolution-without-using-iOS-Auto-Layout/" rel="alternate" type="text/html" title="[iOS / Swift4] Auto Layout 사용하지 않고 각각의 iPhone 해상도 맞추기" /><published>2018-04-06T00:00:00+09:00</published><updated>2018-04-06T00:00:00+09:00</updated><id>http://localhost:4000/Adjust-each-iPhone-resolution-without-using-iOS-Auto-Layout</id><content type="html" xml:base="http://localhost:4000/Adjust-each-iPhone-resolution-without-using-iOS-Auto-Layout/">&lt;h2 id=&quot;summary&quot;&gt;Summary:&lt;/h2&gt;
 
 &lt;p&gt;처음 iOS를 공부하다 보면 하나의 Storyboard만으로 여러 iPhone 기기들의 해상도를 대응하는 Auto Layout 이란 기능에 접근하기 어려울 것 입니다.&lt;/p&gt;
 

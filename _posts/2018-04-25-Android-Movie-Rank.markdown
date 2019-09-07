@@ -1,20 +1,20 @@
 ---
 title: "[Android] Movie Rank"
 layout: post
-date: 2018-04-25 18:00
+date: '2018-04-25 00:00:00'
 tag:
 - Android
 - Java
 - MVP
 - Jsoup
-image: /assets/images/profile-round.png
+image: "/assets/images/profile-round.png"
 headerImage: true
 projects: true
-hidden: true # don't count this post in blog pagination
-description: "This repository contains a Android app implemented with the MVP architecture that uses Jsoup to parse HTML."
+hidden: true
+description: This repository contains a Android app implemented with the MVP architecture
+  that uses Jsoup to parse HTML.
 category: project
 author: ry4nkim
-externalLink: false
 ---
 
 # Android : Movie Rank
