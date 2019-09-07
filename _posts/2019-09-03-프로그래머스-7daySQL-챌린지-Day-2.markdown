@@ -7,7 +7,7 @@ headerImage: true
 tag:
 - MySQL
 - Programmers.kr
-- 7daySQL 챌린지
+- 7daySQL
 category: blog
 author: ry4nkim
 description: 7daySQL 챌린지 Day 2 - 아픈 동물 찾기, 어린 동물 찾기

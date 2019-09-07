@@ -7,7 +7,7 @@ headerImage: true
 tag:
 - MySQL
 - Programmers.kr
-- 7daySQL 챌린지
+- 7daySQL
 category: blog
 author: ry4nkim
 description: 7daySQL 챌린지 Day 3 - 최솟값 구하기, 이름이 없는 동물의 아이디

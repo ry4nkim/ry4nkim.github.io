@@ -7,7 +7,7 @@ headerImage: true
 tag:
 - MySQL
 - Programmers.kr
-- 7daySQL 챌린지
+- 7daySQL
 category: blog
 author: ry4nkim
 description: 7daySQL 챌린지 Day 4 - 고양이와 개는 몇 마리 있을까, 동명 동물 수 찾기
