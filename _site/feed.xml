@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-09-07T17:35:26+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">ry4nkim</title><subtitle>ry4nkim's blog</subtitle><entry><title type="html">[프로그래머스] 7daySQL 챌린지 Day 1</title><link href="http://localhost:4000/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-7daySQL-%EC%B1%8C%EB%A6%B0%EC%A7%80-Day-1/" rel="alternate" type="text/html" title="[프로그래머스] 7daySQL 챌린지 Day 1" /><published>2019-09-07T00:00:00+09:00</published><updated>2019-09-07T00:00:00+09:00</updated><id>http://localhost:4000/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-7daySQL-%EC%B1%8C%EB%A6%B0%EC%A7%80-Day-1</id><content type="html" xml:base="http://localhost:4000/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-7daySQL-%EC%B1%8C%EB%A6%B0%EC%A7%80-Day-1/">&lt;h2 id=&quot;summary&quot;&gt;Summary:&lt;/h2&gt;
+
+&lt;p&gt;[프로그래머스] 7daySQL 챌린지 Day 1&lt;/p&gt;
+
+&lt;h3 id=&quot;index&quot;&gt;Index&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#모든-레코드-조회하기&quot;&gt;모든 레코드 조회하기&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#역순-정렬하기&quot;&gt;역순 정렬하기&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;h2 id=&quot;모든-레코드-조회하기&quot;&gt;모든 레코드 조회하기&lt;/h2&gt;
+
+&lt;h3 id=&quot;문제&quot;&gt;문제&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_INS&lt;/code&gt; 테이블은 동물 보호소에 들어온 동물의 정보를 담은 테이블입니다. &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_INS&lt;/code&gt; 테이블 구조는 다음과 같으며, &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_ID&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_TYPE&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;DATETIME&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;INTAKE_CONDITION&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;NAME&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;SEX_UPON_INTAKE&lt;/code&gt;는 각각 동물의 아이디, 생물 종, 보호 시작일, 보호 시작 시 상태, 이름, 성별 및 중성화 여부를 나타냅니다.&lt;/p&gt;
+
+&lt;div class=&quot;table-wrapper&quot;&gt;
+
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;NAME&lt;/th&gt;
+        &lt;th&gt;TYPE&lt;/th&gt;
+        &lt;th&gt;NULLABLE&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;ANIMAL_ID&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;ANIMAL_TYPE&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;DATETIME&lt;/td&gt;
+        &lt;td&gt;DATETIME&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;INTAKE_CONDITION&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;NAME&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;TRUE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;SEX_UPON_INTAKE&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;동물 보호소에 들어온 모든 동물의 정보를 ANIMAL_ID순으로 조회하는 SQL문을 작성해주세요. SQL을 실행하면 다음과 같이 출력되어야 합니다.&lt;/p&gt;
+
+&lt;div class=&quot;table-wrapper&quot;&gt;
+
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;ANIMAL_ID&lt;/th&gt;
+        &lt;th&gt;ANIMAL_TYPE&lt;/th&gt;
+        &lt;th&gt;DATETIME&lt;/th&gt;
+        &lt;th&gt;INTAKE_CONDITION&lt;/th&gt;
+        &lt;th&gt;NAME&lt;/th&gt;
+        &lt;th&gt;SEX_UPON_INTAKE&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A349996&lt;/td&gt;
+        &lt;td&gt;Cat&lt;/td&gt;
+        &lt;td&gt;2018-01-22 14:32:00&lt;/td&gt;
+        &lt;td&gt;Normal&lt;/td&gt;
+        &lt;td&gt;Sugar&lt;/td&gt;
+        &lt;td&gt;Neutered Male&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A350276&lt;/td&gt;
+        &lt;td&gt;Cat&lt;/td&gt;
+        &lt;td&gt;2017-08-13 13:50:00&lt;/td&gt;
+        &lt;td&gt;Normal&lt;/td&gt;
+        &lt;td&gt;Jewel&lt;/td&gt;
+        &lt;td&gt;Spayed Female&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A350375&lt;/td&gt;
+        &lt;td&gt;Cat&lt;/td&gt;
+        &lt;td&gt;2017-03-06 15:01:00&lt;/td&gt;
+        &lt;td&gt;Normal&lt;/td&gt;
+        &lt;td&gt;Meo&lt;/td&gt;
+        &lt;td&gt;Neutered Male&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;A352555&lt;/td&gt;
+        &lt;td&gt;Dog&lt;/td&gt;
+        &lt;td&gt;2014-08-08 04:20:00&lt;/td&gt;
+        &lt;td&gt;Normal&lt;/td&gt;
+        &lt;td&gt;Harley&lt;/td&gt;
+        &lt;td&gt;Spayed Female&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;..이하 생략&lt;/p&gt;
+
+&lt;p&gt;본 문제는 Kaggle의 Austin Animal Center Shelter Intakes and Outcomes에서 제공하는 데이터를 사용하였으며 ODbL의 적용을 받습니다.&lt;/p&gt;
+
+&lt;p&gt;출처 : &lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/59034&quot; target=&quot;_blank&quot;&gt;프로그래머스 # 코딩테스트 연습 - 모든 레코드 조회하기&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;풀이&quot;&gt;풀이&lt;/h3&gt;
+
+&lt;noscript&gt;&lt;pre&gt;SELECT * # 모든 컬럼 조회
+FROM ANIMAL_INS # ANIMAL_INS 테이블 참조
+ORDER BY ANIMAL_ID # ANIMAL_ID 순으로 정렬&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/ry4nkim/80ea2e1a175b375f6e4b3a9085385592.js?file=solution_1_1.sql&quot;&gt; &lt;/script&gt;
+
+&lt;hr /&gt;
+&lt;h2 id=&quot;역순-정렬하기&quot;&gt;역순 정렬하기&lt;/h2&gt;
+
+&lt;h3 id=&quot;문제-1&quot;&gt;문제&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_INS&lt;/code&gt; 테이블은 동물 보호소에 들어온 동물의 정보를 담은 테이블입니다. &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_INS&lt;/code&gt; 테이블 구조는 다음과 같으며, &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_ID&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;ANIMAL_TYPE&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;DATETIME&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;INTAKE_CONDITION&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;NAME&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;SEX_UPON_INTAKE&lt;/code&gt;는 각각 동물의 아이디, 생물 종, 보호 시작일, 보호 시작 시 상태, 이름, 성별 및 중성화 여부를 나타냅니다.&lt;/p&gt;
+
+&lt;div class=&quot;table-wrapper&quot;&gt;
+
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;NAME&lt;/th&gt;
+        &lt;th&gt;TYPE&lt;/th&gt;
+        &lt;th&gt;NULLABLE&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;ANIMAL_ID&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;ANIMAL_TYPE&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;DATETIME&lt;/td&gt;
+        &lt;td&gt;DATETIME&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;INTAKE_CONDITION&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;NAME&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;TRUE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;SEX_UPON_INTAKE&lt;/td&gt;
+        &lt;td&gt;VARCHAR(N)&lt;/td&gt;
+        &lt;td&gt;FALSE&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;동물 보호소에 들어온 모든 동물의 이름과 보호 시작일을 조회하는 SQL문을 작성해주세요. 이때 결과는 ANIMAL_ID 역순으로 보여주세요. SQL을 실행하면 다음과 같이 출력되어야 합니다.&lt;/p&gt;
+
+&lt;div class=&quot;table-wrapper&quot;&gt;
+
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;NAME&lt;/th&gt;
+        &lt;th&gt;DATETIME&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Rocky&lt;/td&gt;
+        &lt;td&gt;2016-06-07 09:17:00&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Shelly&lt;/td&gt;
+        &lt;td&gt;2015-01-29 15:01:00&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Benji&lt;/td&gt;
+        &lt;td&gt;2016-04-19 13:28:00&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Jackie&lt;/td&gt;
+        &lt;td&gt;2016-01-03 16:25:00&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;*Sam&lt;/td&gt;
+        &lt;td&gt;2016-03-13 11:17:00&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;..이하 생략&lt;/p&gt;
+
+&lt;p&gt;본 문제는 Kaggle의 Austin Animal Center Shelter Intakes and Outcomes에서 제공하는 데이터를 사용하였으며 ODbL의 적용을 받습니다.&lt;/p&gt;
+
+&lt;p&gt;출처 : &lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/59035&quot; target=&quot;_blank&quot;&gt;프로그래머스 # 코딩테스트 연습 - 역순 정렬하기&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;풀이-1&quot;&gt;풀이&lt;/h3&gt;
+
+&lt;noscript&gt;&lt;pre&gt;SELECT NAME,
+       DATETIME # NAME, DATETIME 컬럼 조회
+FROM ANIMAL_INS # ANIMAL_INS 테이블 참조
+ORDER BY ANIMAL_ID DESC # ANIMAL_ID 역순으로 정렬&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/ry4nkim/80ea2e1a175b375f6e4b3a9085385592.js?file=solution_1_2.sql&quot;&gt; &lt;/script&gt;</content><author><name>ry4nkim</name></author><category term="blog" /><category term="MySQL" /><category term="Programmers.kr" /><summary type="html">Summary:</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/profile-round.png" /></entry><entry><title type="html">[Android] Movie Rank</title><link href="http://localhost:4000/Android-Movie-Rank/" rel="alternate" type="text/html" title="[Android] Movie Rank" /><published>2018-04-25T18:00:00+09:00</published><updated>2018-04-25T18:00:00+09:00</updated><id>http://localhost:4000/Android-Movie-Rank</id><content type="html" xml:base="http://localhost:4000/Android-Movie-Rank/">&lt;h1 id=&quot;android--movie-rank&quot;&gt;Android : Movie Rank&lt;/h1&gt;
+
+&lt;p&gt;Github: https://github.com/ry4nkim/android-movie-rank&lt;/p&gt;
+
+&lt;p&gt;This repository contains a Android app implemented with the MVP architecture that uses Jsoup to parse HTML.
+&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img src=&quot;https://blog.ry4nkim.kr/assets/images/android-movie-rank/movie-rank.png&quot; width=&quot;200&quot; /&gt;
+  &lt;img src=&quot;https://blog.ry4nkim.kr/assets/images/android-movie-rank/movie-wishlist.png&quot; width=&quot;200&quot; /&gt;
+  &lt;img src=&quot;https://blog.ry4nkim.kr/assets/images/android-movie-rank/movie-detail.png&quot; width=&quot;200&quot; /&gt;
+  &lt;img src=&quot;https://blog.ry4nkim.kr/assets/images/android-movie-rank/movie-wish.png&quot; width=&quot;200&quot; /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;the-app-has-following-packages&quot;&gt;The app has following packages:&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Model&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;View&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Presenter&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Adapter&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Utils&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;library-reference-resources&quot;&gt;Library reference resources:&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;Jsoup: https://github.com/jhy/jsoup&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;concept-reference-resources&quot;&gt;Concept reference resources:&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jsoup.org/cookbook/extracting-data/selector-syntax&quot;&gt;Use selector-syntax to find elements&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jsoup.org/apidocs/org/jsoup/select/Selector.html&quot;&gt;Selector (jsoup Java HTML Parser 1.11.3 API)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://try.jsoup.org&quot;&gt;Try jsoup online: Java HTML parser and CSS debugger&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;html-parsing-website--megabox&quot;&gt;HTML parsing website:  &lt;a href=&quot;http://www.megabox.co.kr/&quot;&gt;Megabox&lt;/a&gt;&lt;/h3&gt;
+
+&lt;h3 id=&quot;license&quot;&gt;License&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;   Copyright (C) 2018 ry4nkim
+
+   Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>ry4nkim</name></author><category term="project" /><category term="Android" /><category term="Java" /><category term="MVP" /><category term="Jsoup" /><summary type="html">Android : Movie Rank</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/profile-round.png" /></entry><entry><title type="html">[iOS] App Transport Security 해제 방법</title><link href="http://localhost:4000/How-to-Disable-App-Transport-Security/" rel="alternate" type="text/html" title="[iOS] App Transport Security 해제 방법" /><published>2018-04-06T16:10:00+09:00</published><updated>2018-04-06T16:10:00+09:00</updated><id>http://localhost:4000/How-to-Disable-App-Transport-Security</id><content type="html" xml:base="http://localhost:4000/How-to-Disable-App-Transport-Security/">&lt;h2 id=&quot;summary&quot;&gt;Summary:&lt;/h2&gt;
+
+&lt;p&gt;App Transport Security (ATS) 란?&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;App Transport Security 는 iOS 9 부터 도입된 네트워크 보안 기능입니다.&lt;/li&gt;
+  &lt;li&gt;이 기능은 HTTPS 연결을 제외한 보안에 취약한 네트워크 프로토콜의 연결을 차단시킵니다.&lt;/li&gt;
+  &lt;li&gt;이로인해 기존에 많이 쓰이던 HTTP 프로토콜의 연결을 하지 못하게 되었습니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;App Transport Security HTTP 연결 오류 메시지&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;App Transport Security has blocked a cleartext HTTP resource(http://) load since it is insecure. Temporary exceptions can be configured via your app’s Info.plist file.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;App Transport Security가 안전하지 않기 때문에 cleartext HTTP(http://) 리소스 로드를 차단했습니다. 임시 예외는 앱의 Info.plist 파일을 통해 구성할 수 있습니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+&lt;h2 id=&quot;how-to-disable-app-transport-security&quot;&gt;How to Disable App Transport Security&lt;/h2&gt;
+
+&lt;p&gt;특정 iOS 앱 개발을 위해 HTTP 프로토콜의 연결이 꼭 필요로 하다면 Info.plist 파일에 아래 코드를 추가하여 App Transport Security를 해제할 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;Info.plist&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;key&amp;gt;&lt;/span&gt;NSAppTransportSecurity&lt;span class=&quot;nt&quot;&gt;&amp;lt;/key&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;dict&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;key&amp;gt;&lt;/span&gt;NSAllowsArbitraryLoads&lt;span class=&quot;nt&quot;&gt;&amp;lt;/key&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;true/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;key&amp;gt;&lt;/span&gt;NSAllowsArbitraryLoadsForMedia&lt;span class=&quot;nt&quot;&gt;&amp;lt;/key&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;true/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;key&amp;gt;&lt;/span&gt;NSAllowsArbitraryLoadsInWebContent&lt;span class=&quot;nt&quot;&gt;&amp;lt;/key&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;true/&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/dict&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name>ry4nkim</name></author><category term="blog" /><category term="iOS" /><summary type="html">Summary:</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/profile-round.png" /></entry><entry><title type="html">[iOS / Swift4] Alamofire 사용하기</title><link href="http://localhost:4000/How-to-use-Alamofire/" rel="alternate" type="text/html" title="[iOS / Swift4] Alamofire 사용하기" /><published>2018-04-06T13:40:00+09:00</published><updated>2018-04-06T13:40:00+09:00</updated><id>http://localhost:4000/How-to-use-Alamofire</id><content type="html" xml:base="http://localhost:4000/How-to-use-Alamofire/">&lt;h2 id=&quot;summary&quot;&gt;Summary:&lt;/h2&gt;
+
+&lt;p&gt;Alamofire 란?&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Alamofire/Alamofire&quot;&gt;Alamofire&lt;/a&gt;는 iOS와 OS X에서 사용하기 위한 Swift 기반의 HTTP 네트워킹 라이브러리 입니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;index&quot;&gt;Index&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#preparations&quot;&gt;Preparations&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#get-started&quot;&gt;Get Started&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#alamofire-json-request-example&quot;&gt;Alamofire JSON Request Example&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;h2 id=&quot;preparations&quot;&gt;Preparations&lt;/h2&gt;
+
+&lt;p&gt;Alamofire를 사용하기 위해서는 CocoaPods가 필수적으로 설치되어 있어야 합니다.&lt;/p&gt;
+
+&lt;p&gt;CocoaPods Install&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-raw&quot; data-lang=&quot;raw&quot;&gt;$ sudo gem install cocoapods&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;get-started&quot;&gt;Get Started&lt;/h2&gt;
+
+&lt;p&gt;1. 터미널을 실행하고 cd 명령어로 Alamofire를 사용할 Xcode 프로젝트 경로로 이동합니다.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-raw&quot; data-lang=&quot;raw&quot;&gt;$ cd &amp;lt;Your Project Path&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;2. 이동한 후, 아래 명령어를 입력하면 프로젝트 경로 내에 Podfile이 생성됩니다.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-raw&quot; data-lang=&quot;raw&quot;&gt;$ pod init&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;3. 생성된 Podfile 을 Text Editor 로 열어 아래와 같이 수정해줍니다.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-raw&quot; data-lang=&quot;raw&quot;&gt;source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '10.0'
+use_frameworks!
+
+target '&amp;lt;Your Target Name&amp;gt;' do
+    pod 'Alamofire', '~&amp;gt; 4.7'
+end&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;4. Podfile을 수정 및 저장한 뒤, 아래 명령을 입력하여 Alamofire 라이브러리를 설치합니다.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-raw&quot; data-lang=&quot;raw&quot;&gt;$ pod install&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;5. 설치 후 프로젝트 내에 새로 생성된 &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;Your Project Name&amp;gt;.xcworkspace&lt;/code&gt; 파일을 Xcode로 실행합니다.&lt;/p&gt;
+
+&lt;p&gt;6. ViewController.swift 파일에 맨 위줄 라인에 &lt;code class=&quot;highlighter-rouge&quot;&gt;import Alamofire&lt;/code&gt; 을 추가하여 정상적으로 빌드되는지 확인합니다.&lt;/p&gt;
+
+&lt;h2 id=&quot;alamofire-json-request-example&quot;&gt;Alamofire JSON Request Example&lt;/h2&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-swift&quot; data-lang=&quot;swift&quot;&gt;&lt;span class=&quot;kt&quot;&gt;Alamofire&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+            &lt;span class=&quot;s&quot;&gt;&quot;http://&amp;lt;Your URL&amp;gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;nv&quot;&gt;method&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;nv&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[:],&lt;/span&gt;
+            &lt;span class=&quot;nv&quot;&gt;encoding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;URLEncoding&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;default&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;nv&quot;&gt;headers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Content-Type&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;application/json&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Accept&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;application/json&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;validate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;statusCode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&amp;lt;&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;300&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;responseJSON&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;response&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;JSON&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                    &lt;span class=&quot;nf&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;JSON&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+                &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name>ry4nkim</name></author><category term="blog" /><category term="iOS" /><category term="Swift" /><summary type="html">Summary:</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/profile-round.png" /></entry><entry><title type="html">[iOS / Swift4] Auto Layout 사용하지 않고 각각의 iPhone 해상도 맞추기</title><link href="http://localhost:4000/Adjust-each-iPhone-resolution-without-using-iOS-Auto-Layout/" rel="alternate" type="text/html" title="[iOS / Swift4] Auto Layout 사용하지 않고 각각의 iPhone 해상도 맞추기" /><published>2018-04-06T10:30:00+09:00</published><updated>2018-04-06T10:30:00+09:00</updated><id>http://localhost:4000/Adjust-each-iPhone-resolution-without-using-iOS-Auto-Layout</id><content type="html" xml:base="http://localhost:4000/Adjust-each-iPhone-resolution-without-using-iOS-Auto-Layout/">&lt;h2 id=&quot;summary&quot;&gt;Summary:&lt;/h2&gt;
+
+&lt;p&gt;처음 iOS를 공부하다 보면 하나의 Storyboard만으로 여러 iPhone 기기들의 해상도를 대응하는 Auto Layout 이란 기능에 접근하기 어려울 것 입니다.&lt;/p&gt;
+
+&lt;p&gt;왜냐하면 Auto Layout 기능을 사용하기 위해서는 Object 간의 제약(Constraints) 조건을 수학적 방정식으로 설계해야 하기 때문일 것 입니다.&lt;/p&gt;
+
+&lt;p&gt;이를 어려워하는 초보 iOS 개발자들을 위해 Auto Layout 기능을 사용하지 않고 각각의 iPhone 해상도 맞추는 방법을 알려드리고자 합니다.&lt;/p&gt;
+
+&lt;h3 id=&quot;index&quot;&gt;Index&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#preparations&quot;&gt;Preparations&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#code&quot;&gt;Code&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;h2 id=&quot;preparations&quot;&gt;Preparations&lt;/h2&gt;
+
+&lt;p&gt;Storyboard를 각각의 iPhone 크기(4S, SE, 8, 8 Plus, X 등)에 맞게 생성해줍니다.&lt;/p&gt;
+
+&lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
+
+&lt;noscript&gt;&lt;pre&gt;
+//
+//  AppDelegate.swift
+//
+//  Created by RY4NKIM on 2018. 04. 06..
+//  Copyright © 2018년 RY4NKIM. All rights reserved.
+//
+
+import UIKit
+
+@UIApplicationMain
+class AppDelegate: UIResponder, UIApplicationDelegate {
+
+    var window: UIWindow?
+
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -&amp;gt; Bool {
+        // Override point for customization after application launch.
+        
+        let deviceScreenSize: CGSize = UIScreen.main.bounds.size
+        
+        if deviceScreenSize.height == 480 {
+            let StoryboardiPhone4S = UIStoryboard(name: &amp;quot;StoryboardiPhone4S&amp;quot;, bundle: nil)
+            let viewController: UIViewController? = StoryboardiPhone4S.instantiateInitialViewController()
+            window = UIWindow(frame: UIScreen.main.bounds)
+            window?.rootViewController = viewController
+            window?.makeKeyAndVisible()
+        }
+        else if deviceScreenSize.height == 568 {
+            let StoryboardiPhoneSE = UIStoryboard(name: &amp;quot;StoryboardiPhoneSE&amp;quot;, bundle: nil)
+            let viewController: UIViewController? = StoryboardiPhoneSE.instantiateInitialViewController()
+            window = UIWindow(frame: UIScreen.main.bounds)
+            window?.rootViewController = viewController
+            window?.makeKeyAndVisible()
+        }
+        else if deviceScreenSize.height == 667 {
+            let StoryboardiPhone8 = UIStoryboard(name: &amp;quot;StoryboardiPhone8&amp;quot;, bundle: nil)
+            let viewController: UIViewController? = StoryboardiPhone8.instantiateInitialViewController()
+            window = UIWindow(frame: UIScreen.main.bounds)
+            window?.rootViewController = viewController
+            window?.makeKeyAndVisible()
+        }
+        else if deviceScreenSize.height == 736 {
+            let Main = UIStoryboard(name: &amp;quot;StoryboardiPhone8Plus&amp;quot;, bundle: nil)
+            let viewController: UIViewController? = Main.instantiateInitialViewController()
+            window = UIWindow(frame: UIScreen.main.bounds)
+            window?.rootViewController = viewController
+            window?.makeKeyAndVisible()
+        }
+        else {
+            let StoryboardiPhoneX = UIStoryboard(name: &amp;quot;StoryboardiPhoneX&amp;quot;, bundle: nil)
+            let viewController: UIViewController? = StoryboardiPhoneX.instantiateInitialViewController()
+            window = UIWindow(frame: UIScreen.main.bounds)
+            window?.rootViewController = viewController
+            window?.makeKeyAndVisible()
+        }
+            
+        return true
+    }
+
+    func applicationWillResignActive(_ application: UIApplication) {
+        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
+        // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+    }
+
+    func applicationDidEnterBackground(_ application: UIApplication) {
+        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
+        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    }
+
+    func applicationWillEnterForeground(_ application: UIApplication) {
+        // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+    }
+
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    }
+
+    func applicationWillTerminate(_ application: UIApplication) {
+        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+
+}&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/ry4nkim/fbec12a30fdc8f664dcbd932e0011cd7.js&quot;&gt; &lt;/script&gt;</content><author><name>ry4nkim</name></author><category term="blog" /><category term="iOS" /><category term="Swift" /><summary type="html">Summary:</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/profile-round.png" /></entry></feed>
