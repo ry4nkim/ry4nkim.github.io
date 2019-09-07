@@ -1,7 +1,7 @@
 ---
 title: "[iOS] App Transport Security 해제 방법"
 layout: post
-date: '2018-04-06 00:00:00'
+date: '2018-04-08 00:00:00'
 image: "/assets/images/profile-round.png"
 headerImage: true
 tag:
