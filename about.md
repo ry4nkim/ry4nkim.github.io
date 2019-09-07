@@ -23,6 +23,7 @@ layout: page
 
 <h2>Activity</h2>
 <ul>
+	<li>순천향대학교 창업동아리 순마켓 안드로이드 앱 개발자 (2019.04 ~ ing)</li>
 	<li>순천향대학교 컴퓨터공학과 Ubiquitous Computing Laboratory 학생 (2017 ~ ing)</li>
 	<li>순천향대학교 컴퓨터공학과 안드로이드 앱 개발 동아리 DevApp 회장 (2016 ~ 2017)</li>
 	<li>한국학생IT연합(KSIA) 운영사무국 홍보팀 팀장 (2014 ~ 2016)</li>
@@ -39,10 +40,10 @@ layout: page
 <h2>Skills</h2>
 <ul class="skill-list">
 	<li>C / C++</li>
-	<li>Java (with Android)</li>
-	<li>Swift (with iOS)</li>
-	<li>Python</li>
-	<li>PHP</li>
+	<li>Java (Android, Spring)</li>
+	<li>Swift (iOS)</li>
+	<li>Python (Flask)</li>
+	<li>PHP (CodeIgniter)</li>
 	<li>Database</li>
 	<li>MySQL</li>
 </ul>
