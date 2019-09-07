@@ -24,7 +24,7 @@ description: 7daySQL 챌린지 Day 7 - 루시와 엘라 찾기, 이름이 el로 
 ---
 ## 루시와 엘라 찾기
 
-출처 : [프로그래머스 # 코딩테스트 연습 - 오랜 기간 보호한 동물(1)](https://programmers.co.kr/learn/courses/30/lessons/59044){:target="_blank"}
+출처 : [프로그래머스 # 코딩테스트 연습 - 루시와 엘라 찾기](https://programmers.co.kr/learn/courses/30/lessons/59046){:target="_blank"}
 
 ### 문제
 
@@ -80,7 +80,7 @@ SQL문을 실행하면 다음과 같이 나와야 합니다.
 ---
 ## 이름이 el로 끝나는 동물 찾기
 
-출처 : [프로그래머스 # 코딩테스트 연습 - 보호소에서 중성화한 동물](https://programmers.co.kr/learn/courses/30/lessons/59045){:target="_blank"}
+출처 : [프로그래머스 # 코딩테스트 연습 - 이름이 el로 끝나는 동물 찾기](https://programmers.co.kr/learn/courses/30/lessons/59047){:target="_blank"}
 
 ### 문제
 
