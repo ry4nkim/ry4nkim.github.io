@@ -6,50 +6,79 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
-  <loc>http://blog.ry4nkim.kr/</loc>
-  <lastmod>2018-04-26T01:40:03+00:00</lastmod>
+  <loc>https://blog.ry4nkim.kr/</loc>
+  <lastmod>2019-09-07T11:37:46+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>http://blog.ry4nkim.kr/about/</loc>
-  <lastmod>2018-04-26T01:40:03+00:00</lastmod>
+  <loc>https://blog.ry4nkim.kr/post/</loc>
+  <lastmod>2019-09-07T11:37:46+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://blog.ry4nkim.kr/post/</loc>
-  <lastmod>2018-04-26T01:40:03+00:00</lastmod>
+  <loc>https://blog.ry4nkim.kr/projects/</loc>
+  <lastmod>2019-09-07T11:37:46+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://blog.ry4nkim.kr/projects/</loc>
-  <lastmod>2018-04-26T01:40:03+00:00</lastmod>
+  <loc>https://blog.ry4nkim.kr/about/</loc>
+  <lastmod>2019-09-07T11:37:46+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://blog.ry4nkim.kr/How-to-Disable-App-Transport-Security/</loc>
-  <lastmod>2018-04-26T01:40:03+00:00</lastmod>
+  <loc>https://blog.ry4nkim.kr/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-7daySQL-%EC%B1%8C%EB%A6%B0%EC%A7%80-Day-6/</loc>
+  <lastmod>2019-09-07T11:37:46+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://blog.ry4nkim.kr/How-to-use-Alamofire/</loc>
-  <lastmod>2018-04-26T01:40:03+00:00</lastmod>
+  <loc>https://blog.ry4nkim.kr/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-7daySQL-%EC%B1%8C%EB%A6%B0%EC%A7%80-Day-5/</loc>
+  <lastmod>2019-09-07T11:37:46+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://blog.ry4nkim.kr/Adjust-each-iPhone-resolution-without-using-iOS-Auto-Layout/</loc>
-  <lastmod>2018-04-26T01:40:03+00:00</lastmod>
+  <loc>https://blog.ry4nkim.kr/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-7daySQL-%EC%B1%8C%EB%A6%B0%EC%A7%80-Day-4/</loc>
+  <lastmod>2019-09-07T11:37:46+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://blog.ry4nkim.kr/Android-Movie-Rank/</loc>
-  <lastmod>2018-04-26T01:40:03+00:00</lastmod>
+  <loc>https://blog.ry4nkim.kr/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-7daySQL-%EC%B1%8C%EB%A6%B0%EC%A7%80-Day-3/</loc>
+  <lastmod>2019-09-07T11:37:46+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://blog.ry4nkim.kr/tags/</loc>
-  <lastmod>2018-04-26T01:40:03+00:00</lastmod>
+  <loc>https://blog.ry4nkim.kr/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-7daySQL-%EC%B1%8C%EB%A6%B0%EC%A7%80-Day-2/</loc>
+  <lastmod>2019-09-07T11:37:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://blog.ry4nkim.kr/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-7daySQL-%EC%B1%8C%EB%A6%B0%EC%A7%80-Day-1/</loc>
+  <lastmod>2019-09-07T11:37:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://blog.ry4nkim.kr/How-to-use-Alamofire/</loc>
+  <lastmod>2019-09-07T11:37:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://blog.ry4nkim.kr/How-to-Disable-App-Transport-Security/</loc>
+  <lastmod>2019-09-07T11:37:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://blog.ry4nkim.kr/Adjust-each-iPhone-resolution-without-using-iOS-Auto-Layout/</loc>
+  <lastmod>2019-09-07T11:37:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://blog.ry4nkim.kr/tags/</loc>
+  <lastmod>2019-09-07T11:37:46+00:00</lastmod>
   <priority>0.51</priority>
 </url>
-
+<url>
+  <loc>https://blog.ry4nkim.kr/Android-Movie-Rank/</loc>
+  <lastmod>2019-09-07T11:37:46+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
 
 </urlset>
