@@ -14,9 +14,9 @@ picture: assets/images/profile-round.png
 # and specify source (external or local).
 resume: false
 resume-external: false
-resume-url: http://ry4nkim.github.io
+resume-url: https://ry4nkim.github.io
 
-url: http://blog.ry4nkim.kr
+url: https://blog.ry4nkim.kr
 # your url: http://USERNAME.github.io
 
 permalink: /:title/
