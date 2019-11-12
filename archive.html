@@ -1,0 +1,23 @@
+---
+layout: page
+title: Archive
+---
+<section class="list">
+   {% for post in site.posts %}
+    {% capture month %}{{ post.date | date: '%Y' }}{% endcapture %}
+    {% capture nmonth %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+        {% if month != nmonth %}
+            {% if forloop.index != 1 %}</ul>{% endif %}
+            <h2>{{ post.date | date: '%Y' }}</h2><ul>
+        {% endif %}
+
+    <div class="item">
+      <div>
+      <time style="vertical-align: middle;" datetime="{{ post.date | date:"%m-%d" }}">{{ post.date | date: "%b %d" }}</time>
+        <a class="url" href="{{ post.url }}" style="text-decoration: none;">
+            <h4 style="display: inline-block; width: 80%; margin-left: 15px; vertical-align: middle;">{{ post.title }}</h4>
+        </a>
+        </div>
+    </div>
+{% endfor %}
+</section>
