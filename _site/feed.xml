@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-13T11:25:00+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">ry4nkim</title><subtitle>ry4nkim's blog</subtitle><entry><title type="html">[Android Library] Object Spinner</title><link href="http://localhost:4000/android-library-object-spinner/" rel="alternate" type="text/html" title="[Android Library] Object Spinner" /><published>2019-11-12T12:00:00+09:00</published><updated>2019-11-12T12:00:00+09:00</updated><id>http://localhost:4000/android-library-object-spinner</id><content type="html" xml:base="http://localhost:4000/android-library-object-spinner/">&lt;h1 id=&quot;android-library--object-spinner&quot;&gt;Android Library : Object Spinner&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-13T11:27:13+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">ry4nkim</title><subtitle>ry4nkim's blog</subtitle><entry><title type="html">[Android Library] Object Spinner</title><link href="http://localhost:4000/android-library-object-spinner/" rel="alternate" type="text/html" title="[Android Library] Object Spinner" /><published>2019-11-12T12:00:00+09:00</published><updated>2019-11-12T12:00:00+09:00</updated><id>http://localhost:4000/android-library-object-spinner</id><content type="html" xml:base="http://localhost:4000/android-library-object-spinner/">&lt;h1 id=&quot;android-library--object-spinner&quot;&gt;Android Library : Object Spinner&lt;/h1&gt;
 
 &lt;p&gt;Github: https://github.com/ry4nkim/ObjectSpinner&lt;/p&gt;
 
@@ -29,9 +29,7 @@
 
 &lt;h2 id=&quot;usage&quot;&gt;Usage&lt;/h2&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;Add the ObjectSpinner to your layout XML:&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;Add the ObjectSpinner to your layout XML:&lt;/p&gt;
 
 &lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;kr.ry4nkim.objectspinner.ObjectSpinner&lt;/span&gt;
     &lt;span class=&quot;na&quot;&gt;android:id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;@+id/spinner&quot;&lt;/span&gt;
@@ -39,9 +37,7 @@
     &lt;span class=&quot;na&quot;&gt;android:layout_height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;wrap_content&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;Implement &lt;code class=&quot;highlighter-rouge&quot;&gt;ObjectSpinner.Delegate&lt;/code&gt; on your object to override the &lt;code class=&quot;highlighter-rouge&quot;&gt;getSpinnerDelegate()&lt;/code&gt; method to return the spinner’s delegate:&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;Implement &lt;code class=&quot;highlighter-rouge&quot;&gt;ObjectSpinner.Delegate&lt;/code&gt; on your object to override the &lt;code class=&quot;highlighter-rouge&quot;&gt;getSpinnerDelegate()&lt;/code&gt; method to return the spinner’s delegate:&lt;/p&gt;
 
 &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;YourObject&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ObjectSpinner&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;Delegate&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mCode&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
@@ -56,9 +52,7 @@
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;Add item list to the spinner and listen for select:&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;Add item list to the spinner and listen for select:&lt;/p&gt;
 
 &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;ObjectSpinner&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;YourObject&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mObjectSpinner&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;findViewById&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;spinner&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
 

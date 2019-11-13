@@ -5,11 +5,11 @@
   <span class="nt">&lt;version&gt;</span>1.0.1<span class="nt">&lt;/version&gt;</span>
   <span class="nt">&lt;type&gt;</span>pom<span class="nt">&lt;/type&gt;</span>
 <span class="nt">&lt;/dependency&gt;</span>
-</code></pre></div></div> <h2 id="usage">Usage</h2> <ol> <li>Add the ObjectSpinner to your layout XML:</li> </ol> <div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;kr.ry4nkim.objectspinner.ObjectSpinner</span>
+</code></pre></div></div> <h2 id="usage">Usage</h2> <p>Add the ObjectSpinner to your layout XML:</p> <div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;kr.ry4nkim.objectspinner.ObjectSpinner</span>
     <span class="na">android:id=</span><span class="s">"@+id/spinner"</span>
     <span class="na">android:layout_width=</span><span class="s">"match_parent"</span>
     <span class="na">android:layout_height=</span><span class="s">"wrap_content"</span><span class="nt">/&gt;</span>
-</code></pre></div></div> <ol> <li>Implement <code class="highlighter-rouge">ObjectSpinner.Delegate</code> on your object to override the <code class="highlighter-rouge">getSpinnerDelegate()</code> method to return the spinner’s delegate:</li> </ol> <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">YourObject</span> <span class="kd">implements</span> <span class="n">ObjectSpinner</span><span class="o">.</span><span class="na">Delegate</span> <span class="o">{</span>
+</code></pre></div></div> <p>Implement <code class="highlighter-rouge">ObjectSpinner.Delegate</code> on your object to override the <code class="highlighter-rouge">getSpinnerDelegate()</code> method to return the spinner’s delegate:</p> <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">YourObject</span> <span class="kd">implements</span> <span class="n">ObjectSpinner</span><span class="o">.</span><span class="na">Delegate</span> <span class="o">{</span>
   <span class="kd">private</span> <span class="n">String</span> <span class="n">mCode</span><span class="o">;</span>
   <span class="kd">private</span> <span class="n">String</span> <span class="n">mName</span><span class="o">;</span>
   <span class="o">...</span>
@@ -20,7 +20,7 @@
   <span class="o">}</span>
   <span class="o">...</span>
 <span class="o">}</span>
-</code></pre></div></div> <ol> <li>Add item list to the spinner and listen for select:</li> </ol> <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">ObjectSpinner</span><span class="o">&lt;</span><span class="n">YourObject</span><span class="o">&gt;</span> <span class="n">mObjectSpinner</span> <span class="o">=</span> <span class="n">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">spinner</span><span class="o">);</span>
+</code></pre></div></div> <p>Add item list to the spinner and listen for select:</p> <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">ObjectSpinner</span><span class="o">&lt;</span><span class="n">YourObject</span><span class="o">&gt;</span> <span class="n">mObjectSpinner</span> <span class="o">=</span> <span class="n">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">spinner</span><span class="o">);</span>
 
 <span class="n">List</span><span class="o">&lt;</span><span class="n">YourObject</span><span class="o">&gt;</span> <span class="n">itemList</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;();</span>
 

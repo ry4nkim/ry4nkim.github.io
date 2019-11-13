@@ -52,7 +52,7 @@ or Maven:
 Usage
 -----
 
-1. Add the ObjectSpinner to your layout XML:
+Add the ObjectSpinner to your layout XML:
 
 ```xml
 <kr.ry4nkim.objectspinner.ObjectSpinner
@@ -61,7 +61,7 @@ Usage
     android:layout_height="wrap_content"/>
 ```
 
-2. Implement `ObjectSpinner.Delegate` on your object to override the `getSpinnerDelegate()` method to return the spinner's delegate:
+Implement `ObjectSpinner.Delegate` on your object to override the `getSpinnerDelegate()` method to return the spinner's delegate:
 
 ```java
 public class YourObject implements ObjectSpinner.Delegate {
@@ -77,7 +77,7 @@ public class YourObject implements ObjectSpinner.Delegate {
 }
 ```
 
-3. Add item list to the spinner and listen for select:
+Add item list to the spinner and listen for select:
 
 ```java
 ObjectSpinner<YourObject> mObjectSpinner = findViewById(R.id.spinner);
