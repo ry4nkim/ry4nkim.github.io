@@ -6,7 +6,7 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
-    addressable (2.7.0)
+    addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
     backports (3.15.0)
     coffee-script (2.4.1)
@@ -115,8 +115,6 @@ GEM
       jekyll (~> 3.3)
       sinatra (~> 1.4)
       sinatra-contrib (~> 1.4)
-    jekyll-archives (2.2.1)
-      jekyll (>= 3.6, < 5.0)
     jekyll-avatar (0.6.0)
       jekyll (~> 3.0)
     jekyll-coffeescript (1.1.1)
@@ -284,7 +282,6 @@ DEPENDENCIES
   github-pages
   html-proofer
   jekyll-admin
-  jekyll-archives
   jekyll-paginate
 
 BUNDLED WITH
