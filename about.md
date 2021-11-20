@@ -59,6 +59,9 @@ layout: page
       <a href="https://www.newtreemall.co.kr" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Web] 뉴트리몰 - 이너뷰티 전문기업 뉴트리 공식 쇼핑몰 (2020)</a>
     </li>
     <li>
+      <a href="https://07e.kr" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Web] 땡칠e - 스팀 게임코드 쇼핑몰 (2019)</a>
+    </li>
+    <li>
       <a href="https://support.gtgear.co.kr" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Web] 지티기어 서포트 포럼 (2019)</a>
     </li>
     <li>
