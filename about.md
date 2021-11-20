@@ -18,9 +18,9 @@ layout: page
 
 <h2>Career</h2>
 <ul>
-  <li>[프리랜서] 주식회사 베리블 - 듀오백몰(퍼스트몰 솔루션 기반 쇼핑몰) 개발자<br/>(2021.04 ~ 2021.07)</li>
-  <li>[프리랜서] 주식회사 베리블 - 뉴트리몰(퍼스트몰 솔루션 기반 쇼핑몰) 개발자<br/>(2020.07 ~ 2021.02)</li>
-  <li>[산업기능요원] 주식회사 투비네트웍스글로벌 - 웹 & 모바일 앱 개발자<br/>(2018.01 ~ 2020.02)</li>
+  <li>주식회사 베리블 개발팀 프리랜서 - 듀오백몰(퍼스트몰 솔루션 기반 쇼핑몰) 개발자<br/>(2021.04 ~ 2021.07)</li>
+  <li>주식회사 베리블 개발팀 프리랜서 - 뉴트리몰(퍼스트몰 솔루션 기반 쇼핑몰) 개발자<br/>(2020.07 ~ 2021.02)</li>
+  <li>주식회사 투비네트웍스글로벌 개발팀 사원 - 웹 & 모바일 앱 개발자 (산업기능요원)<br/>(2018.01 ~ 2020.02)</li>
 </ul>
 
 <h2>Activity</h2>
@@ -41,11 +41,11 @@ layout: page
 
 <h2>Skills</h2>
 <ul class="skill-list">
-  <li>Android-App : Java, Kotlin, RxAndroid, Clean Architecture, MVVM Pattern</li>
-  <li>Front-End : JSP(with JSTL), JavaScript(with JQuery), HTML/CSS</li>
-  <li>Back-End : Spring(Java), Flask(Python), CodeIgniter(PHP)</li>
-  <li>DataBase : MySQL</li>
-  <li>AWS : EC2, RDS, ELB</li>
+  <li>[Android] Java, Kotlin, RxAndroid, Retrofit2, Clean Architecture, MVVM Pattern</li>
+  <li>[Front-End] JSP(with JSTL), JavaScript(with jQuery), HTML/CSS</li>
+  <li>[Back-End] Spring Boot(Java), Flask(Python), CodeIgniter(PHP)</li>
+  <li>[Database] MySQL</li>
+  <li>[AWS] EC2(with ELB), RDS, Route 53</li>
 </ul>
 
 <h2>Projects</h2>
