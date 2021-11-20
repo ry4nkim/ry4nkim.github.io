@@ -75,13 +75,13 @@ layout: page
       <a href="https://github.com/ry4nkim/android-movie-rank" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Android] Movie Rank</a>
     </li>-->
     <!--<li>[Web] 네이버 데이터랩 API를 활용한 검색 키워드 분석 시스템 (itemscout.io 클론코딩) (2021)</li>-->
-    <li>[Web] SCH 온라인 서점 쇼핑몰 (2021)</li>
-    <li>[Web] 연차휴가 관리시스템 (2020)</li>
+    <!--<li>[Web] SCH 온라인 서점 쇼핑몰 (2021)</li>-->
+    <li>[Web] 연차 휴가 관리 시스템 (2021)</li>
     <li>[Android] 멜론 차트 TOP 100 (2020)</li>
     <li>[Android/iOS] 팅플 - 전국 대학교 과팅 매칭 서비스 (2020)</li>
-    <li>[Android] SoloLife - 자취생들은 위한 쇼핑몰 (2019)</li>
+    <li>[Android] SoloLife - 자취생들을 위한 쇼핑몰 (2019)</li>
     <li>[Android Library] Object Spinner (2019)</li>
-    <li>[Android] Movie Rank - 메가박스 영화 순위 (2018)</li>
+    <li>[Android] 메가박스 영화 순위 (2018)</li>
     <li>[Android] GetNum - URL을 통한 연락처 공유받기 (2016)</li>
     <li>[Android] 카톡파도 - 카카오톡 파일공유 도우미 (2015)</li>
     <li>[Android] 쌍용GO - 천안쌍용고등학교 (2015)</li>
