@@ -34,18 +34,18 @@ layout: page
 
 <h2>Awards</h2>
 <ul>
-  <li>2017 순천향대학교 창의 아이디어 경진대회 금상 (2017)</li>
-  <li>제25회 순천향대학교 공과대학 학술제 장려상 (2016)</li>
-  <li>제2회 KITRI 정보보안 아이디어 공모전 일반부 장려상 (2015)</li>
+  <li>순천향대학교 창의 아이디어 경진대회 금상 (2017)</li>
+  <li>순천향대학교 공과대학 학술제 장려상 (2016)</li>
+  <li>KITRI 정보보안 아이디어 공모전 일반부 장려상 (2015)</li>
 </ul>
 
 <h2>Skills</h2>
 <ul class="skill-list">
-  <li>[Android] Java, Kotlin, RxAndroid, Retrofit2, Clean Architecture, MVVM Pattern</li>
-  <li>[Front-End] JSP(with JSTL), JavaScript(with jQuery), HTML/CSS</li>
-  <li>[Back-End] Spring Boot(Java), Flask(Python), CodeIgniter(PHP)</li>
-  <li>[Database] MySQL</li>
-  <li>[AWS] EC2(with ELB), RDS, Route 53</li>
+  <li>Android : Java, Kotlin, RxAndroid, Retrofit2, Clean Architecture, MVVM Pattern</li>
+  <li>Front-End : JSP(with JSTL), JavaScript(with jQuery), HTML/CSS</li>
+  <li>Back-End : Spring Boot(Java), Flask(Python), CodeIgniter(PHP)</li>
+  <li>Database : MySQL</li>
+  <li>AWS : EC2(with ELB), RDS, Route 53</li>
 </ul>
 
 <h2>Projects</h2>
@@ -68,14 +68,23 @@ layout: page
 
   <li>Public</li>
   <ul>
-    <li>
+    <!--<li>
       <a href="https://github.com/ry4nkim/ObjectSpinner" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Android Library] Object Spinner</a>
     </li>
     <li>
       <a href="https://github.com/ry4nkim/android-movie-rank" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Android] Movie Rank</a>
-    </li>
-    <li>[Android] GetNum - 연락처 공유받기</li>
-    <li>[Android] 카톡파도 - 카카오톡 파일공유 도우미</li>
-    <li>[Android] 쌍용GO - 천안쌍용고등학교 앱</li>
+    </li>-->
+    <!--<li>[Web] 네이버 데이터랩 API를 활용한 검색 키워드 분석 시스템 (itemscout.io 클론코딩) (2021)</li>-->
+    <li>[Web] SCH 온라인 서점 쇼핑몰 (2021)</li>
+    <li>[Web] 연차휴가 관리시스템 (2020)</li>
+    <li>[Android] 멜론 차트 TOP 100 (2020)</li>
+    <li>[Android/iOS] 팅플 - 전국 대학교 과팅 매칭 서비스 (2020)</li>
+    <li>[Android] SoloLife - 자취생들은 위한 쇼핑몰 (2019)</li>
+    <li>[Android Library] Object Spinner (2019)</li>
+    <li>[Android] Movie Rank - 메가박스 영화 순위 (2018)</li>
+    <li>[Android] GetNum - URL을 통한 연락처 공유받기 (2016)</li>
+    <li>[Android] 카톡파도 - 카카오톡 파일공유 도우미 (2015)</li>
+    <li>[Android] 쌍용GO - 천안쌍용고등학교 (2015)</li>
+    <li>[Android] 네이버 프로필 만들기 (2014)</li>
   </ul>
 </ul>
