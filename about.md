@@ -13,18 +13,20 @@ layout: page
 
 <h2>Education</h2>
 <ul>
-  <li>순천향대학교 컴퓨터공학 및 정보보호학 전공 (2016.03 ~ ing)</li>
+  <li>순천향대학교 컴퓨터공학 및 정보보호학 전공 (2016.03 ~ 2022.02 졸업예정)</li>
 </ul>
 
 <h2>Career</h2>
 <ul>
-  <li>투비네트웍스 모바일 앱 (Android & iOS) 개발자 - 병역특례 산업기능요원 복무 (2018.01.08 ~ 2020.02.29)</li>
+  <li>[프리랜서] 주식회사 베리블 듀오백몰(퍼스트몰 솔루션 기반 쇼핑몰) 개발자 (2021.04 ~ 2021.07)</li>
+  <li>[프리랜서] 주식회사 베리블 뉴트리몰(퍼스트몰 솔루션 기반 쇼핑몰) 개발자 (2020.07 ~ 2021.02)</li>
+  <li>[산업기능요원] 주식회사 투비네트웍스글로벌 - 웹 & 모바일 앱 개발자 (2018.01 ~ 2020.02)</li>
 </ul>
 
 <h2>Activity</h2>
 <ul>
-  <li>순천향대학교 창업동아리 SOLA 안드로이드 앱 개발자 (2019.04 ~ 2020.02)</li>
-  <li>순천향대학교 컴퓨터공학과 Ubiquitous Computing Laboratory 학생 (2017 ~ ing)</li>
+  <li>순천향대학교 창업동아리 SOLA 안드로이드 앱 개발자 (2019)</li>
+  <li>순천향대학교 컴퓨터공학과 Ubiquitous Computing Laboratory 학생 (2017 ~ 2018)</li>
   <li>순천향대학교 컴퓨터공학과 안드로이드 앱 개발 동아리 DevApp 회장 (2016 ~ 2017)</li>
   <li>한국학생IT연합(KSIA) 운영사무국 홍보팀 팀장 (2014 ~ 2016)</li>
   <li>천안쌍용고등학교 안드로이드 앱 개발 동아리 Semicolon 기장 (2013 ~ 2015)</li>
@@ -40,12 +42,12 @@ layout: page
 <h2>Skills</h2>
 <ul class="skill-list">
   <li>C / C++</li>
-  <li>Java (Android, Spring)</li>
+  <li>Java (Spring)</li>
+  <li>Kotlin (Android)</li>
   <li>Swift (iOS)</li>
   <li>Python (Flask)</li>
   <li>PHP (CodeIgniter)</li>
-  <li>Javascript</li>
-  <li>Database</li>
+  <li>JavaScript (Node.js)</li>
   <li>MySQL</li>
 </ul>
 
