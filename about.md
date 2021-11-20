@@ -53,17 +53,17 @@ layout: page
   <li>Private</li>
   <ul>
     <li>
-      <a href="https://www.duoback.co.kr" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Web] 듀오백몰 - 앉는 모든 것</a>
+      <a href="https://www.duoback.co.kr" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Web] 듀오백몰 - 앉는 모든 것 (2021)</a>
     </li>
     <li>
-      <a href="https://www.newtreemall.co.kr" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Web] 뉴트리몰 - 이너뷰티 전문기업 뉴트리 공식 쇼핑몰</a>
+      <a href="https://www.newtreemall.co.kr" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Web] 뉴트리몰 - 이너뷰티 전문기업 뉴트리 공식 쇼핑몰 (2020)</a>
     </li>
     <li>
-      <a href="https://play.google.com/store/apps/details?id=com.tbnws.sidebyside" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Android] SideBySide - 같이 좀 달립시다</a>
+      <a href="https://play.google.com/store/apps/details?id=com.tbnws.sidebyside" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Android/iOS] SideBySide - 같이 좀 달립시다 (2018)</a>
     </li>
-    <li>
-      <a href="https://itunes.apple.com/kr/app/id1398166366" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[iOS] SideBySide - 같이 좀 달립시다</a>
-    </li>
+    <!--<li>
+      <a href="https://itunes.apple.com/kr/app/id1398166366" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[iOS] SideBySide - 같이 좀 달립시다 (2018)</a>
+    </li>-->
   </ul>
 
   <li>Public</li>
