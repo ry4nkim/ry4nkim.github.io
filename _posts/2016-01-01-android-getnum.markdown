@@ -9,7 +9,7 @@ image: "/assets/images/profile-round.png"
 headerImage: true
 projects: true
 hidden: true
-description: 
+description: 스마트폰을 백업하지 않은 상태에서 분실하였을 때나 연락처가 초기화됐을 때, URL을 통해 지인들의 연락처를 손쉽게 공유받을 수 있게 도움을 주는 안드로이드 유틸리티 앱입니다.
 category: project
 author: ry4nkim
 ---
@@ -27,19 +27,16 @@ author: ry4nkim
 </p>
 
 ### Description:
-
-
-### Mechanism:
-
+스마트폰을 백업하지 않은 상태에서 분실하였을 때나 연락처가 초기화됐을 때, URL을 통해 지인들의 연락처를 손쉽게 공유받을 수 있게 도움을 주는 안드로이드 유틸리티 앱입니다.
 
 ### Screenshot:
 <br>
 <p align="center">
-  <img src="/assets/images/android-getnum/1.jpg" width="200">
-  <img src="/assets/images/android-getnum/2.jpg" width="200">
-  <img src="/assets/images/android-getnum/3.jpg" width="200">
-  <img src="/assets/images/android-getnum/4.jpg" width="200">
-  <img src="/assets/images/android-getnum/5.jpg" width="200">
-  <img src="/assets/images/android-getnum/6.jpg" width="200">
+  <img src="/assets/images/android-getnum/1.jpg" width="180">
+  <img src="/assets/images/android-getnum/2.jpg" width="180">
+  <img src="/assets/images/android-getnum/3.jpg" width="180">
+  <img src="/assets/images/android-getnum/4.jpg" width="180">
+  <img src="/assets/images/android-getnum/5.jpg" width="180">
+  <img src="/assets/images/android-getnum/6.jpg" width="180">
 </p>
 <br>
