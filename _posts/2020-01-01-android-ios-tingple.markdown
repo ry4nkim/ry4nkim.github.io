@@ -2,12 +2,14 @@
 title: "[Android/iOS] 팅플 - 전국 대학교 과팅 매칭 서비스"
 layout: post
 date: '2020-01-01 00:00:00'
-tag:
+tag: 
+- Android
+- iOS
 image: "/assets/images/profile-round.png"
 headerImage: true
 projects: true
 hidden: true
-description: 
+description: 채팅 서비스 시스템을 공부하기 위해 1인 개발 토이 프로젝트로 개발한 전국 대학교 과팅 매칭 서비스 앱입니다.
 category: project
 author: ry4nkim
 ---
