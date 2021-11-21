@@ -27,15 +27,15 @@ author: ry4nkim
 P.S. 2015년 당시 카카오톡은 사진, 음악, 동영상 파일만 공유할 수 있었습니다.
 
 ### Mechanism:
-1. 공유할 .apk 파일을 .mp4 확장자로 변경
-2. 변경된 .mp4 파일을 카카오톡 대화방에 공유
-3. 공유된 .mp4 파일을 다운로드 후 .apk 확장자로 변경
+<p>1. 공유할 .apk 파일을 .mp4 확장자로 변경</p>
+<p>2. 변경된 .mp4 파일을 카카오톡 대화방에 공유</p>
+<p>3. 공유된 .mp4 파일을 다운로드 후 .apk 확장자로 변경</p>
+
 
 ### Screenshot:
 <br>
 <p align="center">
   <img src="/assets/images/android-kakaotalk-file-share-helper/1.jpg" width="200">
-  <img src="/assets/images/android-kakaotalk-file-share-helper/2.jpg" width="200">
   <img src="/assets/images/android-kakaotalk-file-share-helper/3.jpg" width="200">
   <img src="/assets/images/android-kakaotalk-file-share-helper/4.jpg" width="200">
   <img src="/assets/images/android-kakaotalk-file-share-helper/5.jpg" width="200">
