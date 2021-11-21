@@ -34,8 +34,8 @@ author: ry4nkim
 ### Description:
 
 ### Screenshot:
-
-### Android
+<br>
+<h3 style="text-align: center;">Android</h3>
 <p align="center">
   <img src="/assets/images/android-ios-tingple/1.jpg" width="180">
   <img src="/assets/images/android-ios-tingple/2.jpg" width="180">
@@ -44,8 +44,8 @@ author: ry4nkim
   <img src="/assets/images/android-ios-tingple/5.png" width="180">
   <img src="/assets/images/android-ios-tingple/6.png" width="180">
 </p>
-
-### iOS
+<br>
+<h3 style="text-align: center;">Android</h3>
 <p align="center">
   <img src="/assets/images/android-ios-tingple/7.png" width="180">
   <img src="/assets/images/android-ios-tingple/8.png" width="180">
