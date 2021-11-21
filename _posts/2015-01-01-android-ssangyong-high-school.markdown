@@ -31,8 +31,8 @@ author: ry4nkim
 
 
 ### Tech Stack:
-<p align="center">
-  <img src="https://img.shields.io/badge/Java-007396?style=flat-square&logo=Java&logoColor=white"/></a>&nbsp;
-  <img src="https://img.shields.io/badge/PHP-7378aa?style=flat-square&logo=php&logoColor=white"/></a>&nbsp;
-  <img src="https://img.shields.io/badge/MySQL-2d6e8e?style=flat-square&logo=MySQL&logoColor=white"/></a>&nbsp;
+<p>
+  <img src="https://img.shields.io/badge/Java-d33830?style=flat-square&logo=Java&logoColor=white"/>&nbsp;
+  <img src="https://img.shields.io/badge/PHP-7378aa?style=flat-square&logo=php&logoColor=white"/>&nbsp;
+  <img src="https://img.shields.io/badge/MySQL-2d6e8e?style=flat-square&logo=MySQL&logoColor=white"/>&nbsp;
 </p>
