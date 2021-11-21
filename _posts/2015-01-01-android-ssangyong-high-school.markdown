@@ -20,11 +20,11 @@ author: ry4nkim
 
 <br>
 <p align="center">
-  <img src="/assets/images/android-ssangyoung-high-school/1.png" width="200">
-  <img src="/assets/images/android-ssangyoung-high-school/2.png" width="200">
-  <img src="/assets/images/android-ssangyoung-high-school/3.png" width="200">
-  <img src="/assets/images/android-ssangyoung-high-school/4.png" width="200">
-  <img src="/assets/images/android-ssangyoung-high-school/5.png" width="200">
+  <img src="/assets/images/android-ssangyoung-high-school/1.jpg" width="200">
+  <img src="/assets/images/android-ssangyoung-high-school/2.jpg" width="200">
+  <img src="/assets/images/android-ssangyoung-high-school/3.jpg" width="200">
+  <img src="/assets/images/android-ssangyoung-high-school/4.jpg" width="200">
+  <img src="/assets/images/android-ssangyoung-high-school/5.jpg" width="200">
 </p>
 <br>
 
