@@ -84,8 +84,12 @@ layout: page
     <!--<li>[Web] SCH 온라인 서점 쇼핑몰 (2021)</li>-->
     <li>[Web] 연차 휴가 관리 시스템 (2021)</li>
     <li>[Android] 멜론 차트 TOP 100 (2020)</li>
-    <li>[Android/iOS] 팅플 - 전국 대학교 과팅 매칭 서비스 (2020)</li>
-    <li>[Android] SoloLife - 자취생들을 위한 쇼핑몰 (2019)</li>
+    <li>
+      <a href="/android-ios-tingple" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Android/iOS] 팅플 - 전국 대학교 과팅 매칭 서비스 (2020)</a>
+    </li>
+    <li>
+      <a href="/android-sololife" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Android] SoloLife - 자취생들을 위한 쇼핑몰 (2019)</a>
+    </li>
     <li>
       <a href="/android-library-object-spinner" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Android Library] Object Spinner (2019)</a>
     </li>
