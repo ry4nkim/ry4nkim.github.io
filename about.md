@@ -8,7 +8,7 @@ layout: page
   <li>Nickname : ry4nkim</li>
   <li>Name : 김진우 (Jinwoo Kim)</li>
   <li>Email : ry4nkim@naver.com</li>
-  <li>Github : <a href="https://github.com/ry4nkim" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">https://github.com/ry4nkim</a></li>
+  <li>Github : <a target="_blank" href="https://github.com/ry4nkim" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">https://github.com/ry4nkim</a></li>
 </ul>
 
 <h2>Education</h2>
@@ -53,57 +53,57 @@ layout: page
   <li>Private</li>
   <ul>
     <li>
-      <a href="https://www.duoback.co.kr" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Web] 듀오백몰 - 앉는 모든 것 (2021)</a>
+      <a target="_blank" href="https://www.duoback.co.kr" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Web] 듀오백몰 - 앉는 모든 것 (2021)</a>
     </li>
     <li>
-      <a href="https://www.newtreemall.co.kr" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Web] 뉴트리몰 - 이너뷰티 전문기업 뉴트리 공식 쇼핑몰 (2020)</a>
+      <a target="_blank" href="https://www.newtreemall.co.kr" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Web] 뉴트리몰 - 이너뷰티 전문기업 뉴트리 공식 쇼핑몰 (2020)</a>
     </li>
     <li>
-      <a href="https://07e.kr" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Web] 땡칠e - 스팀 게임코드 쇼핑몰 (2019)</a>
+      <a target="_blank" href="https://07e.kr" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Web] 땡칠e - 스팀 게임코드 쇼핑몰 (2019)</a>
     </li>
     <li>
-      <a href="https://support.gtgear.co.kr" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Web] 지티기어 서포트 포럼 (2019)</a>
+      <a target="_blank" href="https://support.gtgear.co.kr" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Web] 지티기어 서포트 포럼 (2019)</a>
     </li>
     <li>
-      <a href="https://play.google.com/store/apps/details?id=com.tbnws.sidebyside" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Android/iOS] SideBySide - 같이 좀 달립시다 (2018)</a>
+      <a target="_blank" href="https://play.google.com/store/apps/details?id=com.tbnws.sidebyside" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Android/iOS] SideBySide - 같이 좀 달립시다 (2018)</a>
     </li>
     <!--<li>
-      <a href="https://itunes.apple.com/kr/app/id1398166366" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[iOS] SideBySide - 같이 좀 달립시다 (2018)</a>
+      <a target="_blank" href="https://itunes.apple.com/kr/app/id1398166366" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[iOS] SideBySide - 같이 좀 달립시다 (2018)</a>
     </li>-->
   </ul>
 
   <li>Public</li>
   <ul>
     <!--<li>
-      <a href="https://github.com/ry4nkim/ObjectSpinner" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Android Library] Object Spinner</a>
+      <a target="_blank" href="https://github.com/ry4nkim/ObjectSpinner" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Android Library] Object Spinner</a>
     </li>
     <li>
-      <a href="https://github.com/ry4nkim/android-movie-rank" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Android] Movie Rank</a>
+      <a target="_blank" href="https://github.com/ry4nkim/android-movie-rank" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Android] Movie Rank</a>
     </li>-->
     <!--<li>[Web] 네이버 데이터랩 API를 활용한 검색 키워드 분석 시스템 (itemscout.io 클론코딩) (2021)</li>-->
     <!--<li>[Web] SCH 온라인 서점 쇼핑몰 (2021)</li>-->
     <li>[Web] 연차 휴가 관리 시스템 (2021)</li>
     <li>[Android] 멜론 차트 TOP 100 (2020)</li>
     <li>
-      <a href="/android-ios-tingple" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Android/iOS] 팅플 - 전국 대학교 과팅 매칭 서비스 (2020)</a>
+      <a target="_blank" href="/android-ios-tingple" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Android/iOS] 팅플 - 전국 대학교 과팅 매칭 서비스 (2020)</a>
     </li>
     <li>
-      <a href="/android-sololife" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Android] SoloLife - 자취생들을 위한 쇼핑몰 (2019)</a>
+      <a target="_blank" href="/android-sololife" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Android] SoloLife - 자취생들을 위한 쇼핑몰 (2019)</a>
     </li>
     <li>
-      <a href="/android-library-object-spinner" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Android Library] Object Spinner (2019)</a>
+      <a target="_blank" href="/android-library-object-spinner" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Android Library] Object Spinner (2019)</a>
     </li>
     <li>
-      <a href="/android-movie-rank" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Android] 메가박스 영화 순위 (2018)</a>
+      <a target="_blank" href="/android-movie-rank" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Android] 메가박스 영화 순위 (2018)</a>
     </li>
     <li>
-      <a href="/android-getnum" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Android] GetNum - URL을 통한 연락처 공유받기 (2016)</a>
+      <a target="_blank" href="/android-getnum" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Android] GetNum - URL을 통한 연락처 공유받기 (2016)</a>
     </li>
     <li>
-      <a href="/android-kakaotalk-file-share-helper" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Android] 카톡파도 - 카카오톡 파일공유 도우미 (2015)</a>
+      <a target="_blank" href="/android-kakaotalk-file-share-helper" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Android] 카톡파도 - 카카오톡 파일공유 도우미 (2015)</a>
     </li>
     <li>
-      <a href="/android-ssangyong-high-school" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Android] 쌍용GO - 천안쌍용고등학교 (2015)</a>
+      <a target="_blank" href="/android-ssangyong-high-school" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Android] 쌍용GO - 천안쌍용고등학교 (2015)</a>
     </li>
     <!--<li>[Android] 네이버 프로필 만들기 (2014)</li>-->
 
