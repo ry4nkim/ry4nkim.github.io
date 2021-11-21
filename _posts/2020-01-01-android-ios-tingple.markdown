@@ -3,8 +3,6 @@ title: "[Android/iOS] 팅플 - 전국 대학교 과팅 매칭 서비스"
 layout: post
 date: '2020-01-01 00:00:00'
 tag:
-- Android
-- Java
 image: "/assets/images/profile-round.png"
 headerImage: true
 projects: true
@@ -23,6 +21,7 @@ author: ry4nkim
   <img src="https://img.shields.io/badge/Swift-F05138?style=flat-square&logo=Swift&logoColor=white"/>&nbsp;
   <img src="https://img.shields.io/badge/SpringBoot-6DB33F?style=flat-square&logo=SpringBoot&logoColor=white"/>&nbsp;
   <img src="https://img.shields.io/badge/Java-d33830?style=flat-square&logo=Java&logoColor=white"/>&nbsp;
+  <br/>
   <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=Node.js&logoColor=white"/>&nbsp;
   <img src="https://img.shields.io/badge/JavaScript-ecd74d?style=flat-square&logo=JavaScript&logoColor=black"/>&nbsp;
   <img src="https://img.shields.io/badge/Socket.io-010101?style=flat-square&logo=Socket.io&logoColor=white"/>&nbsp;
@@ -32,9 +31,10 @@ author: ry4nkim
 </p>
 
 ### Description:
+채팅 서비스 시스템을 공부하기 위해 1인 개발 토이 프로젝트로 개발한 전국 대학교 과팅 매칭 서비스 앱입니다.
+추후 해당 앱의 기획적인 부분을 보완한 후 고도화 및 상용화시키는 것이 목표입니다.
 
 ### Screenshot:
-<br>
 <h3 style="text-align: center;">Android</h3>
 <p align="center">
   <img src="/assets/images/android-ios-tingple/1.jpg" width="180">
@@ -44,8 +44,7 @@ author: ry4nkim
   <img src="/assets/images/android-ios-tingple/5.png" width="180">
   <img src="/assets/images/android-ios-tingple/6.png" width="180">
 </p>
-<br>
-<h3 style="text-align: center;">Android</h3>
+<h3 style="text-align: center;">iOS</h3>
 <p align="center">
   <img src="/assets/images/android-ios-tingple/7.png" width="180">
   <img src="/assets/images/android-ios-tingple/8.png" width="180">
