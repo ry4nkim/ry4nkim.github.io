@@ -1,7 +1,7 @@
 ---
 title: "[Android/iOS] 팅플 - 전국 대학교 과팅 매칭 서비스"
 layout: post
-date: '2020-01-01 00:00:00'
+date: '2020-01-01 00:00:01'
 tag: 
 - Android
 - iOS
