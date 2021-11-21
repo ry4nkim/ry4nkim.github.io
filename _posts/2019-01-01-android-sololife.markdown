@@ -1,7 +1,7 @@
 ---
 title: "[Android] SoloLife - 자취생들을 위한 쇼핑몰"
 layout: post
-date: '2019-01-01 00:00:00'
+date: '2019-12-31 00:00:00'
 tag:
 - Android
 - Java
