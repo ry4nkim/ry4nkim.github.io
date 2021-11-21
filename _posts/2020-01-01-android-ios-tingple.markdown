@@ -19,6 +19,8 @@ author: ry4nkim
 <p>
   <img src="https://img.shields.io/badge/Android-6bd388?style=flat-square&logo=Android&logoColor=white"/>&nbsp;
   <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=Kotlin&logoColor=white"/>&nbsp;
+  <img src="https://img.shields.io/badge/iOS-000000?style=flat-square&logo=iOS&logoColor=white"/>&nbsp;
+  <img src="https://img.shields.io/badge/Swift-F05138?style=flat-square&logo=Swift&logoColor=white"/>&nbsp;
   <img src="https://img.shields.io/badge/SpringBoot-6DB33F?style=flat-square&logo=SpringBoot&logoColor=white"/>&nbsp;
   <img src="https://img.shields.io/badge/Java-d33830?style=flat-square&logo=Java&logoColor=white"/>&nbsp;
   <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=Node.js&logoColor=white"/>&nbsp;
@@ -33,6 +35,8 @@ author: ry4nkim
 
 ### Screenshot:
 <br>
+
+#### Android
 <p align="center">
   <img src="/assets/images/android-ios-tingple/1.jpg" width="180">
   <img src="/assets/images/android-ios-tingple/2.jpg" width="180">
@@ -40,6 +44,10 @@ author: ry4nkim
   <img src="/assets/images/android-ios-tingple/4.png" width="180">
   <img src="/assets/images/android-ios-tingple/5.png" width="180">
   <img src="/assets/images/android-ios-tingple/6.png" width="180">
+</p>
+
+#### iOS
+<p align="center">
   <img src="/assets/images/android-ios-tingple/7.png" width="180">
   <img src="/assets/images/android-ios-tingple/8.png" width="180">
   <img src="/assets/images/android-ios-tingple/9.png" width="180">
