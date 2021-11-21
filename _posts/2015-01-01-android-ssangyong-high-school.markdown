@@ -17,7 +17,7 @@ author: ry4nkim
 # Android : 쌍용GO - 천안쌍용고등학교
 
 <p>
-  <img src="https://img.shields.io/badge/Android-58c376?style=flat-square&logo=Android&logoColor=white"/>&nbsp;
+  <img src="https://img.shields.io/badge/Android-6bd388?style=flat-square&logo=Android&logoColor=white"/>&nbsp;
   <img src="https://img.shields.io/badge/Java-d33830?style=flat-square&logo=Java&logoColor=white"/>&nbsp;
   <img src="https://img.shields.io/badge/PHP-7378aa?style=flat-square&logo=php&logoColor=white"/>&nbsp;
   <img src="https://img.shields.io/badge/MySQL-2d6e8e?style=flat-square&logo=MySQL&logoColor=white"/>&nbsp;
