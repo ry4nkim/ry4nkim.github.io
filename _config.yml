@@ -1,6 +1,7 @@
 # main text of home
 name: ry4nkim
-bio: Undergraduate Student, Department of Computer Science Engineering & Department of Information Security Engineering, Soonchunhyang University
+# bio: Undergraduate Student, Department of Computer Science Engineering & Department of Information Security Engineering, Soonchunhyang University
+bio: 사용자 친화적인 UI/UX를 지향하는 개발자
 
 # twitter summary info
 description: ry4nkim's blog
@@ -55,7 +56,8 @@ email: ry4nkim@naver.com
 authors:
     ry4nkim:
         name: ry4nkim
-        bio: Undergraduate Student, Department of Computer Science Engineering & Department of Information Security Engineering, Soonchunhyang University
+        # bio: Undergraduate Student, Department of Computer Science Engineering & Department of Information Security Engineering, Soonchunhyang University
+        bio: 사용자 친화적인 UI/UX를 지향하는 개발자
         external-image: false
         picture: assets/images/profile.png
 
