@@ -86,11 +86,24 @@ layout: page
     <li>[Android] 멜론 차트 TOP 100 (2020)</li>
     <li>[Android/iOS] 팅플 - 전국 대학교 과팅 매칭 서비스 (2020)</li>
     <li>[Android] SoloLife - 자취생들을 위한 쇼핑몰 (2019)</li>
-    <li>[Android Library] Object Spinner (2019)</li>
-    <li>[Android] 메가박스 영화 순위 (2018)</li>
-    <li>[Android] GetNum - URL을 통한 연락처 공유받기 (2016)</li>
-    <li>[Android] 카톡파도 - 카카오톡 파일공유 도우미 (2015)</li>
-    <li>[Android] 쌍용GO - 천안쌍용고등학교 (2015)</li>
-    <li>[Android] 네이버 프로필 만들기 (2014)</li>
+    <li>
+      <a href="/android-library-object-spinner" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Android Library] Object Spinner (2019)</a>
+    </li>
+    <li>
+      <a href="/android-movie-rank" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Android] 메가박스 영화 순위 (2018)</a>
+    </li>
+    <li>
+      <a href="/android-getnum" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Android] GetNum - URL을 통한 연락처 공유받기 (2016)</a>
+    </li>
+    <li>
+      <a href="/android-kakaotalk-file-share-helper" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Android] 카톡파도 - 카카오톡 파일공유 도우미 (2015)</a>
+    </li>
+    <li>
+      <a href="/android-ssangyong-high-school" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Android] 쌍용GO - 천안쌍용고등학교 (2015)</a>
+    </li>
+    <!--<li>[Android] 네이버 프로필 만들기 (2014)</li>-->
+
+
+
   </ul>
 </ul>

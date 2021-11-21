@@ -23,6 +23,8 @@ author: ry4nkim
   <img src="https://img.shields.io/badge/Java-d33830?style=flat-square&logo=Java&logoColor=white"/>&nbsp;
 </p>
 
+Github: https://github.com/ry4nkim/android-movie-rank
+
 ### Description:
 Jsoup 라이브러리를 사용하여 메가박스 웹페이지를 파싱해서 MVP(Model-View-Presenter) 디자인 패턴으로 개발한 메가박스 영화 순위 안드로이드 앱입니다.
 
