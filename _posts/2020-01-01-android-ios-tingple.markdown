@@ -14,7 +14,7 @@ category: project
 author: ry4nkim
 ---
 
-# Android : 팅플 - 전국 대학교 과팅 매칭 서비스
+# Android/iOS : 팅플 - 전국 대학교 과팅 매칭 서비스
 
 <p>
   <img src="https://img.shields.io/badge/Android-6bd388?style=flat-square&logo=Android&logoColor=white"/>&nbsp;
@@ -34,9 +34,8 @@ author: ry4nkim
 ### Description:
 
 ### Screenshot:
-<br>
 
-#### Android
+### Android
 <p align="center">
   <img src="/assets/images/android-ios-tingple/1.jpg" width="180">
   <img src="/assets/images/android-ios-tingple/2.jpg" width="180">
@@ -46,7 +45,7 @@ author: ry4nkim
   <img src="/assets/images/android-ios-tingple/6.png" width="180">
 </p>
 
-#### iOS
+### iOS
 <p align="center">
   <img src="/assets/images/android-ios-tingple/7.png" width="180">
   <img src="/assets/images/android-ios-tingple/8.png" width="180">
