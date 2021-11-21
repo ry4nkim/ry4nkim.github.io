@@ -34,6 +34,7 @@ author: ry4nkim
 ### Description:
 순천향대학교 창업동아리 SOLA에서 개발한 자취용품 전문 쇼핑몰 앱입니다.
 기존 퍼스트몰 솔루션 기반의 쇼핑몰 웹 서버에 앱 전용 REST API를 개발하여 안드로이드 앱과 연동시켰습니다.
+일부 페이지를 웹 쇼핑몰(WebView)과 연동한 하이브리드 앱으로, MVVM(Model-View-ViewModel) 디자인 패턴을 적용하였습니다.
 
 ### Screenshot:
 <br>
