@@ -50,7 +50,7 @@ layout: page
 
 <h2>Projects</h2>
 <ul>
-  <li>Private</li>
+  <li>Public</li>
   <ul>
     <li>
       <a target="_blank" href="https://www.duoback.co.kr" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Web] 듀오백몰 - 앉는 모든 것 (2021)</a>
@@ -72,7 +72,7 @@ layout: page
     </li>-->
   </ul>
 
-  <li>Public</li>
+  <li>Private</li>
   <ul>
     <!--<li>
       <a target="_blank" href="https://github.com/ry4nkim/ObjectSpinner" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Android Library] Object Spinner</a>
@@ -108,8 +108,5 @@ layout: page
       <a target="_blank" href="/android-ssangyong-high-school" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Android] 쌍용GO - 천안쌍용고등학교 (2015)</a>
     </li>
     <!--<li>[Android] 네이버 프로필 만들기 (2014)</li>-->
-
-
-
   </ul>
 </ul>
