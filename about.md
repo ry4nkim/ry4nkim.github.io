@@ -13,11 +13,12 @@ layout: page
 
 <h2>Education</h2>
 <ul>
-  <li>순천향대학교 컴퓨터공학 및 정보보호학 전공 (2016.03 ~ 2022.02 졸업예정)</li>
+  <li>순천향대학교 컴퓨터공학 및 정보보호학 전공 (2016.03 ~ 2022.02)</li>
 </ul>
 
 <h2>Career</h2>
 <ul>
+  <li>주식회사 핏펫 안드로이드 앱 개발자 - 모바일팀 매니저 (2022.01 ~ 재직중)</li>
   <li>주식회사 베리블 듀오백몰(퍼스트몰 솔루션 기반 쇼핑몰) 개발자 - 프리랜서 (2021.04 ~ 2021.07)</li>
   <li>주식회사 베리블 뉴트리몰(퍼스트몰 솔루션 기반 쇼핑몰) 개발자 - 프리랜서 (2020.07 ~ 2021.02)</li>
   <li>주식회사 투비네트웍스글로벌 웹 & 모바일 앱 개발자 - 개발팀 사원(산업기능요원) (2018.01 ~ 2020.02)</li>
@@ -34,6 +35,7 @@ layout: page
 
 <h2>Awards</h2>
 <ul>
+  <li>순천향대학교 AI·SW Week 경진대회 장려상 (2021)</li>
   <li>순천향대학교 창의 아이디어 경진대회 금상 (2017)</li>
   <li>순천향대학교 공과대학 학술제 장려상 (2016)</li>
   <li>KITRI 정보보안 아이디어 공모전 일반부 장려상 (2015)</li>
@@ -53,6 +55,9 @@ layout: page
   <li>Public</li>
   <ul>
     <li>
+      <a target="_blank" href="https://play.google.com/store/apps/details?id=kr.co.fitpet" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Android] 핏펫 - 수의사와 함께 하는 반려동물 앱 (2022)</a>
+    </li>
+    <li>
       <a target="_blank" href="https://www.duoback.co.kr" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Web] 듀오백몰 - 앉는 모든 것 (2021)</a>
     </li>
     <li>
@@ -67,9 +72,6 @@ layout: page
     <li>
       <a target="_blank" href="https://play.google.com/store/apps/details?id=com.tbnws.sidebyside" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Android/iOS] SideBySide - 같이 좀 달립시다 (2018)</a>
     </li>
-    <!--<li>
-      <a target="_blank" href="https://itunes.apple.com/kr/app/id1398166366" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[iOS] SideBySide - 같이 좀 달립시다 (2018)</a>
-    </li>-->
   </ul>
 
   <li>Private</li>
