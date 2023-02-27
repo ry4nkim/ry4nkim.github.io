@@ -18,10 +18,10 @@ layout: page
 
 <h2>Career</h2>
 <ul>
-  <li>주식회사 핏펫 안드로이드 앱 개발자 - 모바일팀 매니저 (2022.01 ~ 재직중)</li>
-  <li>주식회사 베리블 듀오백몰(퍼스트몰 솔루션 기반 쇼핑몰) 개발자 - 프리랜서 (2021.04 ~ 2021.07)</li>
-  <li>주식회사 베리블 뉴트리몰(퍼스트몰 솔루션 기반 쇼핑몰) 개발자 - 프리랜서 (2020.07 ~ 2021.02)</li>
-  <li>주식회사 투비네트웍스글로벌 웹 & 모바일 앱 개발자 - 개발팀 사원(산업기능요원) (2018.01 ~ 2020.02)</li>
+  <li>스포카(Spoqa) 안드로이드 앱 개발자 - 모바일팀 매니저 (2023.03 ~ 재직중)</li>
+  <li>핏펫(Fitpet) 안드로이드 앱 개발자 - 모바일팀 매니저 (2022.01 ~ 2023.02)</li>
+  <li>베리블 듀오백몰, 뉴트리몰 (퍼스트몰 솔루션 기반 쇼핑몰) 개발자 - 프리랜서 (2020.07 ~ 2021.07)</li>
+  <li>투비네트웍스글로벌 웹 & 모바일 앱 개발자 - 개발팀 사원(산업기능요원) (2018.01 ~ 2020.02)</li>
 </ul>
 
 <h2>Activity</h2>
@@ -76,14 +76,6 @@ layout: page
 
   <li>Private</li>
   <ul>
-    <!--<li>
-      <a target="_blank" href="https://github.com/ry4nkim/ObjectSpinner" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Android Library] Object Spinner</a>
-    </li>
-    <li>
-      <a target="_blank" href="https://github.com/ry4nkim/android-movie-rank" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Android] Movie Rank</a>
-    </li>-->
-    <!--<li>[Web] 네이버 데이터랩 API를 활용한 검색 키워드 분석 시스템 (itemscout.io 클론코딩) (2021)</li>-->
-    <!--<li>[Web] SCH 온라인 서점 쇼핑몰 (2021)</li>-->
     <li>[Web] 연차 휴가 관리 시스템 (2021)</li>
     <li>
       <a target="_blank" href="/android-ios-tingple" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Android/iOS] 팅플 - 전국 대학교 과팅 매칭 서비스 (2020)</a>
@@ -109,6 +101,5 @@ layout: page
     <li>
       <a target="_blank" href="/android-ssangyong-high-school" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Android] 쌍용GO - 천안쌍용고등학교 (2015)</a>
     </li>
-    <!--<li>[Android] 네이버 프로필 만들기 (2014)</li>-->
   </ul>
 </ul>
