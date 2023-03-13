@@ -18,10 +18,10 @@ layout: page
 
 <h2>Career</h2>
 <ul>
-  <li><b>스포카(Spoqa)</b> 안드로이드 앱 개발자 - 모바일챕터 매니저 (2023.03 ~ 재직중)</li>
-  <li><b>핏펫(Fitpet)</b> 안드로이드 앱 개발자 - 모바일챕터 매니저 (2022.01 ~ 2023.02)</li>
-  <li><b>베리블</b> 듀오백몰, 뉴트리몰 웹 개발자 - 프리랜서 (2020.07 ~ 2021.07)</li>
-  <li><b>투비네트웍스글로벌</b> 웹 & 모바일 앱 개발자 - 개발팀 사원 (2018.01 ~ 2020.02)</li>
+  <li>스포카(Spoqa) 안드로이드 앱 개발자 - 제품팀 팀원 (2023.03 ~ 재직중)</li>
+  <li>핏펫(Fitpet) 안드로이드 앱 개발자 - 모바일챕터 매니저 (2022.01 ~ 2023.02)</li>
+  <li>베리블(Berryble) 듀오백몰, 뉴트리몰 웹 개발자 - 프리랜서 (2020.07 ~ 2021.07)</li>
+  <li>투비네트웍스글로벌 웹 & 모바일 앱 개발자 - 개발팀 사원 (2018.01 ~ 2020.02)</li>
 </ul>
 
 <h2>Activity</h2>
@@ -55,7 +55,10 @@ layout: page
   <li>Public</li>
   <ul>
     <li>
-      <a target="_blank" href="https://play.google.com/store/apps/details?id=kr.co.fitpet" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Android] 핏펫 - 수의사와 함께 하는 반려동물 앱 (2022)</a>
+      <a target="_blank" href="https://play.google.com/store/apps/details?id=com.spoqa.ops" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Android] 키친보드 - 식자재 주문 관리 (2023)</a>
+    </li>
+    <li>
+      <a target="_blank" href="https://play.google.com/store/apps/details?id=kr.co.fitpet" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Android] 핏펫 - 건강한 반려생활의 시작 (2022)</a>
     </li>
     <li>
       <a target="_blank" href="https://www.duoback.co.kr" style="text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">[Web] 듀오백몰 - 앉는 모든 것 (2021)</a>
