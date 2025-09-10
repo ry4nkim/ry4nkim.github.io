@@ -50,7 +50,7 @@ layout: page
 
 <h2>Skills</h2>
 <ul class="skill-list">
-  <li>Android : Android(Kotlin), Compose, View System, Coroutines, Retrofit2, Apollo(GraphQL), Hilt, Clean Architecture, MVVM & MVI Pattern</li>
+  <li>Android : Kotlin, Java, Compose, View System, Coroutines, Retrofit2, Apollo(GraphQL), Hilt, Clean Architecture, MVVM & MVI Pattern</li>
   <li>Front-End : React, TypeScript, Next.js, TanStack Query, Zustand, Tailwind CSS</li>
   <li>Back-End : Spring Boot(Java), Flask(Python), CodeIgniter(PHP)</li>
   <li>Database : MySQL</li>
